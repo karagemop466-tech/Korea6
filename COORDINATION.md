@@ -74,3 +74,5 @@ Session: arena-d6dba19e. Branch: arena/d6dba19e-korea6 (fixed by hosting environ
 
 ## Session arena/9d85eaae-korea6 — research-log audit
 - Scope narrowed after PR #8 published the legacy page corrections: preserve its HTML and README unchanged; audit the remaining historical research assertions in `research/sources.md` only.
+- Reconciled with the already-merged correction PR #8: its `README.md`, `summary.html` and `windows.html` remain authoritative and unchanged. This contribution corrects the same unsupported all-clear conclusions only in `research/sources.md`, including its stale February and July recommendation text, its unsupported “no week exists” conclusion, and its unqualified future-year estimates.
+- Official references linked in the corrected source log: MLB 2027 regular-season announcement, MLB 2027 Spring Training announcement, and NFL Football Operations Important Dates. They verify individual league milestones, not full local sports-radio absence. Local carriage/reception remains unverified; no 2028/2029 dates are proposed.
