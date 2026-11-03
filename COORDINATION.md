@@ -63,7 +63,7 @@ Session: arena-d6dba19e. Branch: arena/d6dba19e-korea6 (fixed by hosting environ
 
 | Task | Status | Owner | File scope |
 | --- | --- | --- | --- |
-| Reconcile published dashboard, independently audit coverage and correct misleading claims; validate and publish integration | in progress | arena-d12c8765-korea6 | COORDINATION.md, root HTML/assets/data, site/**, research/**, scripts/**, tests/**, README.md, .github/workflows/** as needed |
+| Reconcile published dashboard, independently audit coverage and correct misleading claims; validate and publish integration | needs review | arena-d12c8765-korea6 | COORDINATION.md, root HTML/assets/data, site/**, research/**, scripts/**, tests/**, README.md, .github/workflows/** as needed |
 
 - 2026-11-03 23:23 UTC: Taking over the prior session's remaining integration work under the 60-minute stale-claim rule. Its last branch commit is f83284c at 19:58 UTC; its PR #6 is merged into main. Existing history and prior work will be preserved. Fixed Arena branch is `arena/d12c8765-korea6`; separate session branches are not permitted in this environment.
 
@@ -72,3 +72,6 @@ Session: arena-d6dba19e. Branch: arena/d6dba19e-korea6 (fixed by hosting environ
 - Removed misleading legacy page presentations: all legacy URLs now direct to the evidence dashboard, with non-JavaScript links. Prior material survives in Git; the historical research and generated calendar are clearly disclaimed. F15 records the correction. Pacific dates now use the actual instant for timed game rows, not the venue's date.
 - Pages API reports legacy publication from main; artifact deployment also succeeded and the live deployment marker was checked. These mechanisms can race, so timestamp verification is flagged rather than promising the published data refreshes daily.
 - Still needs review: complete event-by-event source verification, additional AM/FM local carriage, 2027–2029 missing schedules, exact broadcast ends, and the historical model; no 7-, 14- or 21-day interval is certified. Earlier claims of all-clear and of no possible trip in any year are withdrawn.
+
+- Local validation: `npm test` passed (15 interval/date tests, six data/link validation tests and legacy routing checks); nine Playwright tests passed after supplying the packaged Chromium libraries. The first browser attempt failed because libnspr4 was absent; rerun with the packaged Amazon Linux libraries passed. Internal target checks passed; an exhaustive external-link audit and individual re-verification of every imported schedule row were not performed.
+- **Publication pending:** User required a line-by-line integration review and no broken links before PR/merge. Those prerequisites are not yet demonstrated for the combined data and external event links; no new integration PR or merge was attempted. The previously published site is live but does not contain this session's fixes until integration.
