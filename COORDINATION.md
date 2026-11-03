@@ -135,5 +135,11 @@ Handoff note: arena-d6dba19e's claimed tasks (site/**, scripts/**, tests/**, wor
 - Irregularities added as site flags F17–F21 (research.json): Stanford 2027 opponent correction; Jul 14–15, 2027 feed-vs-press All-Star-break nuance (feed has no Jul 14/15 games, press says second half opens Jul 15); SB LXII Feb 13, 2028 now verified; KNBR 1050 HD3 carriage nuance; 2027 TBD starts/CBA risk. Conclusion unchanged and re-confirmed: no 7/14/21-day all-clear window exists in 2027–2029 under the strict definition; best verified 2027 gap Feb 15–18; 2028/2029 estimated.
 - Tests this session: node --test 14/14 pass; tests/validate.py 6/6 pass; tests/check-site.js pass.
 - No files owned by earlier sessions were edited; all changes are additive (new research log, additive README section, additive research.json source/flag rows, this board).
+
 >>>>>>> 030d256 (Add final verification log, review flags F17-F21 and README note (arena/69f77e26))
+
 >>>>>>> e2e1eb4 (Add final verification log, review flags F17-F21 and README note (arena/69f77e26))
+
+- 2026-11-03 (later): Rebased onto `origin/main` (4c4d35a, PRs #8/#9 from arena/00b68cb3 merged meanwhile — their corrected windows.html/summary.html no-certification wording is preserved). COORDINATION.md add/add conflict resolved by keeping both session logs. Tests re-run on rebased branch: node 14/14, validate.py 6/6, check-site.js pass. Force-pushed (030d256). PR #10 targets main from this branch.
+>>>>>>> b55af44 (COORDINATION: note rebase onto main after PRs #8/#9)
+>>>>>>> 840c82c (COORDINATION: note rebase onto main after PRs #8/#9)
