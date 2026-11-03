@@ -59,7 +59,21 @@ Rule applied throughout: **verified = confirmed on an official source linked bel
 | KHTK 1140 AM (Sacramento) | Westwood One NFL Sunday doubleheaders — Sacramento-market signal (flagged for 94122 reception) | Wikipedia affiliate list |
 | KGMZ 95.7 FM "The Game" | Bay Area sports station (Warriors flagship; general sports) | https://en.wikipedia.org/wiki/KGMZ-FM |
 
-## 5. Vacation-window logic (see windows.html for full table)
+## 5. Vacation-window audit (checked 2026-11-03; corrected)
 
-- **2027 (verified anchors):** NFL off after Super Bowl LXI (Feb 14, 2027, verified) until preseason (~Aug 2027, est.); MLB spring training starts Feb 19, 2027 (verified) → all-clear **Feb 15–18, 2027 (4 days)**. MLB All-Star break Jul 12–14, 2027 (Derby Jul 12, ASG Jul 13 verified; second half resumes Jul 15 verified) → all-clear **Jul 12–14, 2027 (3 days)**. No 1-week+ all-clear window exists in 2027 under the strict all-leagues definition.
-- **2028 / 2029:** all schedule data unreleased → structural ESTIMATES only (see windows.html, every row flagged).
+**No 7-, 14-, or 21-day sports-free vacation interval is certified for 2027, 2028, or 2029. This is not a finding that such an interval does not exist; it reflects incomplete schedule and local-radio coverage.** Do not infer free time from an empty feed, ordinary season boundaries, or an estimated game duration.
+
+| Finding | Evidence/status | Official source |
+|---|---|---|
+| NFL calendar lists Super Bowl LXI on Feb 14, 2027 | Verified event date; does not establish absence of other live radio events Feb 15–18 | [NFL Football Operations — Important Dates](https://operations.nfl.com/calendar-events/nfl-important-dates/) |
+| MLB 2027 Spring Training begins Feb 19, 2027, with all 30 clubs in action | Verified schedule anchor. Feb 15–18 is a four-date gap between these MLB/NFL anchors only; no all-radio-free status is certified | [MLB — 2027 Spring Training schedule announcement](https://www.mlb.com/press-release/mlb-announces-2027-spring-training-schedule) |
+| MLB schedules Home Run Derby July 12 and All-Star Game July 13, 2027; second half begins July 15 | Verified MLB events. The earlier assertion that July 12–14 was all-clear is withdrawn. Specific AM/FM carriage for those events remains a separate unverified question | [MLB.com — 2027 schedule announcement](https://www.mlb.com/news/mlb-2027-schedule-released) |
+| Week/2-week/3-week intervals for 2027–2029 | Not determined. Complete schedules, all radio listings and 94122 reception/carriage have not been verified across the required sports | Review live coverage status at [Flagged for Review](../site/review.html) and the [evidence dashboard](../site/) |
+| 2028 and 2029 candidate dates | Blank/not published; not enough verified information here to date a candidate. Do not use estimates as verified fixtures | [MLB 2028 schedule](https://www.mlb.com/schedule/2028) · [NFL 2028 schedule](https://www.nfl.com/schedules/2028/) · [MLB 2029 schedule](https://www.mlb.com/schedule/2029) · [NFL 2029 schedule](https://www.nfl.com/schedules/2029/) |
+
+### Corrections and source-quality notes
+
+- Earlier `summary.html`, `windows.html`, and this log called Feb 15–18, 2027 a “verified all-clear” and July 12–14, 2027 a second verified window. These claims are withdrawn. League date anchors are not a complete inventory of all sports broadcast on local AM/FM; July 12–13 additionally contain the MLB Home Run Derby and All-Star Game.
+- Earlier text claimed no week-long interval exists because seasons overlap, without checking a complete, verified event and local broadcast inventory. That conclusion is withdrawn; the result is **not determined**.
+- The former Feb 2028 / Feb 2029 and July 2028 / July 2029 estimated date windows were not based on confirmed future schedules or complete radio coverage and have been removed from recommendations. No dates are filled in where official evidence has not been established.
+- Some source rows elsewhere in this historical research log rely on secondary sources, non-official sources, or old station information. They must not be read as verified against the user's official-source-only rule. See the dashboard's [Flagged for Review](../site/review.html) register; local signal reception in Outer Sunset is not proven by a station's market affiliate listing.
