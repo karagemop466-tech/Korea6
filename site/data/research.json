@@ -63,6 +63,48 @@
       "evidence": "Historical 2013 source lists KZSU 90.1 FM and other sports",
       "limitation": "Historical only: current carriage and Outer Sunset reception unverified; no fixtures imported.",
       "source": "https://gostanford.com/news/2013/04/17/radio-information"
+    },
+    {
+      "sport": "California \u00b7 Men's Basketball (NCAAM)",
+      "station": "KSFO 810 AM",
+      "evidence": "All 32 regular-season 2026\u201327 games explicitly list Radio: KSFO 810 AM (including Feb 17, 2027 at Pitt)",
+      "limitation": "Postseason ACC/NCAA tournament game-level carriage unverified.",
+      "source": "https://calbears.com/sports/mens-basketball/schedule/2026-27"
+    },
+    {
+      "sport": "San Francisco (USF Dons) \u00b7 Men's Basketball (NCAAM)",
+      "station": "KTCT / KNBR 1050 AM",
+      "evidence": "Official USF game releases name KNBR 1050; 2026\u201327 home rows link to thesportsleader.com",
+      "limitation": "Road/neutral rows without an explicit Listen link keep station blank until posted.",
+      "source": "https://usfdons.com/sports/mens-basketball/schedule/2026-27"
+    },
+    {
+      "sport": "Golden State Valkyries \u00b7 WNBA",
+      "station": "KGMZ 95.7 FM",
+      "evidence": "Multi-year flagship partnership for all home games and select road games (May\u2013Sep)",
+      "limitation": "2027\u20132029 WNBA regular-season schedules not yet published.",
+      "source": "https://valkyries.wnba.com/news/valkyries-announce-audacy-as-radio-partner-20250514"
+    },
+    {
+      "sport": "San Jose Earthquakes \u00b7 MLS",
+      "station": "KSFO 810 AM (English) / KZSF 1370 AM (Spanish)",
+      "evidence": "Official 2026 radio partner announcement (select overflow on KNBR 680 / KTCT 1050)",
+      "limitation": "2027\u20132029 MLS schedules and future rights not yet published.",
+      "source": "https://www.sjearthquakes.com/news/news-earthquakes-announce-radio-stations-for-2026-mls-season"
+    },
+    {
+      "sport": "San Jose Sharks \u00b7 NHL (digital-only)",
+      "station": null,
+      "evidence": "Moved exclusively to Sharks Audio Network digital stream/app in January 2021",
+      "limitation": "Excluded from standard terrestrial AM/FM conflicts in 94122.",
+      "source": "https://www.nhl.com/sharks/news/sharks-announce-launch-of-sharks-audio-network-320033246"
+    },
+    {
+      "sport": "Stanford \u00b7 Men's Basketball (digital/satellite)",
+      "station": null,
+      "evidence": "Moved off KNBR 1050 AM in 2017\u201318 to GoStanford.com, Varsity Network and SiriusXM",
+      "limitation": "Excluded from standard terrestrial AM/FM conflicts unless a terrestrial simulcast is announced.",
+      "source": "https://gostanford.com/news/2017/11/09/enhanced-basketball-coverage"
     }
   ],
   "sources": [
@@ -145,6 +187,36 @@
       "name": "NBA All-Star 2027",
       "claim": "Phoenix hosts February 19\u201321, 2027. This does not establish Warriors regular-season silence February 15\u201318.",
       "source": "https://www.nba.com/news/phoenix-suns-nba-all-star-2027-official-release"
+    },
+    {
+      "name": "NFL Pro Bowl game discontinued (Aug 26, 2026)",
+      "claim": "Official NFL announcement confirms that starting with the 2026 season (2027 Pro Bowl class), the AFC-NFC Pro Bowl game will no longer be staged.",
+      "source": "https://www.nfl.com/news/nfl-elevates-pro-bowl-selection-game-s-will-cease-being-contested"
+    },
+    {
+      "name": "Golden State Warriors full 2026\u201327 schedule",
+      "claim": "All remaining regular-season games through April 11, 2027 verified with game-level NBA.com links, proving Feb 15 vs Pacers and Feb 17 vs Pelicans air during the post-Super Bowl week.",
+      "source": "https://www.nba.com/schedule/warriors?cal=February"
+    },
+    {
+      "name": "California 2026\u201327 Men's Basketball schedule",
+      "claim": "All 32 regular-season games (Nov 2, 2026\u2013Mar 6, 2027) explicitly list Radio: KSFO 810 AM, including Feb 17, 2027 at Pittsburgh (4:00 PM PST).",
+      "source": "https://calbears.com/sports/mens-basketball/schedule/2026-27"
+    },
+    {
+      "name": "USF Dons 2026\u201327 Men's Basketball schedule",
+      "claim": "32 regular-season games verified on USF Athletics; home games link directly to KNBR/thesportsleader.com (KNBR 1050 AM).",
+      "source": "https://usfdons.com/sports/mens-basketball/schedule/2026-27"
+    },
+    {
+      "name": "Stanford 2027 ACC opponents & Notre Dame extension",
+      "claim": "Sep 16, 2026 9-game ACC opponent release (Home: Cal, Duke, UNC, Syracuse, Virginia; Away: BC, Clemson, FSU, SMU) plus May 20, 2026 Notre Dame dates (Nov 27, 2027; Oct 14, 2028).",
+      "source": "https://gostanford.com/news/2026/09/16/acc-announces-2027-conference-opponents"
+    },
+    {
+      "name": "Westwood One NCAA Football & U.S. Soccer",
+      "claim": "Six upcoming 2026 NCAAF national broadcasts (Nov 7\u2013Dec 12, including SEC Championship and Army-Navy) plus Nov 17 USMNT vs Haiti.",
+      "source": "https://www.westwoodonesports.com/ncaa-football/"
     }
   ],
   "flags": [
@@ -163,8 +235,8 @@
     {
       "id": "F03",
       "title": "NFL future and special-event coverage incomplete",
-      "detail": "Official 2026 NFL pages yielded 321 distinct game records: 272 regular-season and 49 preseason fixtures. Curated 49ers and Westwood One listings add local evidence and national airtimes. Pro Bowl, 2027\u20132029 season fixtures and complete postseason game-level details remain unverified. Unknown dates remain unplaced.",
-      "source": "https://www.nfl.com/schedules/"
+      "detail": "Official 2026 NFL pages yielded 321 distinct game records: 272 regular-season and 49 preseason fixtures. On August 26, 2026, NFL.com officially announced that the AFC-NFC Pro Bowl game will no longer be staged starting with the 2026 season (2027 class). 2027\u20132029 regular-season NFL fixtures and complete postseason game-level kickoffs remain unverified. Unknown dates remain unplaced.",
+      "source": "https://www.nfl.com/news/nfl-elevates-pro-bowl-selection-game-s-will-cease-being-contested"
     },
     {
       "id": "F04",
@@ -255,6 +327,18 @@
       "title": "Future Super Bowl exact dates require official confirmation",
       "detail": "Atlanta 2028 host verified from NFL announcement; exact date not established by that page. Earlier coordination log references secondary date reporting, not sufficient official verification. Keep exact future dates unverified.",
       "source": "https://www.nfl.com/news/mercedes-benz-stadium-in-atlanta-to-host-super-bowl-lxii-in-2028"
+    },
+    {
+      "id": "F20",
+      "title": "Superseded 2023 Stanford ACC opponent list in legacy source log",
+      "detail": "Legacy research/sources.md cited an October 2023 8-game ACC model placing Stanford at Virginia Tech in 2027. Stanford's September 16, 2026 9-game ACC announcement supersedes that model (Home: Cal, Duke, UNC, Syracuse, Virginia; Away: BC, Clemson, Florida State, SMU), and Stanford's May 20, 2026 release adds Notre Dame on Nov 27, 2027 and Oct 14, 2028.",
+      "source": "https://gostanford.com/news/2026/09/16/acc-announces-2027-conference-opponents"
+    },
+    {
+      "id": "F21",
+      "title": "February 15 and February 17, 2027 confirmed occupied on SF AM/FM radio",
+      "detail": "Full 2026\u201327 Golden State Warriors (KGMZ 95.7 FM), California Men's Basketball (KSFO 810 AM), and USF Dons Men's Basketball (KNBR 1050 AM) schedules prove Monday, Feb 15 (Pacers at Warriors, 4:30 PM PST) and Wednesday, Feb 17 (Cal at Pitt 4:00 PM PST + Pelicans at Warriors 7:00 PM PST + USF at LMU) carry active Bay Area sports broadcasts.",
+      "source": "https://calbears.com/sports/mens-basketball/schedule/2026-27"
     }
   ]
 }

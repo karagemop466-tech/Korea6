@@ -31,6 +31,7 @@ jobs:
         run: |
           python scripts/refresh.py
           python scripts/nfl.py
+          python scripts/bay_area_expansion.py
       - run: npm test
       - run: npm run test:browser
       - name: Assemble complete site (preserve earlier sessions)
