@@ -72,6 +72,7 @@ Session: arena-d6dba19e. Branch: arena/d6dba19e-korea6 (fixed by hosting environ
 - Publication: PR [#8](https://github.com/karagemop466-tech/Korea6/pull/8) merged to `main` at 2026-11-03 23:26 UTC (merge commit `ab50ed892f595a3d7fea4b2be0fdcd8daf8c3c44`). PR verification succeeded; main verification/deploy run [41739227582](https://github.com/karagemop466-tech/Korea6/actions/runs/41739227582) and Pages build [41739226362](https://github.com/karagemop466-tech/Korea6/actions/runs/41739226362) both succeeded. Confirmed the live [vacation windows](https://karagemop466-tech.github.io/Korea6/windows.html) and [executive summary](https://karagemop466-tech.github.io/Korea6/summary.html) contain corrected no-certification language.
 - Coordination overlap discovered after publication: PR [#7](https://github.com/karagemop466-tech/Korea6/pull/7) from `arena/9d85eaae-korea6` independently addresses overlapping legacy-window corrections and adds source-log details. The owner was notified in [PR comment](https://github.com/karagemop466-tech/Korea6/pull/7#issuecomment-6618127799) to reconcile against current `main` and preserve any additive research without duplicating/overwriting deployed work.
 
+
 ## Session arena/9d85eaae-korea6 — research-log audit
 - Scope narrowed after PR #8 published the legacy page corrections: preserve its HTML and README unchanged; audit the remaining historical research assertions in `research/sources.md` only.
 - Reconciled with the already-merged correction PR #8: its `README.md`, `summary.html` and `windows.html` remain authoritative and unchanged. This contribution corrects the same unsupported all-clear conclusions only in `research/sources.md`, including its stale February and July recommendation text, its unsupported “no week exists” conclusion, and its unqualified future-year estimates.
@@ -114,4 +115,31 @@ Handoff note: arena-d6dba19e's claimed tasks (site/**, scripts/**, tests/**, wor
   - **Complete 94122 terrestrial AM/FM station matrix & digital exclusions:** Verified `KNBR 680/104.5`, `KSAN 107.7`, `KTCT 1050` (Stanford FB + USF Dons MBB), `KSFO 810` (Cal FB + all 32 Cal MBB games + SJ Earthquakes English), `KGMZ 95.7` (Warriors + Golden State Valkyries WNBA), `KNEW 960` (Athletics), `KSFN 1510/99.3` (Giants Spanish), and `KZSF 1370` (Earthquakes Spanish); verified **San Jose Sharks** (`Sharks Audio Network` since Jan 2021) and **Stanford MBB** (off `KNBR 1050` since 2017–18) as digital/satellite-only exclusions.
   - **Stanford/Cal 2026–2029 & Westwood One expansion:** Added 18 Aug–Oct 2026 Stanford/Cal FB games, Stanford's Sep 16, 2026 9-game ACC opponent list (superseding the 2023 8-game model in `research/sources.md`, documented as `F20`) + May 20, 2026 Notre Dame extension (`Nov 27, 2027` & `Oct 14, 2028`), Cal 2028–2029 nonconference games, 5 missing Westwood One NCAAF broadcasts (`Nov 14–Dec 12, 2026`), and Nov 17 Westwood One USMNT vs Haiti.
   - **Local verification passed:** `npm test` passed (`18/18` Node tests, `6/6` Python `validate.py` tests, `check-site.js`), `LD_LIBRARY_PATH=/tmp/al2023/lib npm run test:browser` passed (`12/12` Playwright tests including 390px mobile overflow checks across all 8 `site/*.html` pages), and `git diff --check` is clean.
+
 - 2026-11-03 23:50 UTC: PR [#16](https://github.com/karagemop466-tech/Korea6/pull/16) passed CI (`41742167381`) and merged to `main` at `8f87bd5d5f74b13d09b95de32143eed4cd9b900b`. Main verification and GitHub Pages deployment run [41742271483](https://github.com/karagemop466-tech/Korea6/actions/runs/41742271483) succeeded across `refresh.py`, `nfl.py`, `bay_area_expansion.py`, `npm test`, `npm run test:browser`, and `actions/deploy-pages@v4`. Live pages published at <https://karagemop466-tech.github.io/Korea6/site/> and <https://karagemop466-tech.github.io/Korea6/site/core-scope.html>.
+## Session log — arena/69f77e26-korea6 (2026-11-03)
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Final verification pass (line-by-line spot checks of key claims vs official sources), test run, integration PR + merge + Pages deploy confirmation | in progress | arena-69f77e26 | COORDINATION.md, README.md (additive), site/data/research.json (additive flags if needed), new research/verification notes under research/ |
+
+- 2026-11-03: Claimed final verification + publication for this session. Branch `arena/69f77e26-korea6` is even with `origin/main` (2e7c0f4, PRs #2–#6 merged). Prior sessions' pages (root HTML + `site/`) are preserved; this session verifies, flags, and publishes — it does not rewrite earlier analysis. Open PR #1 from `arena/8645d151-korea6` is not owned by this session and is left untouched.
+
+>>>>>>> 76bbe28 (COORDINATION: claim final verification + publication for arena/69f77e26)
+
+>>>>>>> 2a5bd39 (COORDINATION: claim final verification + publication for arena/69f77e26)
+
+### Verification results — arena/69f77e26 (2026-11-03, later same day)
+- Re-verified all load-bearing claims against official sources; log at `research/verification-69f77e26.md`. Confirmed: MLB 2027 schedule (released Jul 16, 2026; opener Mar 24-25; ASG Jul 13, 2027 Wrigley; end Sep 26) and 2027 Spring Training opener Feb 19, 2027 (mlb.com); NFL 2026 key dates and Super Bowl LXI Feb 14, 2027 SoFi (NFL release via seahawks.com, operations.nfl.com); Super Bowl LXII announced for Feb 13, 2028 Atlanta (media.nfl.com) — upgrades the 2028 anchor from estimated to verified; Westwood One 2026 NFL package and SB LXI radio (westwoodonesports.com + network release); KNBR 680/104.5 flagship for Giants (mlb.com) and 49ers through 2030 (cumulusmedia.com Apr 15, 2026); Cal 2027 nonconference/ACC opponents (calbears.com Jun 25 & Sep 16, 2026); Stanford 2027 ACC opponents (gostanford.com Sep 16, 2026 — supersedes the 2023 model list in the preserved root sources.md); MLB 2025 average game 2:38 (mlb.com news).
+- Data spot checks: `site/data/mlb-2027.json` = 2,901 records, 30 clubs, ASG row on 2027-07-13, earliest rows 2027-02-19, last regular-season day 2027-09-26, 1,930 TBD starts; `nfl-2026.json` = 321 (272 reg + 49 pre), 20 49ers games; `curated.json` = 87 rows incl. 46 Westwood One NFL slots, each with an official source URL.
+- Irregularities added as site flags F17–F21 (research.json): Stanford 2027 opponent correction; Jul 14–15, 2027 feed-vs-press All-Star-break nuance (feed has no Jul 14/15 games, press says second half opens Jul 15); SB LXII Feb 13, 2028 now verified; KNBR 1050 HD3 carriage nuance; 2027 TBD starts/CBA risk. Conclusion unchanged and re-confirmed: no 7/14/21-day all-clear window exists in 2027–2029 under the strict definition; best verified 2027 gap Feb 15–18; 2028/2029 estimated.
+- Tests this session: node --test 14/14 pass; tests/validate.py 6/6 pass; tests/check-site.js pass.
+- No files owned by earlier sessions were edited; all changes are additive (new research log, additive README section, additive research.json source/flag rows, this board).
+
+>>>>>>> 030d256 (Add final verification log, review flags F17-F21 and README note (arena/69f77e26))
+
+>>>>>>> e2e1eb4 (Add final verification log, review flags F17-F21 and README note (arena/69f77e26))
+
+- 2026-11-03 (later): Rebased onto `origin/main` (4c4d35a, PRs #8/#9 from arena/00b68cb3 merged meanwhile — their corrected windows.html/summary.html no-certification wording is preserved). COORDINATION.md add/add conflict resolved by keeping both session logs. Tests re-run on rebased branch: node 14/14, validate.py 6/6, check-site.js pass. Force-pushed (030d256). PR #10 targets main from this branch.
+>>>>>>> b55af44 (COORDINATION: note rebase onto main after PRs #8/#9)
+>>>>>>> 840c82c (COORDINATION: note rebase onto main after PRs #8/#9)

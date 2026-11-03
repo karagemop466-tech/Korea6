@@ -217,6 +217,36 @@
       "name": "Westwood One NCAA Football & U.S. Soccer",
       "claim": "Six upcoming 2026 NCAAF national broadcasts (Nov 7\u2013Dec 12, including SEC Championship and Army-Navy) plus Nov 17 USMNT vs Haiti.",
       "source": "https://www.westwoodonesports.com/ncaa-football/"
+    },
+    {
+      "name": "MLB 2027 Spring Training opener",
+      "claim": "All 30 clubs open 2027 Spring Training on Friday, Feb 19, 2027 (announced Sep 4, 2026); official club releases on mlb.com/press-release confirm Feb 19 openers.",
+      "source": "https://www.mlb.com/press-release/press-release-brewers-announce-2027-spring-training-schedule"
+    },
+    {
+      "name": "MLB average game length 2025",
+      "claim": "Official MLB.com report: average nine-inning game in 2025 was 2 hours 38 minutes, third straight season at or under 2:40. Historical mean used only in the labeled planning overlay.",
+      "source": "https://www.mlb.com/news/mlb-average-game-time-under-three-hours-third-straight-year"
+    },
+    {
+      "name": "NFL important dates 2026-27 (team-carried release)",
+      "claim": "NFL release carried on official club site: kickoff Sep 9, 2026; Wild Card Jan 16-18, 2027; championships Jan 31, 2027; Super Bowl LXI Feb 14, 2027 at SoFi Stadium.",
+      "source": "https://www.seahawks.com/news/nfl-announces-important-dates-for-2026-2027"
+    },
+    {
+      "name": "Super Bowl LXII announcement",
+      "claim": "NFL announced Oct 15, 2024 that Super Bowl LXII will be played Feb 13, 2028 at Mercedes-Benz Stadium, Atlanta. 2029 (LXIII, Las Vegas) date not yet announced.",
+      "source": "https://media.nfl.com/news-and-releases/corporate-communications/atlanta-to-host-super-bowl-lxii-in-2028"
+    },
+    {
+      "name": "49ers-KNBR extension through 2030",
+      "claim": "Cumulus Media release Apr 15, 2026: KNBR 680 AM/104.5 FM remains 49ers flagship via multi-year extension through the 2030 season; KSAN 107.7 FM and KSFO 810 AM also carry games. Notes KNBR 1050 is carried as HD3 channel KTCT/1050.",
+      "source": "https://www.cumulusmedia.com/2026/04/15/san-francisco-49ers-announce-multi-year-partnership-extension-with-cumulus-medias-knbr/"
+    },
+    {
+      "name": "Westwood One 40th season of NFL coverage",
+      "claim": "2026 NFL radio package: Kickoff game Sep 9, 2026, TNF/SNF/MNF, 8 international games, Thanksgiving, Black Friday, Christmas, late-season Saturdays, full postseason, Super Bowl LXI Feb 14, 2027 (Westwood One radio).",
+      "source": "https://news.radio-online.com/articles/n49383/Westwood-One-Sets-40th-Season-of-NFL-Coverage"
     }
   ],
   "flags": [
