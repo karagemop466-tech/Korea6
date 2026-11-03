@@ -17,10 +17,37 @@ def extract(raw,url):
    val=json.loads(m[1]);texts.append(val[1] if len(val)>1 and isinstance(val[1],str) else '')
   except (ValueError,TypeError):pass
  records={}
+ roots={}
+ for line in ''.join(texts).splitlines():
+  try:
+   key,value=line.split(':',1);roots[key]=json.loads(value)
+  except (ValueError,IndexError):pass
+ def resolve(v):
+  for _ in range(12):
+   if not isinstance(v,str) or not v.startswith('$') or ':' not in v:break
+   try:
+    keys=v[1:].split(':');v=roots[keys[0]]
+    for k in keys[1:]:v=v[int(k)] if isinstance(v,list) else v[k]
+   except (KeyError,IndexError,ValueError,TypeError):return None
+  return v
  for line in ''.join(texts).splitlines():
   try:root=json.loads(line.split(':',1)[1])
   except (ValueError,IndexError):continue
   for o in walk(root):
+   if all(k in o for k in ('id','time','homeTeam','awayTeam','seasonType','externalIds')):
+    home=resolve(o['homeTeam']);away=resolve(o['awayTeam'])
+    if not isinstance(home,dict) or not isinstance(away,dict):continue
+    home=resolve(home.get('fullName'));away=resolve(away.get('fullName'))
+    if not home or not away:continue
+    stamp=o.get('time');dt=None
+    try:dt=datetime.datetime.fromisoformat(stamp.replace('Z','+00:00'))
+    except (AttributeError,ValueError):pass
+    if dt and not dt.tzinfo:dt=None
+    ext=resolve(o['externalIds']) or []
+    slug=next((x['id'] for x in ext if isinstance(x,dict) and x.get('source')=='slug'),None)
+    if not slug:continue
+    records[o['id']]=dict(id='nfl-'+o['id'],date=dt.astimezone(ZoneInfo('America/Los_Angeles')).date().isoformat() if dt else None,start=stamp if dt else None,title=away+' at '+home,league='NFL',kind='Preseason' if o['seasonType']=='PRE' else 'Regular season',priority='49ers' in away+home,teams=[away,home],source='https://www.nfl.com/games/'+slug,station=None,radioSource=None,timeBasis='Kickoff',status=o.get('status','Unknown'),checked=datetime.datetime.now(datetime.timezone.utc).isoformat(),note='Official NFL schedule record; local radio carriage unverified.')
+    continue
    if not all(k in o for k in ('gameTime','homeTeam','awayTeam','href','gameId')):continue
    a=o['awayTeam'];h=o['homeTeam']
    if not isinstance(a,dict) or not isinstance(h,dict):continue
