@@ -6,7 +6,7 @@ Open `index.html` through a local HTTP server, for example `python3 -m http.serv
 
 ## Main planner
 
-**Start here: [Evidence dashboard](https://karagemop466-tech.github.io/Korea6/site/).** The dashboard provides daily/monthly navigation, league/team/priority filters, CSV export, a source register, and a clearly labeled Flagged for Review page. `calendar.html`, `windows.html`, and `summary.html` are supporting legacy pages; the window page deliberately does not certify a vacation date.
+**Start here: [Evidence dashboard](https://karagemop466-tech.github.io/Korea6/site/).** The dashboard provides daily/monthly navigation, league/team/priority filters, CSV export, a [Two-scope & AM/FM proof view](https://karagemop466-tech.github.io/Korea6/site/core-scope.html), a source register, and a clearly labeled Flagged for Review page. `calendar.html`, `windows.html`, and `summary.html` are supporting legacy pages; the window page deliberately does not certify a vacation date.
 
 ## Coverage and limitations (reviewed 2026-11-03)
 
@@ -20,5 +20,5 @@ Open `index.html` through a local HTTP server, for example `python3 -m http.serv
 - `npm ci`; `npm test`; `npm run test:browser`.
 - `python3 -m http.server 8000 --bind 0.0.0.0` then visit `/site/`.
 - Browser tests use an npm-packaged Chromium. On minimal Linux environments, extract its `al2023.tar.br` with the package's `inflate` function and set `LD_LIBRARY_PATH=/tmp/al2023/lib`; standard GitHub Ubuntu runners include the required libraries.
-- `scripts/refresh.py`: official MLB importer; `scripts/nfl.py`: official NFL rendered-state importer. `scripts/seed.py`: reproducible November 3 curated snapshot, not a live scraper.
+- `scripts/refresh.py`: official MLB importer; `scripts/nfl.py`: official NFL rendered-state importer; `scripts/bay_area_expansion.py`: deterministic generator for `site/data/expanded-official.json` (176 verified Warriors, Cal/USF MBB, Stanford/Cal 2026–2029 FB, Westwood One NCAAF/USSF, MLS, and MLB HR Derby primary-source records; see [`research/line-by-line-audit-f8a21d11.md`](research/line-by-line-audit-f8a21d11.md)). `scripts/seed.py`: reproducible November 3 curated snapshot, not a live scraper.
 - GitHub Pages workflow runs tests before deployment and refreshes official automated feeds daily without committing to main. Reviewed radio entries keep their original review dates. A failed upstream fetch is recorded as a coverage issue, not interpreted as free time.
