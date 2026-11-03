@@ -13,7 +13,7 @@ def get(year):
         for day in raw['dates']:
             for g in day['games']:
                 a=g['teams']['away']['team'];h=g['teams']['home']['team']
-                games.append(dict(id=f"mlb-{g['gamePk']}",date=g['officialDate'],start=None if g['status'].get('startTimeTBD',True) else g['gameDate'],title=a['name']+' at '+h['name'],league='MLB',kind=g.get('seriesDescription',g['gameType']),priority=a['id'] in (137,133) or h['id'] in (137,133),teams=[a['name'],h['name']],source=f"https://statsapi.mlb.com/api/v1/schedule?gamePk={g['gamePk']}",status=g['status']['detailedState'],station=None,radioSource=None,timeBasis='First pitch',checked=checked))
+                games.append(dict(id=f"mlb-{g['gamePk']}-{g['gameDate']}-{g['status']['statusCode']}",gameId=g['gamePk'],date=g['officialDate'],start=None if g['status'].get('startTimeTBD',True) else g['gameDate'],title=a['name']+' at '+h['name'],league='MLB',kind=g.get('seriesDescription',g['gameType']),priority=a['id'] in (137,133) or h['id'] in (137,133),teams=[a['name'],h['name']],source=f"https://statsapi.mlb.com/api/v1/schedule?gamePk={g['gamePk']}",status=g['status']['detailedState'],station=None,radioSource=None,timeBasis='First pitch',checked=checked))
         assert len(games)==raw['totalGames']
         (D/f'mlb-{year}.json').write_text(json.dumps(games,separators=(',',':')))
         return dict(year=year,count=len(games),source=url,checked=checked,status='imported' if games else 'empty response — not evidence of no games')
