@@ -1,0 +1,48 @@
+/* Session arena/fbb7cd8f-korea6 supplementary styles — used only by the added
+   data/calendar/windows/summary pages so the integrated site theme is untouched. */
+:root{
+  --bg:#0f141b; --panel:#171e28; --panel2:#1d2632; --line:#2a3542;
+  --text:#e8edf3; --muted:#9aa7b6; --accent:#4da3ff; --good:#3ecf8e; --warn:#f5b14c; --bad:#ff6b6b;
+}
+.ftv *{box-sizing:border-box}
+.ftv body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+.ftv a{color:var(--accent);text-decoration:none}
+.ftv a:hover{text-decoration:underline}
+.ftv header{background:var(--panel);border-bottom:1px solid var(--line);padding:14px 22px;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.ftv header .brand{font-weight:700;font-size:18px;margin-right:auto}
+.ftv header nav a{color:var(--muted);font-size:14px;padding:6px 10px;border-radius:8px}
+.ftv header nav a:hover,.ftv header nav a.active{color:var(--text);background:var(--panel2);text-decoration:none}
+.ftv main{max-width:1100px;margin:0 auto;padding:24px 20px 60px}
+.ftv h1{font-size:26px;margin:6px 0 14px}
+.ftv h2{font-size:20px;margin:28px 0 10px;border-bottom:1px solid var(--line);padding-bottom:6px}
+.ftv h3{font-size:16px;margin:20px 0 8px}
+.ftv .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:12px 0}
+.ftv .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.ftv .stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.ftv .stat .num{font-size:26px;font-weight:700}
+.ftv .stat .lbl{color:var(--muted);font-size:13px}
+.ftv table{width:100%;border-collapse:collapse;font-size:14px;margin:10px 0}
+.ftv th,.ftv td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.ftv th{color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.ftv tr:hover td{background:var(--panel2)}
+.ftv .tag{display:inline-block;padding:2px 8px;border-radius:20px;font-size:11px;font-weight:600;white-space:nowrap}
+.ftv .tag.free{background:rgba(62,207,142,.15);color:var(--good)}
+.ftv .tag.partial{background:rgba(245,177,76,.15);color:var(--warn)}
+.ftv .tag.busy{background:rgba(255,107,107,.15);color:var(--bad)}
+.ftv .tag.verified{background:rgba(77,163,255,.15);color:var(--accent)}
+.ftv .tag.estimated{background:rgba(245,177,76,.15);color:var(--warn)}
+.ftv .tag.high{background:rgba(255,107,107,.2);color:var(--bad)}
+.ftv .tag.off{background:#2a3542;color:var(--muted)}
+.ftv .note{color:var(--muted);font-size:13px}
+.ftv .daynav{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:14px 0}
+.ftv button,.ftv .btn{background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:8px;padding:8px 14px;font-size:14px;cursor:pointer}
+.ftv button:hover,.ftv .btn:hover{border-color:var(--accent);text-decoration:none}
+.ftv input[type=date]{background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+.ftv .bar{height:10px;border-radius:6px;background:var(--line);overflow:hidden;display:flex;margin:6px 0}
+.ftv .bar .b{background:var(--bad)}
+.ftv .bar .f{background:var(--good)}
+.ftv .timeline{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12.5px}
+.ftv .timeline .row{display:flex;gap:8px;padding:3px 0;border-bottom:1px dashed var(--line)}
+.ftv .timeline .t{width:150px;color:var(--muted);flex:none}
+.ftv footer{border-top:1px solid var(--line);color:var(--muted);font-size:12px;padding:18px 22px;text-align:center}
+.ftv ul.tight li{margin:4px 0}
