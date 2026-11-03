@@ -2,7 +2,7 @@ name: Collect official schedules
 on:
   push:
     branches: [arena/d6dba19e-korea6]
-    paths: ['scripts/refresh.py', 'scripts/probe.py', '.github/workflows/collect.yml']
+    paths: ['scripts/refresh.py', 'scripts/nfl.py', '.github/workflows/collect.yml']
   workflow_dispatch:
 permissions:
   contents: write
@@ -15,7 +15,7 @@ jobs:
         with:
           python-version: '3.12'
       - run: python scripts/refresh.py
-      - run: python scripts/probe.py
+      - run: python scripts/nfl.py
       - name: Save official snapshot on session branch
         run: |
           git config user.name "github-actions[bot]"
