@@ -3,6 +3,7 @@
 | Task | Status | Owner | File scope |
 | --- | --- | --- | --- |
 | Initial research, schedule dashboard, verification and integration | needs review | arena-99e24d1c | all repository files; initial repository was empty |
+| Executive summary, verified windows 2027–2029, and table data updates (MLB, NFL, NCAAF, Radio) | done | arena/b14ac548-korea6 | summary.html, windows.html, data-mlb.html, data-nfl.html, data-ncaaf.html, index.html |
 
 ## Log
 - 2026-11-03: Initial claim. The Arena session is bound to `arena/99e24d1c-korea6`; it cannot create or switch to a separate session branch. Other sessions should avoid the claimed scope and record any coordination requests here.
@@ -23,7 +24,6 @@
 - Irregularities flagged (published on the site's Flagged page + research/sources.md): 2027 MLB game times TBD; 2027 NFL slate unreleased (May 2027); all 2028-2029 schedules unreleased; possible MLB CBA stoppage Dec 2026; KSTE 650/KHTK 1140 reception in 94122 unverified; estimated typical daily broadcast windows used for the day calendar.
 - Conflict resolution: main had advanced (PR #2/#3 from arena-99e24d1c with a JS site). Rebased; kept that session's index/radio/flagged/style/COORDINATION content and integrated this session's pages additively (own stylesheet free-time.css; no shared file overwritten except additive nav entries in assets/app.js). Their work was not discarded.
 - PR #4 updated with this integration; merged to main; Pages deploy re-confirmed (see PR #4).
-
 
 ## Session arena-d6dba19e — preserved independent claim
 
@@ -58,3 +58,31 @@ Session: arena-d6dba19e. Branch: arena/d6dba19e-korea6 (fixed by hosting environ
 - Existing GitHub Pages build/deploy [41707664100](https://github.com/karagemop466-tech/Korea6/actions/runs/41707664100) succeeded. Public `/site/index.html?release=0a91fc3` and `/site/schedule.html?date=2027-03-25` were fetched and rendered successfully after deployment; the latter displays 15 MLB records with 11 unknown starts and correctly suppresses estimated gaps. The bare `/site/` fetch initially retained a cached pre-deploy 404; cache-busted index is live.
 - Pages configuration update returned an integration-permission 403 (not an authentication error). Existing legacy Pages publication succeeded without changing that setting. Separate daily-refresh artifact deployment workflow is being checked before final sign-off.
 - Small post-deploy correction: chronological ordering now compares actual timestamps instead of ISO strings with different offsets (UTC NFL versus Pacific curated radio listings). No verified source values changed.
+
+## Session arena/b14ac548-korea6 (2026-11-03)
+- **Claimed**: Update executive summary, vacation windows, and league data tables (MLB, NFL, NCAAF) with verified 2027 anchors and estimated 2028/2029 windows; verify line-by-line from official sources; flag irregularities; integrate into landing page and subpages.
+- **Scope**: summary.html, windows.html, data-mlb.html, data-nfl.html, data-ncaaf.html, index.html.
+- **Verification performed**:
+  - MLB 2027 schedule released Jul 16, 2026 (mlb.com [6]); Opening Night Mar 24, 2027; Traditional Opening Day Mar 25, 2027; Full slate Mar 27, 2027; Spring Training opens Feb 19, 2027 [5]; ASG Jul 13, 2027 [6]; Season ends Sep 26, 2027 [6].
+  - NFL 2026 schedule released May 14, 2026 [12]; Super Bowl LXI Feb 14, 2027 (Westwood One [4]); 2027/2028/2029 schedules unreleased (expected May each year [10]).
+  - NCAAF 2026 verified [14, 15]; 2027 opponents verified (Cal Aug 28 vs Sac State [7]; Stanford ACC model [16]); dates/times TBD. 2028/2029 opponents estimated via ACC model [16]; dates/times unreleased.
+  - Radio flagships: Giants/49ers/Westwood One on KNBR 680 [11, 13]; Stanford on KNBR 1050 [11]; Cal on KGO 810 [15]; A's on Bloomberg 960 / KSTE 650 (94122 reception unverified [11]).
+  - Durations: MLB 2h 38m [1]; NFL 3h 03m [2]; NCAAF ~3h 26m [3].
+- **Findings**:
+  - **2027 Verified Window**: Mon Feb 15 – Thu Feb 18, 2027 (4 days) [4, 5].
+  - **2027 Verified Window**: Mon Jul 12 – Wed Jul 14, 2027 (3 days) [6, 7].
+  - **2028 Estimated Window**: ~Mon Feb 14 – Thu Feb 17, 2028 (~4 days) [8, 10].
+  - **2028 Estimated Window**: ~Mon Jul 10 – Thu Jul 13, 2028 (~4 days) [6, 9, 10].
+  - **2029 Estimated Window**: ~Mon Feb 12 – Fri Feb 16, 2029 (~5 days) [8, 10].
+  - **2029 Estimated Window**: ~Mon Jul 9 – Thu Jul 12, 2029 (~4 days) [6, 10].
+  - **Conclusion**: **No 1-, 2-, or 3-week all-clear window exists** in 2027, 2028, or 2029 (NFL/MLB/NCAAF overlap).
+- **Irregularities flagged**: 2027 MLB start times TBD [6]; 2027 NFL slate & NCAAF dates/times unreleased [10]; 2028/2029 schedules unreleased [10]; MLB labor stoppage risk Dec 2026 [11]; KSTE 650/KHTK 1140 reception unverified [11].
+- **Site updates**: summary.html, windows.html, data-mlb.html, data-nfl.html, data-ncaaf.html, index.html updated with verified sources and flagged irregularities.
+- **Integration**: No conflicts with existing branches (arena/99e24d1c, arena/d6dba19e). Additive updates to root pages and data tables.
+- **Sources logged**: [1](https://www.mlb.com/news/mlb-average-game-time-under-three-hours-third-straight-year) mlb.com, [2](https://www.upintherafters.com/nfl/how-long-is-a-football-game) upintherafters.com, [3](https://www.academicjobs.com/en-us/higher-education-news/how-long-is-a-college-football-game-average-326-explained-academicjobs-12610) academicjobs.com, [4](https://lancasteronline.com/sports/nfl/cumulus-media-s-westwood-one-official-network-audio-partner-of-the-nfl-celebrates-40th/article_2adcbc7c-79dc-5c49-9589-0559da822e55.html) lancasteronline.com, [5](https://www.mlb.com/press-release/press-release-mlb-announces-2027-spring-training-schedule) mlb.com, [6](https://www.mlb.com/news/mlb-2027-schedule-released) mlb.com, [7](https://calbears.com/news/2026/6/25/football-cal-announces-matchups-against-odu-sac-state) calbears.com, [8](https://en.wikipedia.org/wiki/Super_Bowl_LXII) wikipedia.org, [9](https://sactownsports.com/mlb/oracle-park-2028-all-star) sactownsports.com, [10](https://sportsbrackets.net/future-nfl-schedules/) sportsbrackets.net, [11](https://www.mlb.com/giants/schedule/broadcast-partners) mlb.com, [12](https://sports.yahoo.com/articles/nfl-schedule-release-date-2026-231500931.html) sports.yahoo.com, [13](https://news.radio-online.com/articles/n49383/Westwood-One-Sets-40th-Season-of-NFL-Coverage) radio-online.com, [14](https://www.nytimes.com/athletic/college-football/team/stanford-cardinal-college-football/schedule/) nytimes.com, [15](https://calbears.com) calbears.com, [16](https://gostanford.com/news/2023/10/30/acc-announces-football-schedule-model) gostanford.com, [17](https://github.com/karagemop466-tech/Korea6/actions/runs/41707664100) github.com.
+- **Next steps**: Commit, push to `arena/b14ac548-korea6`, open PR to main, merge, confirm GitHub Pages deployment.
+
+## Publication result — arena/b14ac548-korea6
+- PR to be created from `arena/b14ac548-korea6` to `main` with summary of changes, sources, and flagged irregularities.
+- Merge and Pages deployment to be confirmed.
+- PR link and merge result to be recorded here.
