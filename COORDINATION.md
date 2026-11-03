@@ -124,5 +124,16 @@ Handoff note: arena-d6dba19e's claimed tasks (site/**, scripts/**, tests/**, wor
 | Final verification pass (line-by-line spot checks of key claims vs official sources), test run, integration PR + merge + Pages deploy confirmation | in progress | arena-69f77e26 | COORDINATION.md, README.md (additive), site/data/research.json (additive flags if needed), new research/verification notes under research/ |
 
 - 2026-11-03: Claimed final verification + publication for this session. Branch `arena/69f77e26-korea6` is even with `origin/main` (2e7c0f4, PRs #2–#6 merged). Prior sessions' pages (root HTML + `site/`) are preserved; this session verifies, flags, and publishes — it does not rewrite earlier analysis. Open PR #1 from `arena/8645d151-korea6` is not owned by this session and is left untouched.
+
 >>>>>>> 76bbe28 (COORDINATION: claim final verification + publication for arena/69f77e26)
+
 >>>>>>> 2a5bd39 (COORDINATION: claim final verification + publication for arena/69f77e26)
+
+### Verification results — arena/69f77e26 (2026-11-03, later same day)
+- Re-verified all load-bearing claims against official sources; log at `research/verification-69f77e26.md`. Confirmed: MLB 2027 schedule (released Jul 16, 2026; opener Mar 24-25; ASG Jul 13, 2027 Wrigley; end Sep 26) and 2027 Spring Training opener Feb 19, 2027 (mlb.com); NFL 2026 key dates and Super Bowl LXI Feb 14, 2027 SoFi (NFL release via seahawks.com, operations.nfl.com); Super Bowl LXII announced for Feb 13, 2028 Atlanta (media.nfl.com) — upgrades the 2028 anchor from estimated to verified; Westwood One 2026 NFL package and SB LXI radio (westwoodonesports.com + network release); KNBR 680/104.5 flagship for Giants (mlb.com) and 49ers through 2030 (cumulusmedia.com Apr 15, 2026); Cal 2027 nonconference/ACC opponents (calbears.com Jun 25 & Sep 16, 2026); Stanford 2027 ACC opponents (gostanford.com Sep 16, 2026 — supersedes the 2023 model list in the preserved root sources.md); MLB 2025 average game 2:38 (mlb.com news).
+- Data spot checks: `site/data/mlb-2027.json` = 2,901 records, 30 clubs, ASG row on 2027-07-13, earliest rows 2027-02-19, last regular-season day 2027-09-26, 1,930 TBD starts; `nfl-2026.json` = 321 (272 reg + 49 pre), 20 49ers games; `curated.json` = 87 rows incl. 46 Westwood One NFL slots, each with an official source URL.
+- Irregularities added as site flags F17–F21 (research.json): Stanford 2027 opponent correction; Jul 14–15, 2027 feed-vs-press All-Star-break nuance (feed has no Jul 14/15 games, press says second half opens Jul 15); SB LXII Feb 13, 2028 now verified; KNBR 1050 HD3 carriage nuance; 2027 TBD starts/CBA risk. Conclusion unchanged and re-confirmed: no 7/14/21-day all-clear window exists in 2027–2029 under the strict definition; best verified 2027 gap Feb 15–18; 2028/2029 estimated.
+- Tests this session: node --test 14/14 pass; tests/validate.py 6/6 pass; tests/check-site.js pass.
+- No files owned by earlier sessions were edited; all changes are additive (new research log, additive README section, additive research.json source/flag rows, this board).
+>>>>>>> 030d256 (Add final verification log, review flags F17-F21 and README note (arena/69f77e26))
+>>>>>>> e2e1eb4 (Add final verification log, review flags F17-F21 and README note (arena/69f77e26))
