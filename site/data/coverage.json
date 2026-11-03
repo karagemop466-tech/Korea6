@@ -3,28 +3,28 @@
     "year": 2026,
     "count": 2990,
     "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2026-01-01&endDate=2026-12-31",
-    "checked": "2026-11-03T19:48:50.902718+00:00",
+    "checked": "2026-11-03T19:51:54.825885+00:00",
     "status": "imported"
   },
   {
     "year": 2027,
     "count": 2901,
     "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-01-01&endDate=2027-12-31",
-    "checked": "2026-11-03T19:48:50.903371+00:00",
+    "checked": "2026-11-03T19:51:54.826525+00:00",
     "status": "imported"
   },
   {
     "year": 2028,
     "count": 0,
     "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2028-01-01&endDate=2028-12-31",
-    "checked": "2026-11-03T19:48:50.904004+00:00",
+    "checked": "2026-11-03T19:51:54.827016+00:00",
     "status": "empty response \u2014 not evidence of no games"
   },
   {
     "year": 2029,
     "count": 0,
     "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2029-01-01&endDate=2029-12-31",
-    "checked": "2026-11-03T19:48:50.904700+00:00",
+    "checked": "2026-11-03T19:51:54.827750+00:00",
     "status": "empty response \u2014 not evidence of no games"
   }
 ]
