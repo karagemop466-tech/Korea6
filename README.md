@@ -4,12 +4,9 @@ A static GitHub Pages planner for Pacific Time. The daily scoreboard requests av
 
 Open `index.html` through a local HTTP server, for example `python3 -m http.server 8000`, or use the GitHub Pages site. Internet access and a browser that permits the MLB API request are required for live MLB listings. Run the local checks with `node --test tests/*.test.js` and `node tests/check-site.js`.
 
-## Additional verified analysis (session arena/fbb7cd8f-korea6)
+## Historical pages retired
 
-- `calendar.html` — day-by-day free/busy model (Pacific time, Nov 2026 – Dec 2029) from `data/calendar.json` (generator: `tools/generate_calendar.py`).
-- `windows.html` — vacation windows 2027–2029: **Feb 15–18, 2027 (verified)** and **Jul 12–14, 2027 (verified)** all-clear; 2028/2029 estimated and flagged.
-- `summary.html`, `data-mlb.html`, `data-nfl.html`, `data-ncaaf.html` — executive summary and per-league tables, each row linked to an official source.
-- `research/sources.md` — full verification log. Unverified items are never filled in; see the Flagged for Review page.
+The earlier `calendar.html`, `windows.html`, `summary.html`, and data pages contained unsupported all-clear and affiliate claims. Their URLs now route to the evidence dashboard; prior content remains in Git history. The old `data/calendar.json` is an unverified model and must not be used for booking. See [Flagged for Review](site/review.html).
 
 ## Evidence dashboard — integration update (2026-11-03)
 
@@ -28,4 +25,4 @@ The separate `site/` application preserves previous sessions' pages and adds:
 - `python3 -m http.server 8000 --bind 0.0.0.0` then visit `/site/`.
 - Browser tests use an npm-packaged Chromium. On minimal Linux environments, extract its `al2023.tar.br` with the package's `inflate` function and set `LD_LIBRARY_PATH=/tmp/al2023/lib`; standard GitHub Ubuntu runners include the required libraries.
 - `scripts/refresh.py`: official MLB importer; `scripts/nfl.py`: official NFL rendered-state importer. `scripts/seed.py`: reproducible November 3 curated snapshot, not a live scraper.
-- GitHub Pages workflow runs tests before deployment and refreshes official automated feeds daily without committing to main. Reviewed radio entries keep their original review dates. A failed upstream fetch is recorded as a coverage issue, not interpreted as free time.
+- The GitHub Pages workflow attempts a daily refreshed artifact deployment, but this repository is also configured for legacy branch-based Pages publication. Check the actual published snapshot timestamps; do not assume the deployed files were refreshed. Reviewed radio entries keep their original review dates. A failed upstream fetch is recorded as a coverage issue, not interpreted as free time.

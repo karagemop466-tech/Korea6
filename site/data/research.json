@@ -219,7 +219,7 @@
     {
       "id": "F15",
       "title": "Conflicting earlier-session all-clear claims",
-      "detail": "Preserved root windows.html, summary.html and data/calendar.json contain earlier-session verified/all-clear labels for July 12\u201314, 2027 and February 15\u201318, 2027. The July 13 All-Star Game directly contradicts the July all-clear claim. February\u2019s four dates are not certified against Warriors or all other radio sports. Their 2028\u20132029 scenarios and assertion that no trip exists are not verified conclusions. Additive notices link these pages here; original work is preserved for review.",
+      "detail": "Earlier versions of the root windows, summary and calendar pages claimed verified all-clear periods. MLB lists the July 13 All-Star Game, contradicting the July claim; February 15\u201318 was never certified against all radio sports. Those legacy URLs now lead to this evidence dashboard; the earlier text remains in Git history. data/calendar.json remains an unverified historical model and must not be used for booking.",
       "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=2027-07-13"
     },
     {
@@ -227,6 +227,12 @@
       "title": "Repeated MLB game IDs in source history",
       "detail": "The 2026 full-year feed repeats some game IDs for postponed/rescheduled or suspended/resumed appearances. Source occurrences are retained with distinct record IDs, not counted as distinct matchups. Canceled, postponed and suspended entries do not create modeled intervals; official game IDs and source URLs are preserved.",
       "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2026-01-01&endDate=2026-12-31"
+    },
+    {
+      "id": "F17",
+      "title": "Published refresh mechanism requires confirmation",
+      "detail": "GitHub Pages is configured for legacy publication from main. The scheduled workflow also attempts an artifact deployment; its success does not by itself demonstrate that the served data files are the refreshed artifact. Check the timestamps in the feed collection audit. Curated radio data is a fixed snapshot.",
+      "source": "https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site"
     }
   ]
 }

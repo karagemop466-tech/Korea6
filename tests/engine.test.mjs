@@ -1,4 +1,4 @@
-import test from 'node:test';import assert from 'node:assert/strict';import {mergeIntervals,complement,dayAnalysis,midnight,shiftDate,dateKey} from '../site/engine.mjs';
+import test from 'node:test';import assert from 'node:assert/strict';import {mergeIntervals,complement,dayAnalysis,midnight,shiftDate,dateKey,eventDate} from '../site/engine.mjs';
 test('merge overlapping and touching intervals without mutating input',()=>{let a=[[4,6],[1,3],[3,5],[9,10]];assert.deepEqual(mergeIntervals(a),[[1,6],[9,10]]);assert.equal(a[0][0],4);});
 test('union complement and clipping',()=>assert.deepEqual(complement([[-5,2],[4,7],[6,9],[20,25]],0,10),[[2,4],[9,10]]));
 test('empty day is not certified free',()=>{let a=dayAnalysis([],'2027-01-01');assert.equal(a.certifiedFree,false);assert.equal(a.gaps.length,1);});
@@ -10,3 +10,5 @@ test('UTC date converts to Pacific prior day',()=>assert.equal(dateKey('2027-06-
 test('overnight event carries into next day',()=>{let a=dayAnalysis([{id:'x',league:'MLB',start:'2027-01-01T23:00:00-08:00'}],'2027-01-02');assert.equal((a.busy[0][1]-a.start)/60000,98);});
 test('canceled and postponed events are not busy',()=>{for(let status of ['Cancelled','Postponed'])assert.equal(dayAnalysis([{id:'x',league:'MLB',date:'2027-01-01',start:'2027-01-01T12:00:00-08:00',status}],'2027-01-01').busy.length,0);});
 test('49ers radio pregame and halftime not double counted',()=>{let a=dayAnalysis([{id:'sf-test',league:'NFL',date:'2027-01-01',start:'2027-01-01T12:00:00-08:00'}],'2027-01-01',true);assert.equal((a.busy[0][1]-a.busy[0][0])/60000,360);});
+
+test('timed event is shown on its Pacific date, unknown time keeps source date',()=>{assert.equal(eventDate({date:'2027-03-25',start:'2027-03-25T02:00:00Z'}),'2027-03-24');assert.equal(eventDate({date:'2027-03-25',start:null}),'2027-03-25');});

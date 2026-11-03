@@ -1,3 +1,5 @@
+> **Historical research snapshot — not authoritative.** This document contains superseded and unsupported claims, including incorrect July 2027 all-clear claims and unverified radio affiliates. Do not use it to book travel. See [the current source register](../site/sources.html) and [Flagged for Review](../site/review.html). The original is retained for traceability.
+
 # Research & Verification Log — Free-Time Vacation Project
 
 Session: `arena/fbb7cd8f-korea6` — 2026-11-03. All times Pacific (PST/PDT) unless noted.

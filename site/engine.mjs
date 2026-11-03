@@ -1,5 +1,7 @@
 export const ZONE='America/Los_Angeles';
 export function dateKey(value){return new Intl.DateTimeFormat('en-CA',{timeZone:ZONE,year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(value));}
+// A timed event belongs to the Pacific calendar date of its instant, not necessarily the venue's official date.
+export function eventDate(g){return g.start?dateKey(g.start):g.date;}
 export function shiftDate(date,days){const d=new Date(date+'T12:00:00Z');d.setUTCDate(d.getUTCDate()+days);return d.toISOString().slice(0,10);}
 export function midnight(date){let t=Date.parse(date+'T00:00:00Z');for(let i=0;i<3;i++){const p=new Intl.DateTimeFormat('en-US',{timeZone:ZONE,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit',hourCycle:'h23'}).formatToParts(new Date(t));const v=Object.fromEntries(p.map(x=>[x.type,x.value]));const represented=Date.UTC(+v.year,+v.month-1,+v.day,+v.hour,+v.minute,+v.second);t+=Date.parse(date+'T00:00:00Z')-represented;}return t;}
 export function mergeIntervals(intervals){const sorted=intervals.filter(([s,e])=>e>s).map(x=>[...x]).sort((a,b)=>a[0]-b[0]);const out=[];for(const [s,e] of sorted){const last=out.at(-1);if(last&&s<=last[1])last[1]=Math.max(last[1],e);else out.push([s,e]);}return out;}
