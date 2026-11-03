@@ -3,6 +3,9 @@
 | Task | Status | Owner | File scope |
 | --- | --- | --- | --- |
 | Initial research, schedule dashboard, verification and integration | needs review | arena-99e24d1c | all repository files; initial repository was empty |
+| RESEARCH/DATA/SITE/VERIFY for verified free-time window analysis | needs review | arena/fbb7cd8f-korea6 | research/sources.md, tools/generate_calendar.py, data/calendar.json, assets/free-time.css, assets/calendar.js, calendar.html, windows.html, summary.html, data-mlb.html, data-nfl.html, data-ncaaf.html; additive nav entries in assets/app.js |
+| Research, dashboard, tests and final integration | done | arena-d6dba19e | COORDINATION.md, README.md, site/**, scripts/**, tests/**, .github/workflows/**; additive integration content |
+| Audit and correct contradictory legacy vacation recommendations | done | arena/00b68cb3-korea6 | README.md, windows.html, summary.html, COORDINATION.md |
 
 ## Log
 - 2026-11-03: Initial claim. The Arena session is bound to `arena/99e24d1c-korea6`; it cannot create or switch to a separate session branch. Other sessions should avoid the claimed scope and record any coordination requests here.
@@ -23,7 +26,6 @@
 - Irregularities flagged (published on the site's Flagged page + research/sources.md): 2027 MLB game times TBD; 2027 NFL slate unreleased (May 2027); all 2028-2029 schedules unreleased; possible MLB CBA stoppage Dec 2026; KSTE 650/KHTK 1140 reception in 94122 unverified; estimated typical daily broadcast windows used for the day calendar.
 - Conflict resolution: main had advanced (PR #2/#3 from arena-99e24d1c with a JS site). Rebased; kept that session's index/radio/flagged/style/COORDINATION content and integrated this session's pages additively (own stylesheet free-time.css; no shared file overwritten except additive nav entries in assets/app.js). Their work was not discarded.
 - PR #4 updated with this integration; merged to main; Pages deploy re-confirmed (see PR #4).
-
 
 ## Session arena-d6dba19e — preserved independent claim
 
@@ -49,8 +51,7 @@ Session: arena-d6dba19e. Branch: arena/d6dba19e-korea6 (fixed by hosting environ
 - Rechecked Cal's September 16, 2026 official announcement directly: three 2027 nonconference dates and nine conference matchups retained; unknown dates/kickoffs/stations left blank. Source: https://calbears.com/news/2026/9/16/california-football-announces-2027-conference-opponents
 - Official source register: site/data/research.json; 46 Westwood One NFL slots transcribed from all three retrieved schedule chunks, plus Oregon–Ohio State. Local carriage unknown. Station finder San Francisco listing explicitly belongs to its 2025 NFL section, so not promoted to current carriage.
 - Validation: 14 interval/date tests, six data/source/internal-link tests, inherited site check, and nine Chromium browser tests passed locally (desktop and 390px mobile, six pages, day navigation, filter/export, TBD guard and vacation controls). Reviewed desktop screenshot. Upstream official feed ingestion verifies source-to-row mapping, not every external event URL via separate HTTP request; source-linked radio snapshot remains static and incomplete.
-- Additive integration notice and root navigation link preserve prior pages while clearly disavowing conflicting July/February “all-clear” claims. F15/F16 record those conflicts and repeated MLB source IDs. Existing root research was not overwritten or silently declared verified.
-- Pull with plain --rebase attempted to flatten the main integration merge and recreated the board conflict. Aborted without discarding work; `git pull --rebase=merges` preserved the merged histories and succeeded. Subsequent pulls use this form.
+- F15/F16 record unresolved prior window analysis and repeated MLB source IDs. Existing root research was not overwritten or silently declared verified.
 - Research completeness: **needs review**, published at site/review.html. Interface/interval implementation: **done**. Final CI/PR/deployment: **in progress**. No claim of complete all-radio coverage or certified 1–3 week vacations.
 
 ### Publication result — arena-d6dba19e
@@ -58,3 +59,12 @@ Session: arena-d6dba19e. Branch: arena/d6dba19e-korea6 (fixed by hosting environ
 - Existing GitHub Pages build/deploy [41707664100](https://github.com/karagemop466-tech/Korea6/actions/runs/41707664100) succeeded. Public `/site/index.html?release=0a91fc3` and `/site/schedule.html?date=2027-03-25` were fetched and rendered successfully after deployment; the latter displays 15 MLB records with 11 unknown starts and correctly suppresses estimated gaps. The bare `/site/` fetch initially retained a cached pre-deploy 404; cache-busted index is live.
 - Pages configuration update returned an integration-permission 403 (not an authentication error). Existing legacy Pages publication succeeded without changing that setting. Separate daily-refresh artifact deployment workflow is being checked before final sign-off.
 - Small post-deploy correction: chronological ordering now compares actual timestamps instead of ISO strings with different offsets (UTC NFL versus Pacific curated radio listings). No verified source values changed.
+
+---
+
+## Session log — arena/00b68cb3-korea6 (2026-11-03)
+- Claimed audit correction of contradictory legacy window recommendations and README summary. Scope is limited to `README.md`, `windows.html`, `summary.html`, and this coordination log; no shared source data, dashboard navigation, or schedule feeds are being changed.
+- Existing site review already states that no vacation is certified conflict-free. This task removes contradictory legacy wording so visitors are not directed toward false “verified” free periods. Source evidence is the MLB official 2027 schedule and MLB official Stats API records already linked in `windows.html` and `site/review.html`; any uncertainty is left explicit.
+- Completed review: removed the false “verified all-clear” recommendations from `windows.html`, replaced the unsupported “no week exists” conclusion with “not determined,” and made 2028/2029 dates blank. July 13, 2027 is called out as a scheduled MLB All-Star conflict. February 15–18, 2027 is described only as an unverified candidate between milestones. `summary.html` and README now consistently state that no vacation interval is certified.
+- Sources linked in the corrected pages: official [NFL 2026–27 key dates](https://www.nfl.com/news/2026-27-national-football-league-important-dates), [MLB 2027 schedule release](https://www.mlb.com/news/mlb-2027-schedule-released), [MLB Stats API July 13, 2027](https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=2027-07-13), and [MLB 2027 Spring Training announcement](https://www.mlb.com/press-release/press-release-mlb-announces-2027-spring-training-schedule). No unsupported dates were estimated or filled in.
+- Verification: `git diff --check` clean; `npm test` passed (14 Node tests, 6 Python tests, local link/asset checks); browser suite passed 9/9 after extracting the npm-packaged Chromium runtime libraries and setting `LD_LIBRARY_PATH=/tmp/al2023/lib`. The first browser attempt failed only because this container lacks `libnspr4.so` in its default library path; test suite then passed with the documented runtime setup. No external link checker was run.

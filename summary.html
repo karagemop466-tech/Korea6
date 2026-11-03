@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Executive Summary — Free-Time Vacation</title>
 <link rel="stylesheet" href="assets/free-time.css">
-<script defer src="site/integration-notice.js"></script></head>
+<script defer src="site/integration-notice.js"></script>
+</head>
 <body class="ftv">
 <header>
   <div class="brand">📻 Free-Time Vacation</div>
   <nav>
+    <a href="site/index.html">Evidence dashboard</a>
     <a href="index.html">Dashboard</a>
     <a href="scoreboard.html">Scoreboard</a>
     <a href="vacation.html">Vacation</a>
@@ -25,32 +27,25 @@
 </header>
 <main>
 <h1>Executive Summary</h1>
-<div class="card">
-<h3>Question</h3>
-<p>When in 2027, 2028, and 2029 is the SF Bay Area (Outer Sunset 94122) free of live radio sports — MLB (all 30 clubs; Giants &amp; A's high priority), NFL (all; 49ers high priority), Stanford &amp; Cal NCAAF (high priority), and Westwood One Sports national NFL broadcasts — so a vacation can be taken without missing a game on AM/FM radio?</p>
-<h3>Answer</h3>
+<section class="card">
+<h2>Decision</h2>
+<p><b>No vacation window in 2027, 2028, or 2029 is currently certified conflict-free.</b> Available data do not establish complete coverage of every MLB game, all NFL broadcasts, Stanford and Cal football, Westwood One's national NFL broadcasts, and current game-specific local AM/FM carriage for Outer Sunset 94122. We therefore cannot truthfully recommend exact dates or claim that no 7-, 14-, or 21-day window exists.</p>
+<p>Use the <a href="site/index.html">evidence dashboard</a> to inspect the available official schedule data and the <a href="site/review.html">Flagged for Review page</a> for the coverage limitations. Recheck official schedules before booking.</p>
+<h2>Important corrections</h2>
 <ul class="tight">
-<li><b>Best verified window: Mon Feb 15 – Thu Feb 18, 2027 (4 days).</b> It sits between Super Bowl LXI (Sun Feb 14, 2027, SoFi Stadium — verified) and the opening of 2027 MLB Spring Training (Fri Feb 19, 2027 — verified). NFL and NCAAF are also off.</li>
-<li><b>Second verified window: Mon Jul 12 – Wed Jul 14, 2027 (3 days)</b> — the MLB All-Star break (Derby Jul 12, All-Star Game Jul 13 at Wrigley, second half resumes Jul 15 — all verified); NFL/NCAAF not yet in season.</li>
-<li><b>2028 / 2029:</b> no official schedules exist yet, so the equivalent windows are <span class="tag estimated">ESTIMATED</span>: ~Feb 14–17, 2028 and ~Feb 12–16, 2029 (post-Super-Bowl gaps), plus ~4-day July All-Star breaks. They will be re-anchored to official releases as they come out (NFL: May each year; MLB: ~Jul–Aug prior year; NCAAF: fall/winter prior year).</li>
-<li><b>No 1-, 2-, or 3-week all-clear window exists in any of the three years</b> under the strict all-leagues definition, because the NFL season (Sep → mid-Feb) continuously overlaps MLB and NCAAF.</li>
+<li>The earlier description of July 12–14, 2027 as free is withdrawn: MLB lists the All-Star Game on July 13. <a href="https://www.mlb.com/news/mlb-2027-schedule-released">MLB's 2027 schedule announcement</a> · <a href="https://statsapi.mlb.com/api/v1/schedule?sportId=1&amp;date=2027-07-13">MLB Stats API, July 13</a>.</li>
+<li>February 15–18, 2027 is only a candidate interval between two published league milestones; those milestones alone do not prove that all relevant games or radio broadcasts are absent. The dates are not certified as free. <a href="https://www.nfl.com/news/2026-27-national-football-league-important-dates">NFL 2026–27 key dates</a> · <a href="https://www.mlb.com/press-release/press-release-mlb-announces-2027-spring-training-schedule">MLB 2027 Spring Training announcement</a>.</li>
+<li>No 2028 or 2029 vacation dates are listed as verified here. Values not established by official schedule sources remain blank rather than being projected into calendar entries.</li>
 </ul>
-<h3>Method &amp; verification</h3>
+<h2>What the planner covers—and does not cover</h2>
 <ul class="tight">
-<li>Every data row on the data pages carries an official source link; anything not confirmable from an official source is left blank and listed on <a href="flagged.html">Flagged for Review</a> — no inferred values are presented as verified.</li>
-<li>2027 MLB dates are <b>verified</b> (schedule released Jul 16, 2026). 2026 NFL dates are <b>verified</b> (released May 14, 2026; Super Bowl LXI Feb 14, 2027). Cal/Stanford 2027 <b>opponents</b> are verified; their <b>dates/times are TBD</b>.</li>
-<li>Free time per day is computed in Pacific time from season windows plus estimated typical broadcast windows, using verified average durations: MLB 2 h 38 m (MLB.com, 2025), NFL 3 h 03 m incl. 12-min halftime (2025, all 272 games), NCAAF ~3 h 26 m.</li>
-<li>Radio reality in 94122: Giants/49ers/Westwood One NFL on <b>KNBR 680</b>, Stanford on <b>KNBR 1050</b>, Cal on <b>KGO 810</b>, A's on <b>Bloomberg 960</b> (KSTE 650 is the Sacramento-market A's flagship — reception in Outer Sunset not guaranteed, flagged).</li>
+<li>The evidence dashboard includes MLB official schedule snapshots for 2026 and 2027; the 2028–2029 MLB responses are empty/unknown, not proof that those seasons have no games. <a href="https://statsapi.mlb.com/api/v1/schedule?sportId=1&amp;date=2027-03-25">MLB Stats API example</a>.</li>
+<li>Its NFL snapshot covers 2026 only; it is not a full future-season NFL feed. Curated Westwood One, 49ers, Stanford, Cal, and other radio entries are partial and not equivalent to complete game-by-game local-carriage verification. <a href="https://www.nfl.com/schedules/">NFL schedules</a> · <a href="https://www.westwoodonesports.com/nfl-schedule/">Westwood One NFL schedule</a>.</li>
+<li>All listed schedule records link to their source where available. Unknown dates/times and uncertain broadcast carriage are flagged. A listed network schedule does not establish that a station is receivable in 94122 on a standard AM/FM radio.</li>
+<li>Potential free-time gaps based on assumed event durations are estimates, not verified broadcast end times. Baseball can run long; football has overtime and broadcast pre/post-game coverage. See <a href="site/sources.html">methods and sources</a>.</li>
 </ul>
-<h3>Irregularities flagged for review</h3>
-<ul class="tight">
-<li>2027 MLB game-level start times not yet released (announced months ahead) — day windows are estimates.</li>
-<li>2027 NFL full slate, 2027 NCAAF dates/times, and all 2028–2029 schedules unreleased — estimated and flagged.</li>
-<li>Possible MLB labor stoppage (CBA Dec 2026) could shift 2027 dates — flagged.</li>
-<li>KSTE 650 / KHTK 1140 are Sacramento-licensed; Outer Sunset reception unverified — flagged.</li>
-</ul>
-</div>
+</section>
 </main>
-<footer>Free-Time Vacation · generated 2026-11-03</footer>
+<footer>Free-Time Vacation · evidence limits stated explicitly · reviewed 2026-11-03</footer>
 </body>
 </html>
