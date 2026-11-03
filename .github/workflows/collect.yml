@@ -1,0 +1,21 @@
+name: Collect official schedules
+on:
+  push:
+    branches: [arena/d6dba19e-korea6]
+    paths: ['scripts/refresh.py', '.github/workflows/collect.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/refresh.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: official-data
+          path: site/data/
