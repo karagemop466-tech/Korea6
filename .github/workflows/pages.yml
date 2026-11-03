@@ -15,6 +15,7 @@ concurrency:
 jobs:
   verify:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -24,7 +25,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: npm ci
+      - run: npm ci --no-audit --no-fund --fetch-timeout=60000 --fetch-retries=2
       - name: Refresh official snapshots for publication
         if: github.ref == 'refs/heads/main'
         run: |
