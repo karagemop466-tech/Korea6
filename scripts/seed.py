@@ -76,5 +76,10 @@ for date,title in [('2027-01-16','Wild Card Weekend'),('2027-01-17','Wild Card W
 nba='https://www.nba.com/warriors/schedule'
 for date,time,title in [('2026-11-05','19:00','Miami Heat at Golden State Warriors'),('2026-11-07','17:30','Orlando Magic at Golden State Warriors'),('2026-11-09','19:00','New Orleans Pelicans at Golden State Warriors'),('2026-11-11','18:30','Golden State Warriors at Houston Rockets'),('2026-11-13','18:30','Golden State Warriors at San Antonio Spurs'),('2026-11-16','17:00','Golden State Warriors at New Orleans Pelicans')]:
  add('gsw-'+date,date,time,title,'NBA',nba,'KGMZ 95.7 FM',basis='Tipoff',note='Partial Warriors schedule only; remaining games not yet imported.')
+cal27='https://calbears.com/news/2026/9/16/california-football-announces-2027-conference-opponents'
+for date,title in [('2027-08-28','Sacramento State at California'),('2027-09-04','California at UCLA'),('2027-09-11','Old Dominion at California')]:
+ add('cal-'+date,date,None,title,'NCAAF',cal27,note='Official 2027 nonconference date. Kickoff and local radio unverified.')
+for i,title in enumerate(['Boston College at California','Florida State at California','Louisville at California','SMU at California','California at Georgia Tech','California at Miami','California at Pittsburgh','California at Stanford','California at Wake Forest']):
+ add('cal-2027-acc-'+str(i),None,None,title,'NCAAF',cal27,kind='2027 conference matchup',note='Official 2027 opponent and home/away only. Dates, kickoff times and radio not announced in reviewed source.')
 D.mkdir(exist_ok=True,parents=True)
 (D/'curated.json').write_text(json.dumps(rows,indent=2))

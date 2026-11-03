@@ -1,8 +1,5 @@
 name: Collect official schedules
 on:
-  push:
-    branches: [arena/d6dba19e-korea6]
-    paths: ['scripts/refresh.py', 'scripts/nfl.py', '.github/workflows/collect.yml']
   workflow_dispatch:
 permissions:
   contents: write
@@ -17,6 +14,7 @@ jobs:
       - run: python scripts/refresh.py
       - run: python scripts/nfl.py
       - name: Save official snapshot on session branch
+        if: github.ref == 'refs/heads/arena/d6dba19e-korea6'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

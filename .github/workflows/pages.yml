@@ -1,0 +1,58 @@
+name: Verify and deploy evidence dashboard
+on:
+  push:
+    branches: [main, arena/d6dba19e-korea6]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '31 12 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - name: Refresh official snapshots for publication
+        if: github.ref == 'refs/heads/main'
+        run: |
+          python scripts/refresh.py
+          python scripts/nfl.py
+      - run: npm test
+      - run: npm run test:browser
+      - name: Assemble complete site (preserve earlier sessions)
+        run: |
+          mkdir -p publish
+          cp *.html publish/
+          cp -r assets data research site publish/
+          touch publish/.nojekyll
+          python -c 'import json,datetime,pathlib;pathlib.Path("publish/site/deployment.json").write_text(json.dumps({"built":datetime.datetime.now(datetime.timezone.utc).isoformat(),"status":"tests passed"}))'
+      - uses: actions/upload-pages-artifact@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          path: publish
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: verify
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment
