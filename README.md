@@ -4,24 +4,17 @@ A static GitHub Pages planner for Pacific Time. The daily scoreboard requests av
 
 Open `index.html` through a local HTTP server, for example `python3 -m http.server 8000`, or use the GitHub Pages site. Internet access and a browser that permits the MLB API request are required for live MLB listings. Run the local checks with `node --test tests/*.test.js` and `node tests/check-site.js`.
 
-## Additional verified analysis (session arena/fbb7cd8f-korea6)
+## Main planner
 
-- `calendar.html` — day-by-day free/busy model (Pacific time, Nov 2026 – Dec 2029) from `data/calendar.json` (generator: `tools/generate_calendar.py`).
-- `windows.html` — vacation windows 2027–2029: **Feb 15–18, 2027 (verified)** and **Jul 12–14, 2027 (verified)** all-clear; 2028/2029 estimated and flagged.
-- `summary.html`, `data-mlb.html`, `data-nfl.html`, `data-ncaaf.html` — executive summary and per-league tables, each row linked to an official source.
-- `research/sources.md` — full verification log. Unverified items are never filled in; see the Flagged for Review page.
+**Start here: [Evidence dashboard](https://karagemop466-tech.github.io/Korea6/site/).** The dashboard provides daily/monthly navigation, league/team/priority filters, CSV export, a source register, and a clearly labeled Flagged for Review page. `calendar.html`, `windows.html`, and `summary.html` are supporting legacy pages; the window page deliberately does not certify a vacation date.
 
-## Evidence dashboard — integration update (2026-11-03)
+## Coverage and limitations (reviewed 2026-11-03)
 
-**Start here: [Evidence dashboard](https://karagemop466-tech.github.io/Korea6/site/).**
-
-The separate `site/` application preserves previous sessions' pages and adds:
-- Full official MLB feed snapshots for 2026–2029, including all 30 clubs; 2027 currently has 2,901 records. Empty 2028–2029 responses mean unknown coverage, not no games.
-- 321 official 2026 NFL fixtures (49 preseason, 272 regular season); 46 Westwood One NFL slots, 49ers local station listings, Cal/Stanford football, and partial Warriors listings.
-- Daily/monthly navigation through December 2029, league/team/priority filters, CSV exports, source register and explicit review flags.
-- DST-aware interval union/complement with separately labeled duration estimates. No fixture dates or unknown kickoffs are invented.
-
-**Correction to earlier analysis above:** July 12–14, 2027 is NOT verified all-clear: the official MLB feed lists the All-Star Game on July 13. February 15–18 is only four intervening dates between verified league anchors, not verified sports-free time across all radio sports. No 7/14/21-day trip is currently certified. Earlier root pages and datasets are preserved with integration notices for comparison, not endorsed.
+- Official MLB snapshots are populated for 2026 and 2027. Empty 2028–2029 API responses mean unknown coverage, not no games. The daily dashboard is dependent on an upstream MLB API request.
+- The stored NFL fixture set is for 2026 only. Curated Westwood One slots, 49ers listings, Stanford/Cal football, and local station research are partial; they do not establish complete radio carriage or reception in Outer Sunset 94122.
+- The interval engine uses Pacific civil time with daylight-saving transitions and separately labeled duration assumptions. Estimated open intervals are not proof of broadcast-free time.
+- No 2027–2029 vacation window is currently certified conflict-free. In particular, July 13, 2027 has a scheduled MLB All-Star Game; the prior July 12–14 “all-clear” claim is withdrawn. February 15–18, 2027 is only an unverified candidate between league milestones, not a confirmed free period. We cannot establish whether a 7-, 14-, or 21-day all-clear window exists without complete schedule and radio coverage.
+- See [Flagged for Review](https://karagemop466-tech.github.io/Korea6/site/review.html) and [Sources & method](https://karagemop466-tech.github.io/Korea6/site/sources.html) before relying on any result. Official links are provided in the pages and source data; no missing value should be read as a confirmed absence.
 
 ### Development and verification
 - `npm ci`; `npm test`; `npm run test:browser`.
