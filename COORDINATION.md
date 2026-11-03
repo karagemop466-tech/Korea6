@@ -6,7 +6,7 @@
 | RESEARCH/DATA/SITE/VERIFY for verified free-time window analysis | needs review | arena/fbb7cd8f-korea6 | research/sources.md, tools/generate_calendar.py, data/calendar.json, assets/free-time.css, assets/calendar.js, calendar.html, windows.html, summary.html, data-mlb.html, data-nfl.html, data-ncaaf.html; additive nav entries in assets/app.js |
 | Research, dashboard, tests and final integration | done | arena-d6dba19e | COORDINATION.md, README.md, site/**, scripts/**, tests/**, .github/workflows/**; additive integration content |
 | Audit and correct contradictory legacy vacation recommendations | done | arena/00b68cb3-korea6 | README.md, windows.html, summary.html, COORDINATION.md |
-| Audit historical vacation assertions in research source log | in progress | arena/9d85eaae-korea6 | research/sources.md, COORDINATION.md |
+| Audit historical vacation assertions in research source log | done | arena/9d85eaae-korea6 | research/sources.md, COORDINATION.md |
 
 ## Log
 - 2026-11-03: Initial claim. The Arena session is bound to `arena/99e24d1c-korea6`; it cannot create or switch to a separate session branch. Other sessions should avoid the claimed scope and record any coordination requests here.
@@ -76,3 +76,5 @@ Session: arena-d6dba19e. Branch: arena/d6dba19e-korea6 (fixed by hosting environ
 - Scope narrowed after PR #8 published the legacy page corrections: preserve its HTML and README unchanged; audit the remaining historical research assertions in `research/sources.md` only.
 - Reconciled with the already-merged correction PR #8: its `README.md`, `summary.html` and `windows.html` remain authoritative and unchanged. This contribution corrects the same unsupported all-clear conclusions only in `research/sources.md`, including its stale February and July recommendation text, its unsupported “no week exists” conclusion, and its unqualified future-year estimates.
 - Official references linked in the corrected source log: MLB 2027 regular-season announcement, MLB 2027 Spring Training announcement, and NFL Football Operations Important Dates. They verify individual league milestones, not full local sports-radio absence. Local carriage/reception remains unverified; no 2028/2029 dates are proposed.
+
+- Verification for source-log-only update: `npm test` passed (14 Node tests, six Python tests, site checks); browser suite passed 9/9; `git diff --check` clean. PR #7 remains the delivery vehicle for this additive source-log update; latest CI and deployment status to be recorded after publication.
