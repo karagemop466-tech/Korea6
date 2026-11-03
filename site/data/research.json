@@ -135,6 +135,16 @@
       "name": "Cal 2027 conference and nonconference announcement",
       "claim": "Nine ACC opponents and home/away assignments announced; dates and times to follow. Nonconference dates: August 28 Sacramento State, September 4 at UCLA, September 11 Old Dominion. Kickoff and radio remain blank.",
       "source": "https://calbears.com/news/2026/9/16/california-football-announces-2027-conference-opponents"
+    },
+    {
+      "name": "MLB 2027 season milestones",
+      "claim": "Home Run Derby July 12; All-Star Game July 13; second half July 15. All-Star break is not a multi-day sports-free vacation.",
+      "source": "https://www.mlb.com/news/mlb-2027-schedule-released"
+    },
+    {
+      "name": "NBA All-Star 2027",
+      "claim": "Phoenix hosts February 19\u201321, 2027. This does not establish Warriors regular-season silence February 15\u201318.",
+      "source": "https://www.nba.com/news/phoenix-suns-nba-all-star-2027-official-release"
     }
   ],
   "flags": [
@@ -227,6 +237,24 @@
       "title": "Repeated MLB game IDs in source history",
       "detail": "The 2026 full-year feed repeats some game IDs for postponed/rescheduled or suspended/resumed appearances. Source occurrences are retained with distinct record IDs, not counted as distinct matchups. Canceled, postponed and suspended entries do not create modeled intervals; official game IDs and source URLs are preserved.",
       "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2026-01-01&endDate=2026-12-31"
+    },
+    {
+      "id": "F17",
+      "title": "July all-clear claim corrected",
+      "detail": "Root summary/windows previously called July 12\u201314, 2027 free despite Derby July 12 and ASG July 13. Corrected to July 14 candidate only; local radio silence remains unverified.",
+      "source": "https://www.mlb.com/news/mlb-2027-schedule-released"
+    },
+    {
+      "id": "F18",
+      "title": "Winter anchor gap is not radio silence",
+      "detail": "February 15\u201318, 2027 lies between NFL and MLB anchors. Other radio sports, Warriors games and local carriage remain incomplete. No 7/14/21-day window is certified; future absence is not proven.",
+      "source": "https://operations.nfl.com/calendar-events/nfl-important-dates"
+    },
+    {
+      "id": "F19",
+      "title": "Future Super Bowl exact dates require official confirmation",
+      "detail": "Atlanta 2028 host verified from NFL announcement; exact date not established by that page. Earlier coordination log references secondary date reporting, not sufficient official verification. Keep exact future dates unverified.",
+      "source": "https://www.nfl.com/news/mercedes-benz-stadium-in-atlanta-to-host-super-bowl-lxii-in-2028"
     }
   ]
 }

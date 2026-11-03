@@ -77,3 +77,13 @@ Rule applied throughout: **verified = confirmed on an official source linked bel
 - Earlier text claimed no week-long interval exists because seasons overlap, without checking a complete, verified event and local broadcast inventory. That conclusion is withdrawn; the result is **not determined**.
 - The former Feb 2028 / Feb 2029 and July 2028 / July 2029 estimated date windows were not based on confirmed future schedules or complete radio coverage and have been removed from recommendations. No dates are filled in where official evidence has not been established.
 - Some source rows elsewhere in this historical research log rely on secondary sources, non-official sources, or old station information. They must not be read as verified against the user's official-source-only rule. See the dashboard's [Flagged for Review](../site/review.html) register; local signal reception in Outer Sunset is not proven by a station's market affiliate listing.
+- **2027 (verified anchors):** NFL off after Super Bowl LXI (Feb 14, 2027, verified) until preseason (~Aug 2027, est.); MLB spring training starts Feb 19, 2027 (verified) → all-clear **Feb 15–18, 2027 (4 days)**. MLB All-Star break Jul 12–14, 2027 (Derby Jul 12, ASG Jul 13 verified; second half resumes Jul 15 verified) → all-clear **Jul 12–14, 2027 (3 days)**. No 1-week+ all-clear window exists in 2027 under the strict all-leagues definition.
+- **2028 / 2029:** all schedule data unreleased → structural ESTIMATES only (see windows.html, every row flagged).
+
+## 2026-11-03 — executive-summary integration audit
+- Official MLB season milestones: https://www.mlb.com/news/mlb-2027-schedule-released — July 12 Derby and July 13 All-Star Game invalidate a July 12–14 all-clear claim.
+- Official spring-training anchor: https://www.mlb.com/press-release/press-release-mlb-announces-2027-spring-training-schedule — February 19, 2027 start.
+- NFL anchor: https://operations.nfl.com/calendar-events/nfl-important-dates — February 14, 2027 Super Bowl. February 15–18 is only an anchor-bounded candidate; other radio sports remain unresolved.
+- https://www.nfl.com/news/mercedes-benz-stadium-in-atlanta-to-host-super-bowl-lxii-in-2028 confirms host, not an exact date. Secondary date reports are insufficient for official verification.
+- Duration decision: retain explicitly ESTIMATED NFL/NCAAF 180-minute assumptions, not promote secondary-source averages to official verified facts. MLB 158 minutes remains sourced on methodology page.
+- This is a targeted correction and integration audit, not a claim that every broadcast in every sport has been independently verified. F17–F19 publish remaining limitations.
