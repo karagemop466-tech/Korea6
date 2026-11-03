@@ -6,6 +6,7 @@
 | RESEARCH/DATA/SITE/VERIFY for verified free-time window analysis | needs review | arena/fbb7cd8f-korea6 | research/sources.md, tools/generate_calendar.py, data/calendar.json, assets/free-time.css, assets/calendar.js, calendar.html, windows.html, summary.html, data-mlb.html, data-nfl.html, data-ncaaf.html; additive nav entries in assets/app.js |
 | Research, dashboard, tests and final integration | done | arena-d6dba19e | COORDINATION.md, README.md, site/**, scripts/**, tests/**, .github/workflows/**; additive integration content |
 | Audit and correct contradictory legacy vacation recommendations | done | arena/00b68cb3-korea6 | README.md, windows.html, summary.html, COORDINATION.md |
+| Comprehensive Vacation Planner, Scoreboard with Exact Free Intervals, 2027–2029 1/2/3-Week Vacation Windows, Outer Sunset 94122 AM/FM Radio Guide, Executive Summary & Final Integration | in progress | arena-de3a2f58 | all files (COORDINATION.md, README.md, site/**, assets/**, *.html, data/**, tests/**, scripts/**) |
 
 ## Log
 - 2026-11-03: Initial claim. The Arena session is bound to `arena/99e24d1c-korea6`; it cannot create or switch to a separate session branch. Other sessions should avoid the claimed scope and record any coordination requests here.
@@ -62,7 +63,19 @@ Session: arena-d6dba19e. Branch: arena/d6dba19e-korea6 (fixed by hosting environ
 
 ---
 
-## Session log — arena/00b68cb3-korea6 (2026-11-03)
+## Session log — arena/de3a2f58-korea6 (2026-11-03)
+- Claimed: Comprehensive Vacation Planner, Scoreboard with Exact Free Intervals, 2027–2029 1/2/3-Week Vacation Windows, Outer Sunset 94122 AM/FM Radio Guide, Executive Summary & Final Integration.
+- File scope: all files (COORDINATION.md, README.md, site/**, assets/**, *.html, data/**, tests/**, scripts/**).
+- Objectives:
+  1. Solve the usability and clarity issues of previously worked-on sites.
+  2. Implement dedicated sections for the required sports: MLB (all 30 clubs, Giants/A's high priority), NFL (all teams, 49ers high priority, preseason/regular/postseason), Stanford & Cal NCAAF (high priority), and Westwood One Sports national NFL broadcasts.
+  3. Day-by-day scoreboard & calendar covering every day up to 2028/2029 with yesterday/today/tomorrow navigation, displaying exact times of day free in PST/PDT based on researched game durations (MLB 158m, NFL 183m w/ halftime 13-30m, NCAAF 206m w/ halftime 20m) and radio pregame/postgame windows.
+  4. Provide exact estimated start times for 2027-2028 games with TBD times, with clear toggle between official confirmed times and estimated planning times.
+  5. 2027, 2028, and 2029 vacation window analysis: rigorously evaluate 1-week (7 days), 2-week (14 days), and 3-week (21 days) windows under both strict (all 30 MLB + all NFL) and SF Bay Area live AM/FM radio (Giants, A's, 49ers, Stanford, Cal, Westwood One) criteria, providing verified dates and labeled estimations.
+  6. San Francisco Bay Area (Outer Sunset 94122) AM/FM radio research: analyze KNBR 680/104.5, KSAN 107.7, KNEW 960, KTCT 1050, KSFO 810, KGMZ 95.7, KZSU 90.1, Westwood One schedule, and reception factors.
+  7. Full Executive Summary, line-by-line verification table with official source links, and comprehensive Flagged for Review page.
+  8. Full test suite verification, build checks, pull request to main, merge, and GitHub Pages deployment verification.
+
 - Claimed audit correction of contradictory legacy window recommendations and README summary. Scope is limited to `README.md`, `windows.html`, `summary.html`, and this coordination log; no shared source data, dashboard navigation, or schedule feeds are being changed.
 - Existing site review already states that no vacation is certified conflict-free. This task removes contradictory legacy wording so visitors are not directed toward false “verified” free periods. Source evidence is the MLB official 2027 schedule and MLB official Stats API records already linked in `windows.html` and `site/review.html`; any uncertainty is left explicit.
 - Completed review: removed the false “verified all-clear” recommendations from `windows.html`, replaced the unsupported “no week exists” conclusion with “not determined,” and made 2028/2029 dates blank. July 13, 2027 is called out as a scheduled MLB All-Star conflict. February 15–18, 2027 is described only as an unverified candidate between milestones. `summary.html` and README now consistently state that no vacation interval is certified.
