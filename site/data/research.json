@@ -369,6 +369,36 @@
       "title": "February 15 and February 17, 2027 confirmed occupied on SF AM/FM radio",
       "detail": "Full 2026\u201327 Golden State Warriors (KGMZ 95.7 FM), California Men's Basketball (KSFO 810 AM), and USF Dons Men's Basketball (KNBR 1050 AM) schedules prove Monday, Feb 15 (Pacers at Warriors, 4:30 PM PST) and Wednesday, Feb 17 (Cal at Pitt 4:00 PM PST + Pelicans at Warriors 7:00 PM PST + USF at LMU) carry active Bay Area sports broadcasts.",
       "source": "https://calbears.com/sports/mens-basketball/schedule/2026-27"
+    },
+    {
+      "id": "F22",
+      "title": "Stanford 2027 opponent list corrected (supersedes 2023 model)",
+      "detail": "The preserved root research/sources.md cites the 2023 ACC eight-game model (away: Virginia Tech). The ACC's Sep 16, 2026 announcement for the nine-game 2027 slate lists Stanford home: California, Duke, UNC, Syracuse, Virginia; away: Boston College, Clemson, SMU, Florida State. The 2026 announcement supersedes the older model; game dates remain TBD. (Complements F20, which covers the same correction from the audit session.)",
+      "source": "https://gostanford.com/news/2026/09/16/acc-announces-2027-conference-opponents"
+    },
+    {
+      "id": "F23",
+      "title": "2027 All-Star break: feed vs press",
+      "detail": "The official 2027 MLB feed contains the All-Star Game on Jul 13 and no game rows on Jul 14 or Jul 15 (full 15-game slate resumes Jul 16). Press coverage says the second half opens Thu Jul 15 with a single ESPN game that does not appear in the imported feed rows. Conservatively: Jul 13 busy, Jul 14 game-free in the feed, Jul 15 uncertain. Earlier Jul 12-14 all-clear claims remain contradicted (F15/F17).",
+      "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-07-10&endDate=2027-07-17"
+    },
+    {
+      "id": "F24",
+      "title": "Super Bowl LXII date Feb 13, 2028 is officially announced",
+      "detail": "The NFL announced Oct 15, 2024 that Super Bowl LXII will be played Feb 13, 2028 at Mercedes-Benz Stadium, Atlanta, upgrading the 2028 post-Super-Bowl gap's NFL anchor to verified (see also F19, which conservatively keeps future exact dates flagged). Super Bowl LXIII (2029, Allegiant Stadium, Las Vegas) has no announced date yet, so all 2029 windows remain estimated.",
+      "source": "https://media.nfl.com/news-and-releases/corporate-communications/atlanta-to-host-super-bowl-lxii-in-2028"
+    },
+    {
+      "id": "F25",
+      "title": "KNBR 1050 HD3 carriage nuance (Stanford)",
+      "detail": "Cumulus' Apr 15, 2026 release describes KNBR 1050 programming as carried on HD3 channel KTCT/1050. An HD3 subchannel is not the main AM carrier; whether a standard AM/FM radio in 94122 receives it depends on the receiver. Stanford's affiliate listing remains KNBR 1050, but reception stays covered by F10.",
+      "source": "https://www.cumulusmedia.com/2026/04/15/san-francisco-49ers-announce-multi-year-partnership-extension-with-cumulus-medias-knbr/"
+    },
+    {
+      "id": "F26",
+      "title": "2027 MLB start times mostly TBD; CBA risk",
+      "detail": "1,930 of 2,901 imported 2027 MLB feed records have no start time (TBD), so day-level free-minute estimates for 2027 are planning overlays only (F07). Press coverage also notes the MLB CBA expires in Dec 2026 and a work stoppage could shift 2027 dates; 2027 anchors are re-checked at each release.",
+      "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-01-01&endDate=2027-12-31"
     }
   ]
 }
