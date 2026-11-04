@@ -399,6 +399,12 @@
       "title": "2027 MLB start times mostly TBD; CBA risk",
       "detail": "1,930 of 2,901 imported 2027 MLB feed records have no start time (TBD), so day-level free-minute estimates for 2027 are planning overlays only (F07). Press coverage also notes the MLB CBA expires in Dec 2026 and a work stoppage could shift 2027 dates; 2027 anchors are re-checked at each release.",
       "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-01-01&endDate=2027-12-31"
+    },
+    {
+      "id": "F27",
+      "title": "Historical scope analysis overstates evidence",
+      "detail": "The generated expanded-official.json and earlier audit log claim an annual maximum gap, zero one-week windows and reception in 94122. Incomplete future schedules and game-specific carriage do not establish these claims. The scope page now treats them as unverified; February 15\u201318, 2027 is not certified free. The 49ers partner page documents flagship stations and pregame coverage, not reception at an individual address. National Westwood One listings do not establish a local affiliate for each event.",
+      "source": "https://www.49ers.com/fans/tv-radio"
     }
   ]
 }
