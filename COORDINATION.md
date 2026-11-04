@@ -158,3 +158,5 @@ Handoff note: arena-d6dba19e's claimed tasks (site/**, scripts/**, tests/**, wor
 | Independent audit of current dashboard and publication | in progress | arena/7c36256e-korea6 | COORDINATION.md, research/audit-7c36256e.md |
 
 Earlier in-progress entries are historical; the latest logs mark their work done or published, and their last activity exceeds the 60-minute handoff threshold. Audit only; any changes needed to other scopes will be requested here. Arena fixes the branch name.
+
+- Audit found unsupported claims in `site/core-scope.js` (annual maximum gaps, 94122 receivability, and game-specific radio assignments) and contradictory README conclusion. Earlier owning sessions are completed/stale (>60 minutes); taking over `site/core-scope.js`, `README.md`, and `tests/core-scope-safety.test.mjs` for narrow safety corrections. Raw generated assertions remain historical and require separate review; UI must not repeat them.
