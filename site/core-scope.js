@@ -21,20 +21,20 @@ async function boot() {
     const matrixRows = data.scopeMatrix.map(row => `
       <tr>
         <td><strong>${row.year}</strong></td>
-        <td><span class="badge ${row.coreFourScope.oneWeek === 0 ? 'orange' : 'warn'}">${row.coreFourScope.oneWeek === 0 ? '0 windows' : 'Unverified (0 certified)'}</span><small>${esc(row.coreFourScope.longestGap)}</small></td>
-        <td><span class="badge ${row.fullAmFmScope.oneWeek === 0 ? 'orange' : 'warn'}">${row.fullAmFmScope.oneWeek === 0 ? '0 windows' : 'Unverified (0 certified)'}</span><small>${esc(row.fullAmFmScope.longestGap)}</small></td>
+        <td><span class="badge ${row.coreFourScope.oneWeek === 0 ? 'orange' : 'warn'}">Unverified (0 certified)</span><small>Incomplete schedule coverage; annual maximum unknown</small></td>
+        <td><span class="badge ${row.fullAmFmScope.oneWeek === 0 ? 'orange' : 'warn'}">Unverified (0 certified)</span><small>Incomplete station and schedule coverage; annual maximum unknown</small></td>
         <td><a href="vacations.html">Open ${row.year} finder</a></td>
       </tr>
     `).join('');
 
     const febDays = [
-      {date:'2027-02-14 (Sun)', core:'Super Bowl LXI (NFL Postseason)', full:'Super Bowl LXI (NFL / Westwood One)', station:'KSAN / KNBR / Westwood One (carriage TBA)', src:'https://operations.nfl.com/calendar-events/nfl-important-dates', badge:'orange', status:'Occupied (Both scopes)'},
-      {date:'2027-02-15 (Mon)', core:'0 scheduled games in Core 4-Category scope', full:'Indiana Pacers at Golden State Warriors (4:30 PM PST)', station:'KGMZ 95.7 FM', src:'https://www.nba.com/game/ind-vs-gsw-0022600084', badge:'orange', status:'Occupied on 95.7 FM'},
-      {date:'2027-02-16 (Tue)', core:'0 scheduled games in Core 4-Category scope', full:'No verified local game; Westwood One NCAAM national slate unposted', station:'—', src:'https://www.westwoodonesports.com/ncaa-basketball/', badge:'warn', status:'Single day (<7d; WWO NCAAM unposted)'},
-      {date:'2027-02-17 (Wed)', core:'0 scheduled games in Core 4-Category scope', full:'Cal MBB at Pitt (4:00 PM PST) + Pelicans at Warriors (7:00 PM PST) + USF MBB at LMU (TBA)', station:'KSFO 810 AM · KGMZ 95.7 FM · KTCT 1050 AM (partner)', src:'https://calbears.com/sports/mens-basketball/schedule/2026-27', badge:'orange', status:'Triple Bay Area AM/FM conflict'},
-      {date:'2027-02-18 (Thu)', core:'0 scheduled games in Core 4-Category scope', full:'No verified local game; Westwood One NCAAM national slate unposted', station:'—', src:'https://www.westwoodonesports.com/ncaa-basketball/', badge:'warn', status:'Single day (<7d; WWO NCAAM unposted)'},
-      {date:'2027-02-19 (Fri)', core:'2027 MLB Spring Training Opening Day (3 games)', full:'2027 MLB Spring Training Opening Day + NBA All-Star Weekend', station:'MLB club flagships', src:'https://statsapi.mlb.com/api/v1/schedule?sportId=1&season=2027&startDate=2027-02-19&endDate=2027-02-19', badge:'orange', status:'Occupied (MLB resumes through autumn)'},
-      {date:'2027-02-20 (Sat)', core:'2027 MLB Spring Training (SF Giants at Mariners; Athletics vs White Sox + full slate)', full:'SF Giants (KNBR) + Athletics (KNEW 960) + Cal MBB at NC State (9:00 AM PST, KSFO 810 AM)', station:'KNBR 680/104.5 · KNEW 960 · KSFO 810', src:'https://calbears.com/sports/mens-basketball/schedule/2026-27', badge:'orange', status:'Occupied (Both scopes)'},
+      {date:'2027-02-14 (Sun)', core:'Super Bowl LXI (NFL Postseason)', full:'Super Bowl LXI (NFL / Westwood One)', station:'KSAN / KNBR / Westwood One (carriage TBA)', src:'https://operations.nfl.com/calendar-events/nfl-important-dates', badge:'orange', status:'Scheduled; local carriage requires review'},
+      {date:'2027-02-15 (Mon)', core:'No core game confirmed in this partial snapshot', full:'Indiana Pacers at Golden State Warriors (4:30 PM PST)', station:'KGMZ 95.7 FM', src:'https://www.nba.com/game/ind-vs-gsw-0022600084', badge:'orange', status:'Occupied on 95.7 FM'},
+      {date:'2027-02-16 (Tue)', core:'No core game confirmed in this partial snapshot', full:'No verified local game; Westwood One NCAAM national slate unposted', station:'—', src:'https://www.westwoodonesports.com/ncaa-basketball/', badge:'warn', status:'Unverified; WWO NCAAM unposted'},
+      {date:'2027-02-17 (Wed)', core:'No core game confirmed in this partial snapshot', full:'Cal MBB at Pitt (4:00 PM PST) + Pelicans at Warriors (7:00 PM PST) + USF MBB at LMU (TBA)', station:'KSFO 810 AM · KGMZ 95.7 FM · KTCT 1050 AM (partner)', src:'https://calbears.com/sports/mens-basketball/schedule/2026-27', badge:'orange', status:'Listed games; individual carriage needs review'},
+      {date:'2027-02-18 (Thu)', core:'No core game confirmed in this partial snapshot', full:'No verified local game; Westwood One NCAAM national slate unposted', station:'—', src:'https://www.westwoodonesports.com/ncaa-basketball/', badge:'warn', status:'Unverified; WWO NCAAM unposted'},
+      {date:'2027-02-19 (Fri)', core:'2027 MLB Spring Training Opening Day (3 games)', full:'2027 MLB Spring Training Opening Day + NBA All-Star Weekend', station:'MLB club flagships', src:'https://statsapi.mlb.com/api/v1/schedule?sportId=1&season=2027&startDate=2027-02-19&endDate=2027-02-19', badge:'orange', status:'MLB games listed; AM/FM carriage unverified'},
+      {date:'2027-02-20 (Sat)', core:'2027 MLB Spring Training (SF Giants at Mariners; Athletics vs White Sox + full slate)', full:'Giants and Athletics spring games; Cal MBB at NC State (9:00 AM PST, KSFO 810 AM)', station:'MLB game-specific carriage unverified · KSFO 810 listed for Cal', src:'https://calbears.com/sports/mens-basketball/schedule/2026-27', badge:'orange', status:'Scheduled; local carriage requires review'},
     ].map(d => `
       <tr>
         <td><strong>${esc(d.date)}</strong></td>
@@ -49,7 +49,7 @@ async function boot() {
       <tr>
         <td><strong>${esc(s.station)}</strong><small>${esc(s.band)}</small></td>
         <td>${s.properties.map(p => `<div>• ${esc(p)}</div>`).join('')}${s.note ? `<small>${esc(s.note)}</small>` : ''}</td>
-        <td><span class="badge green">Receivable in 94122</span></td>
+        <td><span class="badge green">Reception unverified</span></td>
         <td>
           <a href="${esc(s.source)}" target="_blank" rel="noopener">Primary ↗</a>
           ${s.secondarySource ? ` · <a href="${esc(s.secondarySource)}" target="_blank" rel="noopener">Partner ↗</a>` : ''}
@@ -70,8 +70,8 @@ async function boot() {
       <div class="eyebrow">LINE-BY-LINE PRIMARY SOURCE EXPANSION · 94122</div>
       <div class="headrow">
         <div>
-          <h1>Two-scope verification &amp; full Bay Area AM/FM proof</h1>
-          <p class="lede">Side-by-side analysis separating the narrow 4-category prompt scope (All 30 MLB, NFL, Stanford/Cal NCAAF, Westwood One NFL) from the complete Outer Sunset 94122 terrestrial AM/FM dial — backed by ${data.events.length} newly verified primary-source records.</p>
+          <h1>Two-scope evidence &amp; Bay Area AM/FM review</h1>
+          <p class="lede">Side-by-side analysis separating the narrow 4-category prompt scope (All 30 MLB, NFL, Stanford/Cal NCAAF, Westwood One NFL) from a partial inventory of Outer Sunset 94122 terrestrial AM/FM sports — backed by ${data.events.length} newly verified primary-source records.</p>
         </div>
         <span class="badge green">Checked ${esc(data.meta.checked)} · 0 inferred values</span>
       </div>
@@ -79,8 +79,8 @@ async function boot() {
       <div class="metrics">
         <div class="metric">
           <label>1–3 WEEK CONFLICT-FREE WINDOWS (2027)</label>
-          <strong>0</strong>
-          <small>Core 4-category max gap is 4 days (Feb 15–18); full AM/FM max gap is 1 day.</small>
+          <strong>Unknown</strong>
+          <small>No windows certified; incomplete evidence does not prove that none exist.</small>
         </div>
         <div class="metric">
           <label>2027 NFL PRO BOWL GAME</label>
@@ -101,6 +101,7 @@ async function boot() {
         <a href="${esc(data.proBowlFinding.secondarySource)}" target="_blank" rel="noopener">NFL Media release ↗</a>
       </div>
 
+      <div class="note">Coverage is incomplete. February 15–18 is only a candidate between league milestones, not proof of a free interval or an annual maximum. National schedules and flagship partnerships do not prove individual game carriage or reception in 94122. The historical generated data contains broader assertions that remain under review. <a href="review.html">See review flags</a>.</div>
       <div class="section-head"><h2>1. 2027–2029 Vacation Window Verdict by Scope (1, 2 &amp; 3 Weeks)</h2></div>
       <div class="panel tablewrap">
         <table>
@@ -116,14 +117,14 @@ async function boot() {
         </table>
       </div>
 
-      <div class="section-head"><h2>2. Day-by-Day Proof: February 14–20, 2027 (Super Bowl LXI to MLB Spring Training)</h2></div>
+      <div class="section-head"><h2>2. Partial Day-by-Day Snapshot: February 14–20, 2027 (Super Bowl LXI to MLB Spring Training)</h2></div>
       <div class="panel tablewrap">
         <table>
           <thead>
             <tr>
               <th>Date (PT)</th>
               <th>Core 4-Category Scope</th>
-              <th>Full SF 94122 Terrestrial AM/FM Dial</th>
+              <th>Partial Bay Area AM/FM evidence</th>
               <th>Status</th>
               <th>Verified Source</th>
             </tr>
@@ -132,13 +133,13 @@ async function boot() {
         </table>
       </div>
 
-      <div class="section-head"><h2>3. Complete Outer Sunset (94122) Terrestrial AM/FM Sports Matrix</h2></div>
+      <div class="section-head"><h2>3. Selected Bay Area Terrestrial AM/FM Sports Stations</h2></div>
       <div class="panel tablewrap">
         <table>
           <thead>
             <tr>
               <th>Station</th>
-              <th>Verified Live Sports Properties</th>
+              <th>Reported sports properties</th>
               <th>94122 Reception</th>
               <th>Official Sources</th>
             </tr>
