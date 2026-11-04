@@ -150,3 +150,11 @@ Handoff note: arena-d6dba19e's claimed tasks (site/**, scripts/**, tests/**, wor
 - Rebase conflicts with concurrent sessions (PRs #8/#9/#16/#17 from arena/00b68cb3 and arena/f8a21d11) were resolved by keeping both sessions' COORDINATION.md log entries and union-merging research.json without discarding either side; no other session's work was overwritten.
 - ID collision found post-merge: the concurrent audit session had already used flag IDs F17–F21 in research.json, so this session's five new flags were renumbered to **F22–F26** (Stanford 2027 correction, Jul 14–15 2027 feed-vs-press nuance, verified SB LXII Feb 13 2028, KNBR 1050 HD3 nuance, 2027 TBD starts/CBA risk) and published via a follow-up PR. This session's 8 new source-register entries merged cleanly by source URL.
 - Task status: **done** — verification log (research/verification-69f77e26.md), tests 18/18 node + 6/6 python + site check, PR merged, Pages deploy confirmed. Flagged/unverified items are published on the site's Flagged for Review page and do not block.
+
+## Session arena/7c36256e-korea6 — 2026-11-04
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Independent audit of current dashboard and publication | in progress | arena/7c36256e-korea6 | COORDINATION.md, research/audit-7c36256e.md |
+
+Earlier in-progress entries are historical; the latest logs mark their work done or published, and their last activity exceeds the 60-minute handoff threshold. Audit only; any changes needed to other scopes will be requested here. Arena fixes the branch name.
