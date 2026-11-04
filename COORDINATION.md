@@ -162,3 +162,5 @@ Earlier in-progress entries are historical; the latest logs mark their work done
 - Audit found unsupported claims in `site/core-scope.js` (annual maximum gaps, 94122 receivability, and game-specific radio assignments) and contradictory README conclusion. Earlier owning sessions are completed/stale (>60 minutes); taking over `site/core-scope.js`, `README.md`, and `tests/core-scope-safety.test.mjs` for narrow safety corrections. Raw generated assertions remain historical and require separate review; UI must not repeat them.
 
 - Taking over stale `site/data/research.json` to publish the audit discrepancy on Flagged for Review; no existing entries will be removed.
+
+- Taking over stale `tests/browser.spec.cjs` for the scope page heading update and browser regression.
