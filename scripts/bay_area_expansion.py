@@ -633,8 +633,8 @@ def build_payload() -> dict:
             "eventCount": len(events),
             "durationEstimatesMinutes": {
                 "MLB": {"minutes": 185, "basis": "Planning estimate (~2h40m pitch-clock average + pre/postgame radio cushion); never treated as an official end time."},
-                "NFL": {"minutes": 195, "basis": "Planning estimate (~3h12m average NFL game duration); never treated as an official end time."},
-                "NCAAF": {"minutes": 215, "basis": "Planning estimate (~3h24m-3h35m FBS average duration); never treated as an official end time."},
+                "NFL": {"minutes": 183, "basis": "Average 2025 regular-season NFL game 3:03 (272 games, third-party analysis of nflverse play-by-play); never treated as an official end time."},
+                "NCAAF": {"minutes": 206, "basis": "Average 2025 FBS game 3:26, as reported from NCAA statistics; never treated as an official end time."},
                 "NBA": {"minutes": 150, "basis": "Planning estimate (~2h15m-2h30m NBA broadcast window); never treated as an official end time."},
                 "NCAAM": {"minutes": 135, "basis": "Planning estimate (~2h05m-2h15m college basketball window); never treated as an official end time."},
                 "MLS": {"minutes": 130, "basis": "Planning estimate (~2h05m soccer match window); never treated as an official end time."},
