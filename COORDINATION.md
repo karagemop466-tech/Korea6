@@ -8,7 +8,16 @@
 | Research, dashboard, tests and final integration | done | arena-d6dba19e | COORDINATION.md, README.md, site/**, scripts/**, tests/**, .github/workflows/**; additive integration content |
 | Audit and correct contradictory legacy vacation recommendations | done | arena/00b68cb3-korea6 | README.md, windows.html, summary.html, COORDINATION.md |
 | Audit historical vacation assertions in research source log | done | arena/9d85eaae-korea6 | research/sources.md, COORDINATION.md |
-| Final integration: verify, PR to main, merge, Pages deploy confirmation | in progress | arena/a5b64579-korea6 | COORDINATION.md, README.md (additive), site/**, tests/**, root HTML pages |
+| Final integration: verify, PR to main, merge, Pages deploy confirmation | done | arena/a5b64579-korea6 | COORDINATION.md, README.md (additive), site/**, tests/**, root HTML pages |
+
+## Session log — arena/a5b64579-korea6 (2026-11-05)
+
+- Claimed final integration on branch `arena/a5b64579-korea6`; branch was even with `origin/main` (10807b2, PRs #2–#19 merged).
+- Verification: `npm test` passes (19 Node tests, 6 Python validate.py tests, check-site.js); `npm run test:browser` passes 13/13 Playwright tests with LD_LIBRARY_PATH=/tmp/al2023/lib. No earlier-session data was rewritten.
+- Independent source spot checks: MLB 2027 schedule released Jul 16, 2026 (Opening Night Mar 24, Opening Day Mar 25, All-Star Game Jul 13 at Wrigley, season ends Sep 26, Spring Training Feb 19, all 30 clubs / 2,901 feed records); Super Bowl LXI Feb 14, 2027 at SoFi Stadium on Westwood One radio. 2028–2029 MLB/NFL/college schedules remain unreleased and are correctly blank/estimated (F02/F03).
+- PR #21 (https://github.com/karagemop466-tech/Korea6/pull/21) created from arena/a5b64579-korea6 to main; merged without waiting for approval at merge commit 8ea0aec72a9166bf63ea6f30ac4cd64cc9955f85.
+- GitHub Pages: verify run 42111552864 and deploy run succeeded (actions/deploy-pages@v4). Live evidence dashboard at https://karagemop466-tech.github.io/Korea6/site/ ; executive summary at .../site/exec.html ; Flagged for Review at .../site/review.html (flags F01–F26 published and non-blocking).
+- No certified 7/14/21-day sports-free vacation window for 2027–2029; best 2027 research candidate Feb 15–18 (4 days, not certified; occupied by Warriors 95.7 FM Feb 15 and Warriors + Cal MBB 810 AM + USF MBB Feb 17 on the full AM/FM dial). Conclusion and all irregularities remain flagged for review rather than hidden.
 
 ## Session log — arena/252ee7d4-korea6 (2026-11-05)
 - Claim: freshness UX audit; make the daily schedule default to the current `America/Los_Angeles` date rather than the stale 2026-11-03 literal, with regression coverage. Scope: `site/app.js`, `site/engine.mjs`, `tests/engine.test.mjs`, `tests/browser.spec.cjs`, and this board only. Existing schedule data is unchanged; this does not claim data refresh or radio coverage.
