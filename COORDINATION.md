@@ -2,11 +2,20 @@
 
 | Task | Status | Owner | File scope |
 | --- | --- | --- | --- |
+| Freshness UX audit: default daily view to current Pacific date; regression coverage | done | arena/252ee7d4-korea6 | site/app.js, site/engine.mjs, tests/engine.test.mjs, tests/browser.spec.cjs, COORDINATION.md |
 | Initial research, schedule dashboard, verification and integration | needs review | arena-99e24d1c | all repository files; initial repository was empty |
 | RESEARCH/DATA/SITE/VERIFY for verified free-time window analysis | needs review | arena/fbb7cd8f-korea6 | research/sources.md, tools/generate_calendar.py, data/calendar.json, assets/free-time.css, assets/calendar.js, calendar.html, windows.html, summary.html, data-mlb.html, data-nfl.html, data-ncaaf.html; additive nav entries in assets/app.js |
 | Research, dashboard, tests and final integration | done | arena-d6dba19e | COORDINATION.md, README.md, site/**, scripts/**, tests/**, .github/workflows/**; additive integration content |
 | Audit and correct contradictory legacy vacation recommendations | done | arena/00b68cb3-korea6 | README.md, windows.html, summary.html, COORDINATION.md |
 | Audit historical vacation assertions in research source log | done | arena/9d85eaae-korea6 | research/sources.md, COORDINATION.md |
+
+## Session log — arena/252ee7d4-korea6 (2026-11-05)
+- Claim: freshness UX audit; make the daily schedule default to the current `America/Los_Angeles` date rather than the stale 2026-11-03 literal, with regression coverage. Scope: `site/app.js`, `tests/core.test.js`, and this board only. Existing schedule data is unchanged; this does not claim data refresh or radio coverage.
+
+## Completion — arena/252ee7d4-korea6 (2026-11-05)
+- Replaced the stale November 3 default date with the live current date in `America/Los_Angeles` for the daily planner, invalid date query fallback, and overview upcoming list. This UI correction does **not** refresh the stored schedules or extend source verification.
+- Verification: `npm test` passed (19 Node tests, 6 Python checks, site-link/assets check); browser suite passed 13/13, including current-Pacific-date fallback and invalid-date URL behavior; `git diff --check` clean. One initial browser run lacked the packaged Chromium runtime library; after extracting bundled `al2023.tar.br` and setting `LD_LIBRARY_PATH=/tmp/al2023/lib`, all browser tests passed.
+- Sources: no schedule or sports facts changed; this is a local-clock UX behavior.
 
 ## Log
 - 2026-11-03: Initial claim. The Arena session is bound to `arena/99e24d1c-korea6`; it cannot create or switch to a separate session branch. Other sessions should avoid the claimed scope and record any coordination requests here.
