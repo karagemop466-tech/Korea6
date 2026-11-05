@@ -1,404 +1,460 @@
 {
-  "checked": "2026-11-03",
-  "stations": [
-    {
-      "sport": "Giants \u00b7 MLB",
-      "station": "KNBR 680 AM / 104.5 FM",
-      "evidence": "Official English flagship listing",
-      "limitation": "Season affiliation only; individual games and future rights need confirmation.",
-      "source": "https://www.mlb.com/giants/schedule/watch"
-    },
-    {
-      "sport": "Giants \u00b7 Spanish MLB",
-      "station": "KSFN 1510 AM / 99.3 FM",
-      "evidence": "Official Spanish flagship listing",
-      "limitation": "Game-specific carriage and reception not verified.",
-      "source": "https://www.mlb.com/giants/schedule/watch"
-    },
-    {
-      "sport": "Athletics \u00b7 MLB",
-      "station": "KNEW 960 AM",
-      "evidence": "Listed as Bay Area terrestrial affiliate",
-      "limitation": "No blanket claim that every spring-training game airs; future rights unconfirmed.",
-      "source": "https://www.mlb.com/athletics/schedule/affiliates"
-    },
-    {
-      "sport": "49ers \u00b7 NFL",
-      "station": "KSAN 107.7 FM / KNBR 680 AM / 104.5 FM",
-      "evidence": "Upcoming team schedule lists these stations",
-      "limitation": "Pregame starts earlier than kickoff; postgame end is unknown.",
-      "source": "https://www.49ers.com/schedule/"
-    },
-    {
-      "sport": "Stanford \u00b7 NCAAF",
-      "station": "KTCT / KNBR 1050 AM",
-      "evidence": "2026 team radio announcement",
-      "limitation": "Season partner; exact future game-by-game carriage unverified.",
-      "source": "https://gostanford.com/news/2026/07/30/2026-football-radio-broadcast-team-announced"
-    },
-    {
-      "sport": "California \u00b7 NCAAF",
-      "station": "KSFO 810 AM; Big Game: KNBR 680 AM / 104.5 FM",
-      "evidence": "2026 schedule lists game-specific radio",
-      "limitation": "Big Game differs from the usual station; kickoff still TBD.",
-      "source": "https://calbears.com/sports/football/schedule/2026"
-    },
-    {
-      "sport": "Warriors \u00b7 NBA \u00b7 high priority",
-      "station": "KGMZ 95.7 FM",
-      "evidence": "Official upcoming schedule lists KGMZ-FM",
-      "limitation": "Additional busy-time sport. No guarantee of reception inside a particular 94122 home.",
-      "source": "https://www.nba.com/warriors/schedule"
-    },
-    {
-      "sport": "Westwood One \u00b7 NFL and other sports",
-      "station": null,
-      "evidence": "National schedule verified; station finder lists KNBR-AM, KNBR-FM and KTCT-AM in its NFL Regular Season (2025) section. HD-only KNBR-F2 excluded.",
-      "limitation": "Historical affiliation only. 2026 game-specific local assignments remain blank; affiliate conflicts and blackouts are explicitly noted.",
-      "source": "https://www.westwoodonesports.com/station-finder/"
-    },
-    {
-      "sport": "Stanford \u00b7 other sports",
-      "station": null,
-      "evidence": "Historical 2013 source lists KZSU 90.1 FM and other sports",
-      "limitation": "Historical only: current carriage and Outer Sunset reception unverified; no fixtures imported.",
-      "source": "https://gostanford.com/news/2013/04/17/radio-information"
-    },
-    {
-      "sport": "California \u00b7 Men's Basketball (NCAAM)",
-      "station": "KSFO 810 AM",
-      "evidence": "All 32 regular-season 2026\u201327 games explicitly list Radio: KSFO 810 AM (including Feb 17, 2027 at Pitt)",
-      "limitation": "Postseason ACC/NCAA tournament game-level carriage unverified.",
-      "source": "https://calbears.com/sports/mens-basketball/schedule/2026-27"
-    },
-    {
-      "sport": "San Francisco (USF Dons) \u00b7 Men's Basketball (NCAAM)",
-      "station": "KTCT / KNBR 1050 AM",
-      "evidence": "Official USF game releases name KNBR 1050; 2026\u201327 home rows link to thesportsleader.com",
-      "limitation": "Road/neutral rows without an explicit Listen link keep station blank until posted.",
-      "source": "https://usfdons.com/sports/mens-basketball/schedule/2026-27"
-    },
-    {
-      "sport": "Golden State Valkyries \u00b7 WNBA",
-      "station": "KGMZ 95.7 FM",
-      "evidence": "Multi-year flagship partnership for all home games and select road games (May\u2013Sep)",
-      "limitation": "2027\u20132029 WNBA regular-season schedules not yet published.",
-      "source": "https://valkyries.wnba.com/news/valkyries-announce-audacy-as-radio-partner-20250514"
-    },
-    {
-      "sport": "San Jose Earthquakes \u00b7 MLS",
-      "station": "KSFO 810 AM (English) / KZSF 1370 AM (Spanish)",
-      "evidence": "Official 2026 radio partner announcement (select overflow on KNBR 680 / KTCT 1050)",
-      "limitation": "2027\u20132029 MLS schedules and future rights not yet published.",
-      "source": "https://www.sjearthquakes.com/news/news-earthquakes-announce-radio-stations-for-2026-mls-season"
-    },
-    {
-      "sport": "San Jose Sharks \u00b7 NHL (digital-only)",
-      "station": null,
-      "evidence": "Moved exclusively to Sharks Audio Network digital stream/app in January 2021",
-      "limitation": "Excluded from standard terrestrial AM/FM conflicts in 94122.",
-      "source": "https://www.nhl.com/sharks/news/sharks-announce-launch-of-sharks-audio-network-320033246"
-    },
-    {
-      "sport": "Stanford \u00b7 Men's Basketball (digital/satellite)",
-      "station": null,
-      "evidence": "Moved off KNBR 1050 AM in 2017\u201318 to GoStanford.com, Varsity Network and SiriusXM",
-      "limitation": "Excluded from standard terrestrial AM/FM conflicts unless a terrestrial simulcast is announced.",
-      "source": "https://gostanford.com/news/2017/11/09/enhanced-basketball-coverage"
-    }
-  ],
-  "sources": [
-    {
-      "name": "MLB official schedule feed",
-      "claim": "Source of imported MLB fixtures, dates, game types and startTimeTBD flag. All returned records retained, including canceled or postponed games.",
-      "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-01-01&endDate=2027-12-31"
-    },
-    {
-      "name": "2027 schedule release \u00b7 Orioles",
-      "claim": "Official release dated July 16, 2026 confirms 2027 regular-season schedule publication.",
-      "source": "https://www.mlb.com/press-release/press-release-orioles-announce-2027-regular-season-schedule"
-    },
-    {
-      "name": "MLB game length",
-      "claim": "MLB reports 2025 average game time of 2 hours 38 minutes. This is a historical mean, not a guaranteed broadcast end.",
-      "source": "https://www.mlb.com/press-release/press-release-mlb-attendance-reaches-71-4-million-three-straight-years-of-growth-for-first-time-since-2007"
-    },
-    {
-      "name": "NFL important dates",
-      "claim": "Lists January 2027 postseason windows and Super Bowl LXI on February 14, 2027. No kickoff entered without verification.",
-      "source": "https://operations.nfl.com/calendar-events/nfl-important-dates"
-    },
-    {
-      "name": "49ers schedule",
-      "claim": "Upcoming game dates, kickoff times and local AM/FM assignments. Week 18 date remains blank.",
-      "source": "https://www.49ers.com/schedule/"
-    },
-    {
-      "name": "49ers radio coverage",
-      "claim": "Official page describes a three-hour pregame show and postgame coverage. These extend beyond the game itself; exact postgame end unknown.",
-      "source": "https://www.49ers.com/fans/tv-radio"
-    },
-    {
-      "name": "Cal football schedule",
-      "claim": "November 2026 games and station assignments. Big Game and Pittsburgh times blank when not published.",
-      "source": "https://calbears.com/sports/football/schedule/2026"
-    },
-    {
-      "name": "Stanford football schedule",
-      "claim": "Virginia Tech time is presented as 4 OR 4:30 P.M.; kept blank rather than choosing one. Big Game deduplicated with Cal.",
-      "source": "https://gostanford.com/sports/football/schedule"
-    },
-    {
-      "name": "Westwood One NFL schedule",
-      "claim": "46 upcoming network broadcast slots transcribed for November 2026\u2013January 2027, including TBA slots. Network airtime is not kickoff.",
-      "source": "https://www.westwoodonesports.com/nfl-schedule/"
-    },
-    {
-      "name": "Westwood One other sports",
-      "claim": "Oregon at Ohio State, November 7, 2026 at 3 PM ET. Local AM/FM carriage not established.",
-      "source": "https://www.westwoodonesports.com/events/557143"
-    },
-    {
-      "name": "Westwood One station finder",
-      "claim": "Explicitly warns of local blackouts and programming conflicts. Covers football, basketball, soccer, golf, baseball, softball, lacrosse and hockey.",
-      "source": "https://www.westwoodonesports.com/station-finder/"
-    },
-    {
-      "name": "Warriors schedule",
-      "claim": "Additional live local radio sport; upcoming official schedule lists KGMZ-FM.",
-      "source": "https://www.nba.com/warriors/schedule"
-    },
-    {
-      "name": "NFL official schedule data",
-      "claim": "2026 official schedule pages parsed for 321 unique game IDs: 49 preseason and 272 regular-season fixtures. Known times converted from ISO timestamps; unknown dates stay blank. League-wide future coverage and local radio remain unresolved.",
-      "source": "https://www.nfl.com/schedules/2026/by-week/week-1"
-    },
-    {
-      "name": "Cal 2027 conference and nonconference announcement",
-      "claim": "Nine ACC opponents and home/away assignments announced; dates and times to follow. Nonconference dates: August 28 Sacramento State, September 4 at UCLA, September 11 Old Dominion. Kickoff and radio remain blank.",
-      "source": "https://calbears.com/news/2026/9/16/california-football-announces-2027-conference-opponents"
-    },
-    {
-      "name": "MLB 2027 season milestones",
-      "claim": "Home Run Derby July 12; All-Star Game July 13; second half July 15. All-Star break is not a multi-day sports-free vacation.",
-      "source": "https://www.mlb.com/news/mlb-2027-schedule-released"
-    },
-    {
-      "name": "NBA All-Star 2027",
-      "claim": "Phoenix hosts February 19\u201321, 2027. This does not establish Warriors regular-season silence February 15\u201318.",
-      "source": "https://www.nba.com/news/phoenix-suns-nba-all-star-2027-official-release"
-    },
-    {
-      "name": "NFL Pro Bowl game discontinued (Aug 26, 2026)",
-      "claim": "Official NFL announcement confirms that starting with the 2026 season (2027 Pro Bowl class), the AFC-NFC Pro Bowl game will no longer be staged.",
-      "source": "https://www.nfl.com/news/nfl-elevates-pro-bowl-selection-game-s-will-cease-being-contested"
-    },
-    {
-      "name": "Golden State Warriors full 2026\u201327 schedule",
-      "claim": "All remaining regular-season games through April 11, 2027 verified with game-level NBA.com links, proving Feb 15 vs Pacers and Feb 17 vs Pelicans air during the post-Super Bowl week.",
-      "source": "https://www.nba.com/schedule/warriors?cal=February"
-    },
-    {
-      "name": "California 2026\u201327 Men's Basketball schedule",
-      "claim": "All 32 regular-season games (Nov 2, 2026\u2013Mar 6, 2027) explicitly list Radio: KSFO 810 AM, including Feb 17, 2027 at Pittsburgh (4:00 PM PST).",
-      "source": "https://calbears.com/sports/mens-basketball/schedule/2026-27"
-    },
-    {
-      "name": "USF Dons 2026\u201327 Men's Basketball schedule",
-      "claim": "32 regular-season games verified on USF Athletics; home games link directly to KNBR/thesportsleader.com (KNBR 1050 AM).",
-      "source": "https://usfdons.com/sports/mens-basketball/schedule/2026-27"
-    },
-    {
-      "name": "Stanford 2027 ACC opponents & Notre Dame extension",
-      "claim": "Sep 16, 2026 9-game ACC opponent release (Home: Cal, Duke, UNC, Syracuse, Virginia; Away: BC, Clemson, FSU, SMU) plus May 20, 2026 Notre Dame dates (Nov 27, 2027; Oct 14, 2028).",
-      "source": "https://gostanford.com/news/2026/09/16/acc-announces-2027-conference-opponents"
-    },
-    {
-      "name": "Westwood One NCAA Football & U.S. Soccer",
-      "claim": "Six upcoming 2026 NCAAF national broadcasts (Nov 7\u2013Dec 12, including SEC Championship and Army-Navy) plus Nov 17 USMNT vs Haiti.",
-      "source": "https://www.westwoodonesports.com/ncaa-football/"
-    },
-    {
-      "name": "MLB 2027 Spring Training opener",
-      "claim": "All 30 clubs open 2027 Spring Training on Friday, Feb 19, 2027 (announced Sep 4, 2026); official club releases on mlb.com/press-release confirm Feb 19 openers.",
-      "source": "https://www.mlb.com/press-release/press-release-brewers-announce-2027-spring-training-schedule"
-    },
-    {
-      "name": "MLB average game length 2025",
-      "claim": "Official MLB.com report: average nine-inning game in 2025 was 2 hours 38 minutes, third straight season at or under 2:40. Historical mean used only in the labeled planning overlay.",
-      "source": "https://www.mlb.com/news/mlb-average-game-time-under-three-hours-third-straight-year"
-    },
-    {
-      "name": "NFL important dates 2026-27 (team-carried release)",
-      "claim": "NFL release carried on official club site: kickoff Sep 9, 2026; Wild Card Jan 16-18, 2027; championships Jan 31, 2027; Super Bowl LXI Feb 14, 2027 at SoFi Stadium.",
-      "source": "https://www.seahawks.com/news/nfl-announces-important-dates-for-2026-2027"
-    },
-    {
-      "name": "Super Bowl LXII announcement",
-      "claim": "NFL announced Oct 15, 2024 that Super Bowl LXII will be played Feb 13, 2028 at Mercedes-Benz Stadium, Atlanta. 2029 (LXIII, Las Vegas) date not yet announced.",
-      "source": "https://media.nfl.com/news-and-releases/corporate-communications/atlanta-to-host-super-bowl-lxii-in-2028"
-    },
-    {
-      "name": "49ers-KNBR extension through 2030",
-      "claim": "Cumulus Media release Apr 15, 2026: KNBR 680 AM/104.5 FM remains 49ers flagship via multi-year extension through the 2030 season; KSAN 107.7 FM and KSFO 810 AM also carry games. Notes KNBR 1050 is carried as HD3 channel KTCT/1050.",
-      "source": "https://www.cumulusmedia.com/2026/04/15/san-francisco-49ers-announce-multi-year-partnership-extension-with-cumulus-medias-knbr/"
-    },
-    {
-      "name": "Westwood One 40th season of NFL coverage",
-      "claim": "2026 NFL radio package: Kickoff game Sep 9, 2026, TNF/SNF/MNF, 8 international games, Thanksgiving, Black Friday, Christmas, late-season Saturdays, full postseason, Super Bowl LXI Feb 14, 2027 (Westwood One radio).",
-      "source": "https://news.radio-online.com/articles/n49383/Westwood-One-Sets-40th-Season-of-NFL-Coverage"
-    }
-  ],
-  "flags": [
-    {
-      "id": "F01",
-      "title": "No certified vacation window",
-      "detail": "No 7-, 14- or 21-day sports-free trip can currently be certified for 2027\u20132029. Coverage of all requested leagues and local broadcasts is incomplete. Empty results are unknown, never free.",
-      "source": "https://www.westwoodonesports.com/station-finder/"
-    },
-    {
-      "id": "F02",
-      "title": "2028\u20132029 schedule coverage",
-      "detail": "MLB feed returned zero games for these calendar years at collection. This does not establish that no games will occur, or that no official dates exist elsewhere. NFL and college-football future full schedules are not verified here. Dates remain blank.",
-      "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2028-01-01&endDate=2029-12-31"
-    },
-    {
-      "id": "F03",
-      "title": "NFL future and special-event coverage incomplete",
-      "detail": "Official 2026 NFL pages yielded 321 distinct game records: 272 regular-season and 49 preseason fixtures. On August 26, 2026, NFL.com officially announced that the AFC-NFC Pro Bowl game will no longer be staged starting with the 2026 season (2027 class). 2027\u20132029 regular-season NFL fixtures and complete postseason game-level kickoffs remain unverified. Unknown dates remain unplaced.",
-      "source": "https://www.nfl.com/news/nfl-elevates-pro-bowl-selection-game-s-will-cease-being-contested"
-    },
-    {
-      "id": "F04",
-      "title": "Westwood One local carriage unresolved",
-      "detail": "All 46 upcoming NFL slots visible on the reviewed national page were transcribed, but their Bay Area affiliate assignments were not verified. General Westwood One Sports talk programming is not live play-by-play. No national slot is labeled confirmed local radio without separate evidence.",
-      "source": "https://www.westwoodonesports.com/nfl-schedule/"
-    },
-    {
-      "id": "F05",
-      "title": "Broadcast end times are unknown",
-      "detail": "MLB 158-minute historical average is used only in a separate planning overlay. NFL/NCAAF 180-minute and NBA 150-minute overlays are assumptions, not verified average durations. They include halftime, not added twice. Overtime, delays, pregame and postgame can extend the conflict.",
-      "source": "https://www.mlb.com/press-release/press-release-mlb-attendance-reaches-71-4-million-three-straight-years-of-growth-for-first-time-since-2007"
-    },
-    {
-      "id": "F06",
-      "title": "Pregame and postgame coverage",
-      "detail": "49ers official partner page describes a three-hour pregame show. Radio-mode calculations include that lead-in for game-specific 49ers records; postgame ends and other teams\u2019 pregame coverage remain unknown. No exact on-air free minute can be certified.",
-      "source": "https://www.49ers.com/fans/tv-radio"
-    },
-    {
-      "id": "F07",
-      "title": "TBD is not midnight",
-      "detail": "MLB startTimeTBD records have no verified start. Placeholder timestamps are discarded. Unknown-time fixtures make the entire calendar date uncertain; 49ers Week 18 also has an unknown date.",
-      "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-01-01&endDate=2027-12-31"
-    },
-    {
-      "id": "F08",
-      "title": "Stanford ambiguous kickoff",
-      "detail": "Stanford\u2013Virginia Tech is listed as 4 OR 4:30 P.M. on November 14. No single time is chosen; official time field stays blank.",
-      "source": "https://gostanford.com/sports/football/schedule"
-    },
-    {
-      "id": "F09",
-      "title": "Additional local sports coverage incomplete",
-      "detail": "Warriors games are high priority. Their schedule import is partial. Stanford basketball and KZSU sports, Westwood One basketball, golf, soccer and NCAA championships require current event-level local carriage research. Other Bay Area live sports cannot yet be ruled out.",
-      "source": "https://www.westwoodonesports.com/station-finder/"
-    },
-    {
-      "id": "F10",
-      "title": "94122 reception is not guaranteed",
-      "detail": "Official affiliation establishes a broadcast outlet, not reception at a specific address. Terrain, building construction, antenna and interference matter. Internet streams, satellite and HD-only subchannels do not qualify as ordinary AM/FM reception.",
-      "source": "https://www.mlb.com/athletics/schedule/affiliates"
-    },
-    {
-      "id": "F11",
-      "title": "Season affiliation \u2260 game confirmation",
-      "detail": "Giants, Athletics and Stanford station listings are shown in the radio guide, not automatically copied onto every game. Spring-training carriage, preemptions and future rights are unverified.",
-      "source": "https://www.mlb.com/giants/schedule/watch"
-    },
-    {
-      "id": "F12",
-      "title": "Future postseason and special events",
-      "detail": "2027 MLB feed currently contains no postseason games. All-Star Game is present, but the Home Run Derby and every other special event are not comprehensively covered by the game feed. A normal schedule gap is not proof of no programming.",
-      "source": "https://www.mlb.com/events"
-    },
-    {
-      "id": "F13",
-      "title": "No synthetic fixtures",
-      "detail": "The final instruction to leave unconfirmed fields blank takes precedence over the earlier request to estimate unreleased schedules. No invented opponents, dates or TBD kickoff times are inserted. Duration estimates live only in the labeled planning overlay.",
-      "source": "https://www.nfl.com/schedules/"
-    },
-    {
-      "id": "F15",
-      "title": "Conflicting earlier-session all-clear claims",
-      "detail": "Preserved root windows.html, summary.html and data/calendar.json contain earlier-session verified/all-clear labels for July 12\u201314, 2027 and February 15\u201318, 2027. The July 13 All-Star Game directly contradicts the July all-clear claim. February\u2019s four dates are not certified against Warriors or all other radio sports. Their 2028\u20132029 scenarios and assertion that no trip exists are not verified conclusions. Additive notices link these pages here; original work is preserved for review.",
-      "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=2027-07-13"
-    },
-    {
-      "id": "F16",
-      "title": "Repeated MLB game IDs in source history",
-      "detail": "The 2026 full-year feed repeats some game IDs for postponed/rescheduled or suspended/resumed appearances. Source occurrences are retained with distinct record IDs, not counted as distinct matchups. Canceled, postponed and suspended entries do not create modeled intervals; official game IDs and source URLs are preserved.",
-      "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2026-01-01&endDate=2026-12-31"
-    },
-    {
-      "id": "F17",
-      "title": "July all-clear claim corrected",
-      "detail": "Root summary/windows previously called July 12\u201314, 2027 free despite Derby July 12 and ASG July 13. Corrected to July 14 candidate only; local radio silence remains unverified.",
-      "source": "https://www.mlb.com/news/mlb-2027-schedule-released"
-    },
-    {
-      "id": "F18",
-      "title": "Winter anchor gap is not radio silence",
-      "detail": "February 15\u201318, 2027 lies between NFL and MLB anchors. Other radio sports, Warriors games and local carriage remain incomplete. No 7/14/21-day window is certified; future absence is not proven.",
-      "source": "https://operations.nfl.com/calendar-events/nfl-important-dates"
-    },
-    {
-      "id": "F19",
-      "title": "Future Super Bowl exact dates require official confirmation",
-      "detail": "Atlanta 2028 host verified from NFL announcement; exact date not established by that page. Earlier coordination log references secondary date reporting, not sufficient official verification. Keep exact future dates unverified.",
-      "source": "https://www.nfl.com/news/mercedes-benz-stadium-in-atlanta-to-host-super-bowl-lxii-in-2028"
-    },
-    {
-      "id": "F20",
-      "title": "Superseded 2023 Stanford ACC opponent list in legacy source log",
-      "detail": "Legacy research/sources.md cited an October 2023 8-game ACC model placing Stanford at Virginia Tech in 2027. Stanford's September 16, 2026 9-game ACC announcement supersedes that model (Home: Cal, Duke, UNC, Syracuse, Virginia; Away: BC, Clemson, Florida State, SMU), and Stanford's May 20, 2026 release adds Notre Dame on Nov 27, 2027 and Oct 14, 2028.",
-      "source": "https://gostanford.com/news/2026/09/16/acc-announces-2027-conference-opponents"
-    },
-    {
-      "id": "F21",
-      "title": "February 15 and February 17, 2027 confirmed occupied on SF AM/FM radio",
-      "detail": "Full 2026\u201327 Golden State Warriors (KGMZ 95.7 FM), California Men's Basketball (KSFO 810 AM), and USF Dons Men's Basketball (KNBR 1050 AM) schedules prove Monday, Feb 15 (Pacers at Warriors, 4:30 PM PST) and Wednesday, Feb 17 (Cal at Pitt 4:00 PM PST + Pelicans at Warriors 7:00 PM PST + USF at LMU) carry active Bay Area sports broadcasts.",
-      "source": "https://calbears.com/sports/mens-basketball/schedule/2026-27"
-    },
-    {
-      "id": "F22",
-      "title": "Stanford 2027 opponent list corrected (supersedes 2023 model)",
-      "detail": "The preserved root research/sources.md cites the 2023 ACC eight-game model (away: Virginia Tech). The ACC's Sep 16, 2026 announcement for the nine-game 2027 slate lists Stanford home: California, Duke, UNC, Syracuse, Virginia; away: Boston College, Clemson, SMU, Florida State. The 2026 announcement supersedes the older model; game dates remain TBD. (Complements F20, which covers the same correction from the audit session.)",
-      "source": "https://gostanford.com/news/2026/09/16/acc-announces-2027-conference-opponents"
-    },
-    {
-      "id": "F23",
-      "title": "2027 All-Star break: feed vs press",
-      "detail": "The official 2027 MLB feed contains the All-Star Game on Jul 13 and no game rows on Jul 14 or Jul 15 (full 15-game slate resumes Jul 16). Press coverage says the second half opens Thu Jul 15 with a single ESPN game that does not appear in the imported feed rows. Conservatively: Jul 13 busy, Jul 14 game-free in the feed, Jul 15 uncertain. Earlier Jul 12-14 all-clear claims remain contradicted (F15/F17).",
-      "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-07-10&endDate=2027-07-17"
-    },
-    {
-      "id": "F24",
-      "title": "Super Bowl LXII date Feb 13, 2028 is officially announced",
-      "detail": "The NFL announced Oct 15, 2024 that Super Bowl LXII will be played Feb 13, 2028 at Mercedes-Benz Stadium, Atlanta, upgrading the 2028 post-Super-Bowl gap's NFL anchor to verified (see also F19, which conservatively keeps future exact dates flagged). Super Bowl LXIII (2029, Allegiant Stadium, Las Vegas) has no announced date yet, so all 2029 windows remain estimated.",
-      "source": "https://media.nfl.com/news-and-releases/corporate-communications/atlanta-to-host-super-bowl-lxii-in-2028"
-    },
-    {
-      "id": "F25",
-      "title": "KNBR 1050 HD3 carriage nuance (Stanford)",
-      "detail": "Cumulus' Apr 15, 2026 release describes KNBR 1050 programming as carried on HD3 channel KTCT/1050. An HD3 subchannel is not the main AM carrier; whether a standard AM/FM radio in 94122 receives it depends on the receiver. Stanford's affiliate listing remains KNBR 1050, but reception stays covered by F10.",
-      "source": "https://www.cumulusmedia.com/2026/04/15/san-francisco-49ers-announce-multi-year-partnership-extension-with-cumulus-medias-knbr/"
-    },
-    {
-      "id": "F26",
-      "title": "2027 MLB start times mostly TBD; CBA risk",
-      "detail": "1,930 of 2,901 imported 2027 MLB feed records have no start time (TBD), so day-level free-minute estimates for 2027 are planning overlays only (F07). Press coverage also notes the MLB CBA expires in Dec 2026 and a work stoppage could shift 2027 dates; 2027 anchors are re-checked at each release.",
-      "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-01-01&endDate=2027-12-31"
-    }
-  ]
+ "checked": "2026-11-03",
+ "stations": [
+  {
+   "sport": "Giants \u00b7 MLB",
+   "station": "KNBR 680 AM / 104.5 FM",
+   "evidence": "Official English flagship listing",
+   "limitation": "Season affiliation only; individual games and future rights need confirmation.",
+   "source": "https://www.mlb.com/giants/schedule/watch"
+  },
+  {
+   "sport": "Giants \u00b7 Spanish MLB",
+   "station": "KSFN 1510 AM / 99.3 FM",
+   "evidence": "Official Spanish flagship listing",
+   "limitation": "Game-specific carriage and reception not verified.",
+   "source": "https://www.mlb.com/giants/schedule/watch"
+  },
+  {
+   "sport": "Athletics \u00b7 MLB",
+   "station": "KNEW 960 AM",
+   "evidence": "Listed as Bay Area terrestrial affiliate",
+   "limitation": "No blanket claim that every spring-training game airs; future rights unconfirmed.",
+   "source": "https://www.mlb.com/athletics/schedule/affiliates"
+  },
+  {
+   "sport": "49ers \u00b7 NFL",
+   "station": "KSAN 107.7 FM / KNBR 680 AM / 104.5 FM",
+   "evidence": "Upcoming team schedule lists these stations",
+   "limitation": "Pregame starts earlier than kickoff; postgame end is unknown.",
+   "source": "https://www.49ers.com/schedule/"
+  },
+  {
+   "sport": "Stanford \u00b7 NCAAF",
+   "station": "KTCT / KNBR 1050 AM",
+   "evidence": "2026 team radio announcement",
+   "limitation": "Season partner; exact future game-by-game carriage unverified.",
+   "source": "https://gostanford.com/news/2026/07/30/2026-football-radio-broadcast-team-announced"
+  },
+  {
+   "sport": "California \u00b7 NCAAF",
+   "station": "KSFO 810 AM; Big Game: KNBR 680 AM / 104.5 FM",
+   "evidence": "2026 schedule lists game-specific radio",
+   "limitation": "Big Game differs from the usual station; kickoff still TBD.",
+   "source": "https://calbears.com/sports/football/schedule/2026"
+  },
+  {
+   "sport": "Warriors \u00b7 NBA \u00b7 high priority",
+   "station": "KGMZ 95.7 FM",
+   "evidence": "Official upcoming schedule lists KGMZ-FM",
+   "limitation": "Additional busy-time sport. No guarantee of reception inside a particular 94122 home.",
+   "source": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "sport": "Westwood One \u00b7 NFL and other sports",
+   "station": null,
+   "evidence": "National schedule verified; station finder lists KNBR-AM, KNBR-FM and KTCT-AM in its NFL Regular Season (2025) section. HD-only KNBR-F2 excluded.",
+   "limitation": "Historical affiliation only. 2026 game-specific local assignments remain blank; affiliate conflicts and blackouts are explicitly noted.",
+   "source": "https://www.westwoodonesports.com/station-finder/"
+  },
+  {
+   "sport": "Stanford \u00b7 other sports",
+   "station": null,
+   "evidence": "Historical 2013 source lists KZSU 90.1 FM and other sports",
+   "limitation": "Historical only: current carriage and Outer Sunset reception unverified; no fixtures imported.",
+   "source": "https://gostanford.com/news/2013/04/17/radio-information"
+  },
+  {
+   "sport": "California \u00b7 Men's Basketball (NCAAM)",
+   "station": "KSFO 810 AM",
+   "evidence": "All 32 regular-season 2026\u201327 games explicitly list Radio: KSFO 810 AM (including Feb 17, 2027 at Pitt)",
+   "limitation": "Postseason ACC/NCAA tournament game-level carriage unverified.",
+   "source": "https://calbears.com/sports/mens-basketball/schedule/2026-27"
+  },
+  {
+   "sport": "San Francisco (USF Dons) \u00b7 Men's Basketball (NCAAM)",
+   "station": "KTCT / KNBR 1050 AM",
+   "evidence": "Official USF game releases name KNBR 1050; 2026\u201327 home rows link to thesportsleader.com",
+   "limitation": "Road/neutral rows without an explicit Listen link keep station blank until posted.",
+   "source": "https://usfdons.com/sports/mens-basketball/schedule/2026-27"
+  },
+  {
+   "sport": "Golden State Valkyries \u00b7 WNBA",
+   "station": "KGMZ 95.7 FM",
+   "evidence": "Multi-year flagship partnership for all home games and select road games (May\u2013Sep)",
+   "limitation": "2027\u20132029 WNBA regular-season schedules not yet published.",
+   "source": "https://valkyries.wnba.com/news/valkyries-announce-audacy-as-radio-partner-20250514"
+  },
+  {
+   "sport": "San Jose Earthquakes \u00b7 MLS",
+   "station": "KSFO 810 AM (English) / KZSF 1370 AM (Spanish)",
+   "evidence": "Official 2026 radio partner announcement (select overflow on KNBR 680 / KTCT 1050)",
+   "limitation": "2027\u20132029 MLS schedules and future rights not yet published.",
+   "source": "https://www.sjearthquakes.com/news/news-earthquakes-announce-radio-stations-for-2026-mls-season"
+  },
+  {
+   "sport": "San Jose Sharks \u00b7 NHL (digital-only)",
+   "station": null,
+   "evidence": "Moved exclusively to Sharks Audio Network digital stream/app in January 2021",
+   "limitation": "Excluded from standard terrestrial AM/FM conflicts in 94122.",
+   "source": "https://www.nhl.com/sharks/news/sharks-announce-launch-of-sharks-audio-network-320033246"
+  },
+  {
+   "sport": "Stanford \u00b7 Men's Basketball (digital/satellite)",
+   "station": null,
+   "evidence": "Moved off KNBR 1050 AM in 2017\u201318 to GoStanford.com, Varsity Network and SiriusXM",
+   "limitation": "Excluded from standard terrestrial AM/FM conflicts unless a terrestrial simulcast is announced.",
+   "source": "https://gostanford.com/news/2017/11/09/enhanced-basketball-coverage"
+  }
+ ],
+ "sources": [
+  {
+   "name": "MLB official schedule feed",
+   "claim": "Source of imported MLB fixtures, dates, game types and startTimeTBD flag. All returned records retained, including canceled or postponed games.",
+   "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-01-01&endDate=2027-12-31"
+  },
+  {
+   "name": "2027 schedule release \u00b7 Orioles",
+   "claim": "Official release dated July 16, 2026 confirms 2027 regular-season schedule publication.",
+   "source": "https://www.mlb.com/press-release/press-release-orioles-announce-2027-regular-season-schedule"
+  },
+  {
+   "name": "MLB game length",
+   "claim": "MLB reports 2025 average game time of 2 hours 38 minutes. This is a historical mean, not a guaranteed broadcast end.",
+   "source": "https://www.mlb.com/press-release/press-release-mlb-attendance-reaches-71-4-million-three-straight-years-of-growth-for-first-time-since-2007"
+  },
+  {
+   "name": "NFL important dates",
+   "claim": "Lists January 2027 postseason windows and Super Bowl LXI on February 14, 2027. No kickoff entered without verification.",
+   "source": "https://operations.nfl.com/calendar-events/nfl-important-dates"
+  },
+  {
+   "name": "49ers schedule",
+   "claim": "Upcoming game dates, kickoff times and local AM/FM assignments. Week 18 date remains blank.",
+   "source": "https://www.49ers.com/schedule/"
+  },
+  {
+   "name": "49ers radio coverage",
+   "claim": "Official page describes a three-hour pregame show and postgame coverage. These extend beyond the game itself; exact postgame end unknown.",
+   "source": "https://www.49ers.com/fans/tv-radio"
+  },
+  {
+   "name": "Cal football schedule",
+   "claim": "November 2026 games and station assignments. Big Game and Pittsburgh times blank when not published.",
+   "source": "https://calbears.com/sports/football/schedule/2026"
+  },
+  {
+   "name": "Stanford football schedule",
+   "claim": "Virginia Tech time is presented as 4 OR 4:30 P.M.; kept blank rather than choosing one. Big Game deduplicated with Cal.",
+   "source": "https://gostanford.com/sports/football/schedule"
+  },
+  {
+   "name": "Westwood One NFL schedule",
+   "claim": "46 upcoming network broadcast slots transcribed for November 2026\u2013January 2027, including TBA slots. Network airtime is not kickoff.",
+   "source": "https://www.westwoodonesports.com/nfl-schedule/"
+  },
+  {
+   "name": "Westwood One other sports",
+   "claim": "Oregon at Ohio State, November 7, 2026 at 3 PM ET. Local AM/FM carriage not established.",
+   "source": "https://www.westwoodonesports.com/events/557143"
+  },
+  {
+   "name": "Westwood One station finder",
+   "claim": "Explicitly warns of local blackouts and programming conflicts. Covers football, basketball, soccer, golf, baseball, softball, lacrosse and hockey.",
+   "source": "https://www.westwoodonesports.com/station-finder/"
+  },
+  {
+   "name": "Warriors schedule",
+   "claim": "Additional live local radio sport; upcoming official schedule lists KGMZ-FM.",
+   "source": "https://www.nba.com/warriors/schedule"
+  },
+  {
+   "name": "NFL official schedule data",
+   "claim": "2026 official schedule pages parsed for 321 unique game IDs: 49 preseason and 272 regular-season fixtures. Known times converted from ISO timestamps; unknown dates stay blank. League-wide future coverage and local radio remain unresolved.",
+   "source": "https://www.nfl.com/schedules/2026/by-week/week-1"
+  },
+  {
+   "name": "Cal 2027 conference and nonconference announcement",
+   "claim": "Nine ACC opponents and home/away assignments announced; dates and times to follow. Nonconference dates: August 28 Sacramento State, September 4 at UCLA, September 11 Old Dominion. Kickoff and radio remain blank.",
+   "source": "https://calbears.com/news/2026/9/16/california-football-announces-2027-conference-opponents"
+  },
+  {
+   "name": "MLB 2027 season milestones",
+   "claim": "Home Run Derby July 12; All-Star Game July 13; second half July 15. All-Star break is not a multi-day sports-free vacation.",
+   "source": "https://www.mlb.com/news/mlb-2027-schedule-released"
+  },
+  {
+   "name": "NBA All-Star 2027",
+   "claim": "Phoenix hosts February 19\u201321, 2027. This does not establish Warriors regular-season silence February 15\u201318.",
+   "source": "https://www.nba.com/news/phoenix-suns-nba-all-star-2027-official-release"
+  },
+  {
+   "name": "NFL Pro Bowl game discontinued (Aug 26, 2026)",
+   "claim": "Official NFL announcement confirms that starting with the 2026 season (2027 Pro Bowl class), the AFC-NFC Pro Bowl game will no longer be staged.",
+   "source": "https://www.nfl.com/news/nfl-elevates-pro-bowl-selection-game-s-will-cease-being-contested"
+  },
+  {
+   "name": "Golden State Warriors full 2026\u201327 schedule",
+   "claim": "All remaining regular-season games through April 11, 2027 verified with game-level NBA.com links, proving Feb 15 vs Pacers and Feb 17 vs Pelicans air during the post-Super Bowl week.",
+   "source": "https://www.nba.com/schedule/warriors?cal=February"
+  },
+  {
+   "name": "California 2026\u201327 Men's Basketball schedule",
+   "claim": "All 32 regular-season games (Nov 2, 2026\u2013Mar 6, 2027) explicitly list Radio: KSFO 810 AM, including Feb 17, 2027 at Pittsburgh (4:00 PM PST).",
+   "source": "https://calbears.com/sports/mens-basketball/schedule/2026-27"
+  },
+  {
+   "name": "USF Dons 2026\u201327 Men's Basketball schedule",
+   "claim": "32 regular-season games verified on USF Athletics; home games link directly to KNBR/thesportsleader.com (KNBR 1050 AM).",
+   "source": "https://usfdons.com/sports/mens-basketball/schedule/2026-27"
+  },
+  {
+   "name": "Stanford 2027 ACC opponents & Notre Dame extension",
+   "claim": "Sep 16, 2026 9-game ACC opponent release (Home: Cal, Duke, UNC, Syracuse, Virginia; Away: BC, Clemson, FSU, SMU) plus May 20, 2026 Notre Dame dates (Nov 27, 2027; Oct 14, 2028).",
+   "source": "https://gostanford.com/news/2026/09/16/acc-announces-2027-conference-opponents"
+  },
+  {
+   "name": "Westwood One NCAA Football & U.S. Soccer",
+   "claim": "Six upcoming 2026 NCAAF national broadcasts (Nov 7\u2013Dec 12, including SEC Championship and Army-Navy) plus Nov 17 USMNT vs Haiti.",
+   "source": "https://www.westwoodonesports.com/ncaa-football/"
+  },
+  {
+   "name": "MLB 2027 Spring Training opener",
+   "claim": "All 30 clubs open 2027 Spring Training on Friday, Feb 19, 2027 (announced Sep 4, 2026); official club releases on mlb.com/press-release confirm Feb 19 openers.",
+   "source": "https://www.mlb.com/press-release/press-release-brewers-announce-2027-spring-training-schedule"
+  },
+  {
+   "name": "MLB average game length 2025",
+   "claim": "Official MLB.com report: average nine-inning game in 2025 was 2 hours 38 minutes, third straight season at or under 2:40. Historical mean used only in the labeled planning overlay.",
+   "source": "https://www.mlb.com/news/mlb-average-game-time-under-three-hours-third-straight-year"
+  },
+  {
+   "name": "NFL important dates 2026-27 (team-carried release)",
+   "claim": "NFL release carried on official club site: kickoff Sep 9, 2026; Wild Card Jan 16-18, 2027; championships Jan 31, 2027; Super Bowl LXI Feb 14, 2027 at SoFi Stadium.",
+   "source": "https://www.seahawks.com/news/nfl-announces-important-dates-for-2026-2027"
+  },
+  {
+   "name": "Super Bowl LXII announcement",
+   "claim": "NFL announced Oct 15, 2024 that Super Bowl LXII will be played Feb 13, 2028 at Mercedes-Benz Stadium, Atlanta. 2029 (LXIII, Las Vegas) date not yet announced.",
+   "source": "https://media.nfl.com/news-and-releases/corporate-communications/atlanta-to-host-super-bowl-lxii-in-2028"
+  },
+  {
+   "name": "49ers-KNBR extension through 2030",
+   "claim": "Cumulus Media release Apr 15, 2026: KNBR 680 AM/104.5 FM remains 49ers flagship via multi-year extension through the 2030 season; KSAN 107.7 FM and KSFO 810 AM also carry games. Notes KNBR 1050 is carried as HD3 channel KTCT/1050.",
+   "source": "https://www.cumulusmedia.com/2026/04/15/san-francisco-49ers-announce-multi-year-partnership-extension-with-cumulus-medias-knbr/"
+  },
+  {
+   "name": "Westwood One 40th season of NFL coverage",
+   "claim": "2026 NFL radio package: Kickoff game Sep 9, 2026, TNF/SNF/MNF, 8 international games, Thanksgiving, Black Friday, Christmas, late-season Saturdays, full postseason, Super Bowl LXI Feb 14, 2027 (Westwood One radio).",
+   "source": "https://news.radio-online.com/articles/n49383/Westwood-One-Sets-40th-Season-of-NFL-Coverage"
+  },
+  {
+   "name": "2028 MLB All-Star Game awarded to Giants / Oracle Park (Aug 14, 2026)",
+   "claim": "Official MLB release awards the 2028 All-Star Game and All-Star Week to the San Francisco Giants at Oracle Park. The release does not fix the game date; press reports give Jul 11 or Jul 12, 2028 (both candidate dates are blocked in the model).",
+   "source": "https://www.mlb.com/news/release-mlb-awards-the-2028-all-star-game-presented-by-mastercard-to-the-san-francisco-giants"
+  },
+  {
+   "name": "LA28 Olympic baseball competition schedule (Dodger Stadium)",
+   "claim": "Olympic baseball at Dodger Stadium is scheduled around Jul 13-20, 2028. Published LA28/WBSC/NBC schedules differ slightly on the first and last competition day; MLB player participation in the Olympics is not yet agreed.",
+   "source": "https://www.nbcolympics.com/news/baseball-2028-los-angeles-olympics"
+  },
+  {
+   "name": "Super Bowl LXIII awarded to Las Vegas / Allegiant Stadium (Mar 30, 2026)",
+   "claim": "NFL announcement at the 2026 Annual Meeting (via LVCVA release) that Las Vegas hosts Super Bowl LXIII in 2029. The game date is not yet set; the model uses an estimated Feb 11, 2029 (customary second Sunday of February).",
+   "source": "https://www.prnewswire.com/news-releases/super-bowl-returns-to-las-vegas-in-2029-302729218.html"
+  },
+  {
+   "name": "MLB CBA expiration and 2027 season risk (press, Nov 2026)",
+   "claim": "MLB's collective bargaining agreement expires 11:59 p.m. ET Dec 1, 2026; owners have signaled a lockout absent a deal, and on Nov 3, 2026 MLB proposed phasing any salary-cap system in by 2028. A stoppage could delay or shorten the 2027 spring training and regular season. Press-sourced; not an official league publication.",
+   "source": "https://sports.yahoo.com/articles/latest-mlb-proposal-players-pushes-231147442.html"
+  }
+ ],
+ "flags": [
+  {
+   "id": "F01",
+   "title": "No certified vacation window",
+   "detail": "No 7-, 14- or 21-day sports-free trip can currently be certified for 2027\u20132029. Coverage of all requested leagues and local broadcasts is incomplete. Empty results are unknown, never free.",
+   "source": "https://www.westwoodonesports.com/station-finder/"
+  },
+  {
+   "id": "F02",
+   "title": "2028\u20132029 schedule coverage",
+   "detail": "MLB feed returned zero games for these calendar years at collection. This does not establish that no games will occur, or that no official dates exist elsewhere. NFL and college-football future full schedules are not verified here. Dates remain blank.",
+   "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2028-01-01&endDate=2029-12-31"
+  },
+  {
+   "id": "F03",
+   "title": "NFL future and special-event coverage incomplete",
+   "detail": "Official 2026 NFL pages yielded 321 distinct game records: 272 regular-season and 49 preseason fixtures. On August 26, 2026, NFL.com officially announced that the AFC-NFC Pro Bowl game will no longer be staged starting with the 2026 season (2027 class). 2027\u20132029 regular-season NFL fixtures and complete postseason game-level kickoffs remain unverified. Unknown dates remain unplaced.",
+   "source": "https://www.nfl.com/news/nfl-elevates-pro-bowl-selection-game-s-will-cease-being-contested"
+  },
+  {
+   "id": "F04",
+   "title": "Westwood One local carriage unresolved",
+   "detail": "All 46 upcoming NFL slots visible on the reviewed national page were transcribed, but their Bay Area affiliate assignments were not verified. General Westwood One Sports talk programming is not live play-by-play. No national slot is labeled confirmed local radio without separate evidence.",
+   "source": "https://www.westwoodonesports.com/nfl-schedule/"
+  },
+  {
+   "id": "F05",
+   "title": "Broadcast end times are unknown",
+   "detail": "MLB 158-minute historical average is used only in a separate planning overlay. NFL/NCAAF 180-minute and NBA 150-minute overlays are assumptions, not verified average durations. They include halftime, not added twice. Overtime, delays, pregame and postgame can extend the conflict.",
+   "source": "https://www.mlb.com/press-release/press-release-mlb-attendance-reaches-71-4-million-three-straight-years-of-growth-for-first-time-since-2007"
+  },
+  {
+   "id": "F06",
+   "title": "Pregame and postgame coverage",
+   "detail": "49ers official partner page describes a three-hour pregame show. Radio-mode calculations include that lead-in for game-specific 49ers records; postgame ends and other teams\u2019 pregame coverage remain unknown. No exact on-air free minute can be certified.",
+   "source": "https://www.49ers.com/fans/tv-radio"
+  },
+  {
+   "id": "F07",
+   "title": "TBD is not midnight",
+   "detail": "MLB startTimeTBD records have no verified start. Placeholder timestamps are discarded. Unknown-time fixtures make the entire calendar date uncertain; 49ers Week 18 also has an unknown date.",
+   "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-01-01&endDate=2027-12-31"
+  },
+  {
+   "id": "F08",
+   "title": "Stanford ambiguous kickoff",
+   "detail": "Stanford\u2013Virginia Tech is listed as 4 OR 4:30 P.M. on November 14. No single time is chosen; official time field stays blank.",
+   "source": "https://gostanford.com/sports/football/schedule"
+  },
+  {
+   "id": "F09",
+   "title": "Additional local sports coverage incomplete",
+   "detail": "Warriors games are high priority. Their schedule import is partial. Stanford basketball and KZSU sports, Westwood One basketball, golf, soccer and NCAA championships require current event-level local carriage research. Other Bay Area live sports cannot yet be ruled out.",
+   "source": "https://www.westwoodonesports.com/station-finder/"
+  },
+  {
+   "id": "F10",
+   "title": "94122 reception is not guaranteed",
+   "detail": "Official affiliation establishes a broadcast outlet, not reception at a specific address. Terrain, building construction, antenna and interference matter. Internet streams, satellite and HD-only subchannels do not qualify as ordinary AM/FM reception.",
+   "source": "https://www.mlb.com/athletics/schedule/affiliates"
+  },
+  {
+   "id": "F11",
+   "title": "Season affiliation \u2260 game confirmation",
+   "detail": "Giants, Athletics and Stanford station listings are shown in the radio guide, not automatically copied onto every game. Spring-training carriage, preemptions and future rights are unverified.",
+   "source": "https://www.mlb.com/giants/schedule/watch"
+  },
+  {
+   "id": "F12",
+   "title": "Future postseason and special events",
+   "detail": "2027 MLB feed currently contains no postseason games. All-Star Game is present, but the Home Run Derby and every other special event are not comprehensively covered by the game feed. A normal schedule gap is not proof of no programming.",
+   "source": "https://www.mlb.com/events"
+  },
+  {
+   "id": "F13",
+   "title": "No synthetic fixtures",
+   "detail": "The final instruction to leave unconfirmed fields blank takes precedence over the earlier request to estimate unreleased schedules. No invented opponents, dates or TBD kickoff times are inserted. Duration estimates live only in the labeled planning overlay.",
+   "source": "https://www.nfl.com/schedules/"
+  },
+  {
+   "id": "F15",
+   "title": "Conflicting earlier-session all-clear claims",
+   "detail": "Preserved root windows.html, summary.html and data/calendar.json contain earlier-session verified/all-clear labels for July 12\u201314, 2027 and February 15\u201318, 2027. The July 13 All-Star Game directly contradicts the July all-clear claim. February\u2019s four dates are not certified against Warriors or all other radio sports. Their 2028\u20132029 scenarios and assertion that no trip exists are not verified conclusions. Additive notices link these pages here; original work is preserved for review.",
+   "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=2027-07-13"
+  },
+  {
+   "id": "F16",
+   "title": "Repeated MLB game IDs in source history",
+   "detail": "The 2026 full-year feed repeats some game IDs for postponed/rescheduled or suspended/resumed appearances. Source occurrences are retained with distinct record IDs, not counted as distinct matchups. Canceled, postponed and suspended entries do not create modeled intervals; official game IDs and source URLs are preserved.",
+   "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2026-01-01&endDate=2026-12-31"
+  },
+  {
+   "id": "F17",
+   "title": "July all-clear claim corrected",
+   "detail": "Root summary/windows previously called July 12\u201314, 2027 free despite Derby July 12 and ASG July 13. Corrected to July 14 candidate only; local radio silence remains unverified.",
+   "source": "https://www.mlb.com/news/mlb-2027-schedule-released"
+  },
+  {
+   "id": "F18",
+   "title": "Winter anchor gap is not radio silence",
+   "detail": "February 15\u201318, 2027 lies between NFL and MLB anchors. Other radio sports, Warriors games and local carriage remain incomplete. No 7/14/21-day window is certified; future absence is not proven.",
+   "source": "https://operations.nfl.com/calendar-events/nfl-important-dates"
+  },
+  {
+   "id": "F19",
+   "title": "Future Super Bowl exact dates require official confirmation",
+   "detail": "Atlanta 2028 host verified from NFL announcement; exact date not established by that page. Earlier coordination log references secondary date reporting, not sufficient official verification. Keep exact future dates unverified.",
+   "source": "https://www.nfl.com/news/mercedes-benz-stadium-in-atlanta-to-host-super-bowl-lxii-in-2028"
+  },
+  {
+   "id": "F20",
+   "title": "Superseded 2023 Stanford ACC opponent list in legacy source log",
+   "detail": "Legacy research/sources.md cited an October 2023 8-game ACC model placing Stanford at Virginia Tech in 2027. Stanford's September 16, 2026 9-game ACC announcement supersedes that model (Home: Cal, Duke, UNC, Syracuse, Virginia; Away: BC, Clemson, Florida State, SMU), and Stanford's May 20, 2026 release adds Notre Dame on Nov 27, 2027 and Oct 14, 2028.",
+   "source": "https://gostanford.com/news/2026/09/16/acc-announces-2027-conference-opponents"
+  },
+  {
+   "id": "F21",
+   "title": "February 15 and February 17, 2027 confirmed occupied on SF AM/FM radio",
+   "detail": "Full 2026\u201327 Golden State Warriors (KGMZ 95.7 FM), California Men's Basketball (KSFO 810 AM), and USF Dons Men's Basketball (KNBR 1050 AM) schedules prove Monday, Feb 15 (Pacers at Warriors, 4:30 PM PST) and Wednesday, Feb 17 (Cal at Pitt 4:00 PM PST + Pelicans at Warriors 7:00 PM PST + USF at LMU) carry active Bay Area sports broadcasts.",
+   "source": "https://calbears.com/sports/mens-basketball/schedule/2026-27"
+  },
+  {
+   "id": "F22",
+   "title": "Stanford 2027 opponent list corrected (supersedes 2023 model)",
+   "detail": "The preserved root research/sources.md cites the 2023 ACC eight-game model (away: Virginia Tech). The ACC's Sep 16, 2026 announcement for the nine-game 2027 slate lists Stanford home: California, Duke, UNC, Syracuse, Virginia; away: Boston College, Clemson, SMU, Florida State. The 2026 announcement supersedes the older model; game dates remain TBD. (Complements F20, which covers the same correction from the audit session.)",
+   "source": "https://gostanford.com/news/2026/09/16/acc-announces-2027-conference-opponents"
+  },
+  {
+   "id": "F23",
+   "title": "2027 All-Star break: feed vs press",
+   "detail": "The official 2027 MLB feed contains the All-Star Game on Jul 13 and no game rows on Jul 14 or Jul 15 (full 15-game slate resumes Jul 16). Press coverage says the second half opens Thu Jul 15 with a single ESPN game that does not appear in the imported feed rows. Conservatively: Jul 13 busy, Jul 14 game-free in the feed, Jul 15 uncertain. Earlier Jul 12-14 all-clear claims remain contradicted (F15/F17).",
+   "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-07-10&endDate=2027-07-17"
+  },
+  {
+   "id": "F24",
+   "title": "Super Bowl LXII date Feb 13, 2028 is officially announced",
+   "detail": "Reconciled 2026-11-05: the NFL's Oct 15, 2024 release (media.nfl.com) announced Atlanta/Mercedes-Benz Stadium as the host but did not state a date. The game date Feb 13, 2028 was announced Jul 24, 2026 by the host stadium (Mercedes-Benz Stadium) and ESPN's Adam Schefter; nfl.com's Super Bowl table still showed TBA on 2026-11-05. Treat Feb 13, 2028 as the planning anchor with this evidence chain recorded (see also F19 and F31).",
+   "source": "https://media.nfl.com/news-and-releases/corporate-communications/atlanta-to-host-super-bowl-lxii-in-2028"
+  },
+  {
+   "id": "F25",
+   "title": "KNBR 1050 HD3 carriage nuance (Stanford)",
+   "detail": "Cumulus' Apr 15, 2026 release describes KNBR 1050 programming as carried on HD3 channel KTCT/1050. An HD3 subchannel is not the main AM carrier; whether a standard AM/FM radio in 94122 receives it depends on the receiver. Stanford's affiliate listing remains KNBR 1050, but reception stays covered by F10.",
+   "source": "https://www.cumulusmedia.com/2026/04/15/san-francisco-49ers-announce-multi-year-partnership-extension-with-cumulus-medias-knbr/"
+  },
+  {
+   "id": "F26",
+   "title": "2027 MLB start times mostly TBD; CBA risk",
+   "detail": "1,930 of 2,901 imported 2027 MLB feed records have no start time (TBD), so day-level free-minute estimates for 2027 are planning overlays only (F07). Press coverage also notes the MLB CBA expires in Dec 2026 and a work stoppage could shift 2027 dates; 2027 anchors are re-checked at each release.",
+   "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-01-01&endDate=2027-12-31"
+  },
+  {
+   "id": "F27",
+   "title": "MLB CBA expires Dec 1, 2026 \u2014 2027 schedule carries work-stoppage risk",
+   "detail": "As of 2026-11-05 the MLB CBA expires Dec 1, 2026 and press reports expect a lockout if no deal is reached; MLB proposed on Nov 3, 2026 to delay any salary cap to 2028. If a stoppage delays spring training or Opening Day 2027, the official 2027 rows (already released by MLB) and every estimate on this site shift accordingly. Re-check anchors before booking.",
+   "source": "https://sports.yahoo.com/articles/latest-mlb-proposal-players-pushes-231147442.html"
+  },
+  {
+   "id": "F28",
+   "title": "2028 MLB All-Star Game at Oracle Park \u2014 exact date tentative",
+   "detail": "MLB officially awarded the 2028 All-Star Game and All-Star Week to the Giants/Oracle Park on Aug 14, 2026, but the release did not fix the game date. Press reports give Tuesday Jul 11 or Wednesday Jul 12, 2028. The model blocks both candidate dates plus the Home Run Derby window.",
+   "source": "https://www.mlb.com/news/release-mlb-awards-the-2028-all-star-game-presented-by-mastercard-to-the-san-francisco-giants"
+  },
+  {
+   "id": "F29",
+   "title": "LA28 Olympic baseball (Jul 13-20, 2028) \u2014 MLB pause scenario is not confirmed",
+   "detail": "Olympic baseball at Dodger Stadium is on the published LA28 schedule (approx. Jul 13-20, 2028). Whether MLB pauses its season so players can participate is NOT decided (press scenarios describe a break around the All-Star Game with the second half resuming ~Jul 21, 2028). If MLB pauses, an approximately 8-day core-scope window appears (Jul 13-20, 2028); if MLB plays through, those dates are busy and the window closes. SF terrestrial radio carriage of Olympic baseball is unverified. Olympic rows are excluded from the core 4-category scope and shown as a separate league.",
+   "source": "https://www.nbcolympics.com/news/baseball-2028-los-angeles-olympics"
+  },
+  {
+   "id": "F30",
+   "title": "2028-2029 fixtures are labeled estimates, never released schedules",
+   "detail": "All rows generated by scripts/season_estimates.py carry status 'Estimate \u2014 not an officially released schedule' (or an announced-anchor status), an ESTIMATED typical window basis, and a source link to the official league hub used as the verification target. MLB has not released a 2028+ schedule; the NFL releases each season's schedule the preceding spring; Stanford/Cal and Westwood One game-level listings exist only one season ahead. Estimate rows must be replaced with official records when leagues publish.",
+   "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2028-01-01&endDate=2028-12-31"
+  },
+  {
+   "id": "F31",
+   "title": "Super Bowl LXII date evidence chain (Feb 13, 2028)",
+   "detail": "nfl.com's Super Bowl news page (checked 2026-11-05) lists Super Bowl LXII at Mercedes-Benz Stadium with date TBA. The Feb 13, 2028 date was announced Jul 24, 2026 by the host stadium (Mercedes-Benz Stadium official account) and ESPN's Adam Schefter. The model uses Feb 13, 2028 as the 2028 winter-gap anchor with this chain recorded; if the NFL publishes a different date, the February 2028 candidate window moves.",
+   "source": "https://www.nfl.com/news/mercedes-benz-stadium-in-atlanta-to-host-super-bowl-lxii-in-2028"
+  },
+  {
+   "id": "F32",
+   "title": "Super Bowl LXIII (2029) date is an estimate",
+   "detail": "Las Vegas/Allegiant Stadium was awarded Super Bowl LXIII on Mar 30, 2026 (NFL Annual Meeting; LVCVA release). No game date has been announced. The model uses Feb 11, 2029 (customary second Sunday of February) strictly as an estimate; the February 2029 candidate window depends on it.",
+   "source": "https://www.prnewswire.com/news-releases/super-bowl-returns-to-las-vegas-in-2029-302729218.html"
+  }
+ ]
 }

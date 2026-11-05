@@ -1,4 +1,4 @@
-import test from 'node:test';import assert from 'node:assert/strict';import {mergeIntervals,complement,dayAnalysis,midnight,shiftDate,dateKey,todayPacific} from '../site/engine.mjs';
+import test from 'node:test';import assert from 'node:assert/strict';import {mergeIntervals,complement,dayAnalysis,midnight,shiftDate,dateKey,todayPacific,span,clearRuns} from '../site/engine.mjs';
 test('merge overlapping and touching intervals without mutating input',()=>{let a=[[4,6],[1,3],[3,5],[9,10]];assert.deepEqual(mergeIntervals(a),[[1,6],[9,10]]);assert.equal(a[0][0],4);});
 test('union complement and clipping',()=>assert.deepEqual(complement([[-5,2],[4,7],[6,9],[20,25]],0,10),[[2,4],[9,10]]));
 test('empty day is not certified free',()=>{let a=dayAnalysis([],'2027-01-01');assert.equal(a.certifiedFree,false);assert.equal(a.gaps.length,1);});
@@ -11,3 +11,5 @@ test('current planner date follows Pacific midnight, not the browser UTC date',(
 test('overnight event carries into next day',()=>{let a=dayAnalysis([{id:'x',league:'MLB',start:'2027-01-01T23:00:00-08:00'}],'2027-01-02');assert.equal((a.busy[0][1]-a.start)/60000,98);});
 test('canceled and postponed events are not busy',()=>{for(let status of ['Cancelled','Postponed'])assert.equal(dayAnalysis([{id:'x',league:'MLB',date:'2027-01-01',start:'2027-01-01T12:00:00-08:00',status}],'2027-01-01').busy.length,0);});
 test('49ers radio pregame and halftime not double counted',()=>{let a=dayAnalysis([{id:'sf-test',league:'NFL',date:'2027-01-01',start:'2027-01-01T12:00:00-08:00'}],'2027-01-01',true);assert.equal((a.busy[0][1]-a.busy[0][0])/60000,360);});
+test('explicit estimated window end replaces duration model',()=>{let s=span({id:'e1',league:'MLB',start:'2028-03-29T10:05:00-07:00',windowEnd:'2028-03-29T22:35:00-07:00'});assert.equal((s[1]-s[0])/60000,750);});
+test('clearRuns finds maximal clear stretches and never includes busy days',()=>{const busy=new Set(['2028-02-13','2028-02-18','2028-02-19']);const runs=clearRuns(busy,'2028-02-12','2028-02-20');assert.deepEqual(runs,[{start:'2028-02-12',end:'2028-02-12',days:1},{start:'2028-02-14',end:'2028-02-17',days:4},{start:'2028-02-20',end:'2028-02-20',days:1}]);assert.deepEqual(clearRuns(new Set(),'2029-02-12','2029-02-12'),[{start:'2029-02-12',end:'2029-02-12',days:1}]);assert.deepEqual(clearRuns(new Set(['2029-02-12']),'2029-02-12','2029-02-12'),[]);});

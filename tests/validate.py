@@ -4,7 +4,7 @@ ALLOWED=[
  'statsapi.mlb.com','www.mlb.com','www.nfl.com','media.nfl.com','operations.nfl.com',
  'www.49ers.com','www.westwoodonesports.com','calbears.com','gostanford.com','usfdons.com',
  'www.nba.com','cdn.nba.com','www.sjearthquakes.com','valkyries.wnba.com','www.nhl.com',
- 'www.thesportsleader.com','talk960.iheart.com',
+ 'www.thesportsleader.com','talk960.iheart.com','www.prnewswire.com','www.nbcolympics.com',
 ]
 class Validate(unittest.TestCase):
  def _check_event_row(self,row,ids):
@@ -41,4 +41,22 @@ class Validate(unittest.TestCase):
   data=json.loads((R/'site/data/research.json').read_text())
   for kind in ['sources','stations','flags']:
    for row in data[kind]:self.assertTrue(row['source'].startswith('https://'))
+ def test_season_estimates_labeled(self):
+  rows=json.loads((R/'site/data/season-estimates.json').read_text())
+  self.assertGreater(len(rows),500)
+  for r in rows:
+   self.assertTrue(r.get('estimation'),r['id'])
+   self.assertIsNone(r.get('station'),r['id'])
+   self.assertTrue(r.get('note'),r['id'])
+   if r['status'].startswith('Estimate'):
+    self.assertIn('ESTIMATED',r['timeBasis'],r['id'])
+   if r['id'].startswith('anchor-'):
+    self.assertFalse(r['status'].startswith('Estimate'),r['id'])
+ def test_estimates_do_not_shadow_verified_ids(self):
+  est=json.loads((R/'site/data/season-estimates.json').read_text())
+  for name in ['mlb-2026.json','mlb-2027.json','nfl-2026.json','curated.json','expanded-official.json']:
+   data=json.loads((R/'site/data'/name).read_text())
+   rows=data['events'] if isinstance(data,dict) else data
+   known={r['id'] for r in rows if 'id' in r}
+   for r in est:self.assertNotIn(r['id'],known)
 if __name__=='__main__':unittest.main()
