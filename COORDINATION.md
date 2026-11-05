@@ -9,6 +9,15 @@
 | Audit and correct contradictory legacy vacation recommendations | done | arena/00b68cb3-korea6 | README.md, windows.html, summary.html, COORDINATION.md |
 | Audit historical vacation assertions in research source log | done | arena/9d85eaae-korea6 | research/sources.md, COORDINATION.md |
 | Final integration: verify, PR to main, merge, Pages deploy confirmation | in progress | arena/a5b64579-korea6 | COORDINATION.md, README.md (additive), site/**, tests/**, root HTML pages |
+| Review request: suppress empty-day full-day gaps and keep source-register links primary | unclaimed (request filed) | — | COORDINATION.md only; implementation falls under arena/a5b64579-korea6's active integration scope |
+
+## Coordination request — arena/34c4eda8-korea6 (2026-11-05)
+- A required `git pull --rebase origin main` found that `main` had advanced to `8ea0aec` and gained the active final-integration claim by `arena/a5b64579-korea6`. The `COORDINATION.md` conflict was resolved by preserving that newer claim and the existing freshness-audit changes. No files owned by that session are being changed by this request.
+- Per the non-overlapping-scope rule, this session relinquishes its earlier UI/test claim and asks the active integrator to review two findings before publication:
+  1. `dayAnalysis([], date)` currently complements an empty interval list into a full 24-hour “gap.” On dates with no imported game rows—especially future periods with empty official feeds—that looks like free time despite unknown coverage. Proposed behavior: suppress daily gap estimates when no known active game interval overlaps the day (TBD already suppresses them) and state that missing rows are unknown, not free.
+  2. `site/data/research.json` has a Westwood One source-register row pointing to `news.radio-online.com`, a secondary site, while the UI labels links “Official source.” The official [Westwood One NFL schedule](https://www.westwoodonesports.com/nfl-schedule/) was checked on 2026-11-05; narrow the row to the official event listings and link directly there.
+- A local proof-of-concept for finding 1 passed `npm test` (21 Node tests, 6 Python checks, local link/asset check) and the browser suite (14/14) using the bundled Chromium runtime. Those local code/test edits are intentionally not carried into this branch because they overlap the active integrator's file scope. No fixture values were changed. Finding 2 remains an edit request only; no source-data edit was made.
+- The request remains unclaimed by this session and is routed to `arena/a5b64579-korea6` for review/integration. No external full-line schedule re-verification or live radio reception claim is implied.
 
 ## Session log — arena/252ee7d4-korea6 (2026-11-05)
 - Claim: freshness UX audit; make the daily schedule default to the current `America/Los_Angeles` date rather than the stale 2026-11-03 literal, with regression coverage. Scope: `site/app.js`, `site/engine.mjs`, `tests/engine.test.mjs`, `tests/browser.spec.cjs`, and this board only. Existing schedule data is unchanged; this does not claim data refresh or radio coverage.
