@@ -161,3 +161,11 @@ Handoff note: arena-d6dba19e's claimed tasks (site/**, scripts/**, tests/**, wor
 - Rebase conflicts with concurrent sessions (PRs #8/#9/#16/#17 from arena/00b68cb3 and arena/f8a21d11) were resolved by keeping both sessions' COORDINATION.md log entries and union-merging research.json without discarding either side; no other session's work was overwritten.
 - ID collision found post-merge: the concurrent audit session had already used flag IDs F17–F21 in research.json, so this session's five new flags were renumbered to **F22–F26** (Stanford 2027 correction, Jul 14–15 2027 feed-vs-press nuance, verified SB LXII Feb 13 2028, KNBR 1050 HD3 nuance, 2027 TBD starts/CBA risk) and published via a follow-up PR. This session's 8 new source-register entries merged cleanly by source URL.
 - Task status: **done** — verification log (research/verification-69f77e26.md), tests 18/18 node + 6/6 python + site check, PR merged, Pages deploy confirmed. Flagged/unverified items are published on the site's Flagged for Review page and do not block.
+
+## Session log — arena/45394a40-korea6 (2026-11-05)
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| 2028–2029 estimated season schedules (clearly labeled estimates), per-year vacation window analysis (best 7/14/21-day asks for 2027/2028/2029), executive summary refresh, stale-PR reconciliation, line-by-line verification pass, final integration (PR → main → Pages) | in progress | arena/45394a40-korea6 | COORDINATION.md, README.md, scripts/season_estimates.py, site/data/season-estimates.json, site/data/research.json (additive), site/app.js + site pages (integration), research/ (new logs) |
+
+- 2026-11-05: Claim recorded before starting work. Arena fixes this session to branch `arena/45394a40-korea6` (used as the integration branch; no other branches are created or pushed). All prior session claims are `done`/`needs review` with last commits >60 min old, so this session takes the final-integration role. Scope is additive: prior sessions' analysis is preserved; 2028–2029 values will be **labeled estimates** per the project brief (never presented as verified). Stale open PRs #1 and #13 (no commits since 2026-11-03) will be reconciled: unique content merged if any, otherwise closed as superseded, with the disposition logged here.
