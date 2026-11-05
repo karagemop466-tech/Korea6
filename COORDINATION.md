@@ -159,3 +159,13 @@ Handoff note: arena-d6dba19e's claimed tasks (site/**, scripts/**, tests/**, wor
 - Rebase conflicts with concurrent sessions (PRs #8/#9/#16/#17 from arena/00b68cb3 and arena/f8a21d11) were resolved by keeping both sessions' COORDINATION.md log entries and union-merging research.json without discarding either side; no other session's work was overwritten.
 - ID collision found post-merge: the concurrent audit session had already used flag IDs F17–F21 in research.json, so this session's five new flags were renumbered to **F22–F26** (Stanford 2027 correction, Jul 14–15 2027 feed-vs-press nuance, verified SB LXII Feb 13 2028, KNBR 1050 HD3 nuance, 2027 TBD starts/CBA risk) and published via a follow-up PR. This session's 8 new source-register entries merged cleanly by source URL.
 - Task status: **done** — verification log (research/verification-69f77e26.md), tests 18/18 node + 6/6 python + site check, PR merged, Pages deploy confirmed. Flagged/unverified items are published on the site's Flagged for Review page and do not block.
+
+## Session arena/63ee3d13-korea6 — claim (2026-11-05)
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Multi-year (2027/2028/2029) vacation-window analysis: verified anchors re-check, labelled 2028–2029 projections, new "Year windows" page + data, additive review flags, final integration PR/merge/Pages | in progress | arena/63ee3d13-korea6 | `research/sources-63ee3d13.md`, `scripts/projections.py`, `site/data/projections.json`, `site/year-windows.html`, `site/year-windows.js`, additive nav entry in `scripts/pages.py` (regenerated `site/*.html`), additive source/flag rows in `site/data/research.json`, `README.md` (additive section), `COORDINATION.md` |
+
+- 2026-11-05: Repository inspected. `main` is at `10807b2` (PR #19). Remote has only `main`; the two open PRs (#1 `arena/8645d151-korea6`, #13 `arena/b14ac548-korea6`) come from branches that no longer exist on the remote and whose last commits are ~2 days old (>60 min handoff threshold). They are **not** merged by this session because both predate the current `site/` dashboard and PR #13 asserts "VERIFIED" status against non-official sources (topendsports, sportsbrackets.net, academicjobs.com, upintherafters, wikipedia) and repeats a "Jul 12–14, 2027 verified window" that conflicts with the officially scheduled Jul 13, 2027 MLB All-Star Game. They are closed with an explanatory note instead. No other session's published pages are deleted or rewritten.
+- Non-overlap: this session does not edit `site/app.js`, `site/engine.mjs`, `site/core-scope.*`, `scripts/bay_area_expansion.py`, `scripts/seed.py`, `scripts/refresh.py`, `scripts/nfl.py`, or the root legacy HTML pages. All changes are new files plus additive appends.
+
