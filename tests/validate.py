@@ -45,13 +45,17 @@ class Validate(unittest.TestCase):
   rows=json.loads((R/'site/data/season-estimates.json').read_text())
   self.assertGreater(len(rows),500)
   for r in rows:
-   self.assertTrue(r.get('estimation'),r['id'])
-   self.assertIsNone(r.get('station'),r['id'])
+   self.assertTrue(r.get('status'),r['id'])
    self.assertTrue(r.get('note'),r['id'])
-   if r['status'].startswith('Estimate'):
+   self.assertIsNone(r.get('station'),r['id'])
+   if r['id'].startswith('est-'):
+    self.assertTrue(r['estimation'],r['id'])
+    self.assertTrue(r['status'].startswith('Estimate'),r['id'])
     self.assertIn('ESTIMATED',r['timeBasis'],r['id'])
    if r['id'].startswith('anchor-'):
     self.assertFalse(r['status'].startswith('Estimate'),r['id'])
+   if r['estimation'] and r['id']!='anchor-nfl-sb-lxii':
+    self.assertTrue('estimat' in (r['status']+r['note']).lower(),r['id'])
  def test_estimates_do_not_shadow_verified_ids(self):
   est=json.loads((R/'site/data/season-estimates.json').read_text())
   for name in ['mlb-2026.json','mlb-2027.json','nfl-2026.json','curated.json','expanded-official.json']:

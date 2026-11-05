@@ -3373,7 +3373,7 @@
   "timeBasis": "Official date; kickoff TBD",
   "checked": "2026-11-05",
   "note": "Host venue officially announced by the NFL Oct 15, 2024 (media.nfl.com release). The game date Feb 13, 2028 was announced Jul 24, 2026 by the host stadium (Mercedes-Benz Stadium) and ESPN's Adam Schefter; nfl.com's Super Bowl table still showed TBA on 2026-11-05 (flag F24). Kickoff time not set. Westwood One carries the national radio broadcast.",
-  "estimation": true
+  "estimation": false
  },
  {
   "id": "est-mlb-st-2028-02-18",
@@ -5982,7 +5982,7 @@
   "radioSource": null,
   "timeBasis": "ESTIMATED typical window",
   "checked": "2026-11-05",
-  "note": "Official MLB release awards the 2028 All-Star Game to the Giants at Oracle Park (Aug 14, 2026). Game date not finalized in the release; press reports give reported Jul 11. Both candidate dates are blocked pending the official date.",
+  "note": "Official MLB release awards the 2028 All-Star Game to the Giants at Oracle Park (Aug 14, 2026). Game date not finalized in the release; press reports give reported Jul 11; the model treats each date as estimated pending the official announcement, and blocks both candidates.",
   "estimation": true
  },
  {
@@ -6000,11 +6000,11 @@
   "radioSource": null,
   "timeBasis": "ESTIMATED typical window",
   "checked": "2026-11-05",
-  "note": "Official MLB release awards the 2028 All-Star Game to the Giants at Oracle Park (Aug 14, 2026). Game date not finalized in the release; press reports give reported Jul 12. Both candidate dates are blocked pending the official date.",
+  "note": "Official MLB release awards the 2028 All-Star Game to the Giants at Oracle Park (Aug 14, 2026). Game date not finalized in the release; press reports give reported Jul 12; the model treats each date as estimated pending the official announcement, and blocks both candidates.",
   "estimation": true
  },
  {
-  "id": "est-oly-baseball-2028-07-13",
+  "id": "anchor-oly-baseball-2028-07-13",
   "date": "2028-07-13",
   "start": "2028-07-13T10:00:00-07:00",
   "windowEnd": "2028-07-13T22:00:00-07:00",
@@ -6018,11 +6018,11 @@
   "radioSource": null,
   "timeBasis": "Announced session window (times estimated)",
   "checked": "2026-11-05",
-  "note": "Olympic baseball at Dodger Stadium is scheduled around Jul 13-20, 2028 (LA28/WBSC published schedules differ on the exact first/last day). Whether MLB pauses its season for player participation is NOT decided; SF terrestrial radio carriage of Olympic baseball is unverified. This is not an MLB game and is excluded from the core 4-category scope.",
+  "note": "Olympic baseball at Dodger Stadium is scheduled around Jul 13-20, 2028 (LA28/WBSC published schedules differ on the exact first/last day). Whether MLB pauses its season for player participation is NOT decided; SF terrestrial radio carriage of Olympic baseball is unverified. Session times shown are estimated. This is not an MLB game and is excluded from the core 4-category scope.",
   "estimation": true
  },
  {
-  "id": "est-oly-baseball-2028-07-14",
+  "id": "anchor-oly-baseball-2028-07-14",
   "date": "2028-07-14",
   "start": "2028-07-14T10:00:00-07:00",
   "windowEnd": "2028-07-14T22:00:00-07:00",
@@ -6036,11 +6036,11 @@
   "radioSource": null,
   "timeBasis": "Announced session window (times estimated)",
   "checked": "2026-11-05",
-  "note": "Olympic baseball at Dodger Stadium is scheduled around Jul 13-20, 2028 (LA28/WBSC published schedules differ on the exact first/last day). Whether MLB pauses its season for player participation is NOT decided; SF terrestrial radio carriage of Olympic baseball is unverified. This is not an MLB game and is excluded from the core 4-category scope.",
+  "note": "Olympic baseball at Dodger Stadium is scheduled around Jul 13-20, 2028 (LA28/WBSC published schedules differ on the exact first/last day). Whether MLB pauses its season for player participation is NOT decided; SF terrestrial radio carriage of Olympic baseball is unverified. Session times shown are estimated. This is not an MLB game and is excluded from the core 4-category scope.",
   "estimation": true
  },
  {
-  "id": "est-oly-baseball-2028-07-15",
+  "id": "anchor-oly-baseball-2028-07-15",
   "date": "2028-07-15",
   "start": "2028-07-15T10:00:00-07:00",
   "windowEnd": "2028-07-15T22:00:00-07:00",
@@ -6054,11 +6054,11 @@
   "radioSource": null,
   "timeBasis": "Announced session window (times estimated)",
   "checked": "2026-11-05",
-  "note": "Olympic baseball at Dodger Stadium is scheduled around Jul 13-20, 2028 (LA28/WBSC published schedules differ on the exact first/last day). Whether MLB pauses its season for player participation is NOT decided; SF terrestrial radio carriage of Olympic baseball is unverified. This is not an MLB game and is excluded from the core 4-category scope.",
+  "note": "Olympic baseball at Dodger Stadium is scheduled around Jul 13-20, 2028 (LA28/WBSC published schedules differ on the exact first/last day). Whether MLB pauses its season for player participation is NOT decided; SF terrestrial radio carriage of Olympic baseball is unverified. Session times shown are estimated. This is not an MLB game and is excluded from the core 4-category scope.",
   "estimation": true
  },
  {
-  "id": "est-oly-baseball-2028-07-16",
+  "id": "anchor-oly-baseball-2028-07-16",
   "date": "2028-07-16",
   "start": "2028-07-16T10:00:00-07:00",
   "windowEnd": "2028-07-16T22:00:00-07:00",
@@ -6072,11 +6072,11 @@
   "radioSource": null,
   "timeBasis": "Announced session window (times estimated)",
   "checked": "2026-11-05",
-  "note": "Olympic baseball at Dodger Stadium is scheduled around Jul 13-20, 2028 (LA28/WBSC published schedules differ on the exact first/last day). Whether MLB pauses its season for player participation is NOT decided; SF terrestrial radio carriage of Olympic baseball is unverified. This is not an MLB game and is excluded from the core 4-category scope.",
+  "note": "Olympic baseball at Dodger Stadium is scheduled around Jul 13-20, 2028 (LA28/WBSC published schedules differ on the exact first/last day). Whether MLB pauses its season for player participation is NOT decided; SF terrestrial radio carriage of Olympic baseball is unverified. Session times shown are estimated. This is not an MLB game and is excluded from the core 4-category scope.",
   "estimation": true
  },
  {
-  "id": "est-oly-baseball-2028-07-17",
+  "id": "anchor-oly-baseball-2028-07-17",
   "date": "2028-07-17",
   "start": "2028-07-17T10:00:00-07:00",
   "windowEnd": "2028-07-17T22:00:00-07:00",
@@ -6090,11 +6090,11 @@
   "radioSource": null,
   "timeBasis": "Announced session window (times estimated)",
   "checked": "2026-11-05",
-  "note": "Olympic baseball at Dodger Stadium is scheduled around Jul 13-20, 2028 (LA28/WBSC published schedules differ on the exact first/last day). Whether MLB pauses its season for player participation is NOT decided; SF terrestrial radio carriage of Olympic baseball is unverified. This is not an MLB game and is excluded from the core 4-category scope.",
+  "note": "Olympic baseball at Dodger Stadium is scheduled around Jul 13-20, 2028 (LA28/WBSC published schedules differ on the exact first/last day). Whether MLB pauses its season for player participation is NOT decided; SF terrestrial radio carriage of Olympic baseball is unverified. Session times shown are estimated. This is not an MLB game and is excluded from the core 4-category scope.",
   "estimation": true
  },
  {
-  "id": "est-oly-baseball-2028-07-18",
+  "id": "anchor-oly-baseball-2028-07-18",
   "date": "2028-07-18",
   "start": "2028-07-18T10:00:00-07:00",
   "windowEnd": "2028-07-18T22:00:00-07:00",
@@ -6108,11 +6108,11 @@
   "radioSource": null,
   "timeBasis": "Announced session window (times estimated)",
   "checked": "2026-11-05",
-  "note": "Olympic baseball at Dodger Stadium is scheduled around Jul 13-20, 2028 (LA28/WBSC published schedules differ on the exact first/last day). Whether MLB pauses its season for player participation is NOT decided; SF terrestrial radio carriage of Olympic baseball is unverified. This is not an MLB game and is excluded from the core 4-category scope.",
+  "note": "Olympic baseball at Dodger Stadium is scheduled around Jul 13-20, 2028 (LA28/WBSC published schedules differ on the exact first/last day). Whether MLB pauses its season for player participation is NOT decided; SF terrestrial radio carriage of Olympic baseball is unverified. Session times shown are estimated. This is not an MLB game and is excluded from the core 4-category scope.",
   "estimation": true
  },
  {
-  "id": "est-oly-baseball-2028-07-19",
+  "id": "anchor-oly-baseball-2028-07-19",
   "date": "2028-07-19",
   "start": "2028-07-19T10:00:00-07:00",
   "windowEnd": "2028-07-19T22:00:00-07:00",
@@ -6126,11 +6126,11 @@
   "radioSource": null,
   "timeBasis": "Announced session window (times estimated)",
   "checked": "2026-11-05",
-  "note": "Olympic baseball at Dodger Stadium is scheduled around Jul 13-20, 2028 (LA28/WBSC published schedules differ on the exact first/last day). Whether MLB pauses its season for player participation is NOT decided; SF terrestrial radio carriage of Olympic baseball is unverified. This is not an MLB game and is excluded from the core 4-category scope.",
+  "note": "Olympic baseball at Dodger Stadium is scheduled around Jul 13-20, 2028 (LA28/WBSC published schedules differ on the exact first/last day). Whether MLB pauses its season for player participation is NOT decided; SF terrestrial radio carriage of Olympic baseball is unverified. Session times shown are estimated. This is not an MLB game and is excluded from the core 4-category scope.",
   "estimation": true
  },
  {
-  "id": "est-oly-baseball-2028-07-20",
+  "id": "anchor-oly-baseball-2028-07-20",
   "date": "2028-07-20",
   "start": "2028-07-20T10:00:00-07:00",
   "windowEnd": "2028-07-20T22:00:00-07:00",
@@ -6144,7 +6144,7 @@
   "radioSource": null,
   "timeBasis": "Announced session window (times estimated)",
   "checked": "2026-11-05",
-  "note": "Olympic baseball at Dodger Stadium is scheduled around Jul 13-20, 2028 (LA28/WBSC published schedules differ on the exact first/last day). Whether MLB pauses its season for player participation is NOT decided; SF terrestrial radio carriage of Olympic baseball is unverified. This is not an MLB game and is excluded from the core 4-category scope.",
+  "note": "Olympic baseball at Dodger Stadium is scheduled around Jul 13-20, 2028 (LA28/WBSC published schedules differ on the exact first/last day). Whether MLB pauses its season for player participation is NOT decided; SF terrestrial radio carriage of Olympic baseball is unverified. Session times shown are estimated. This is not an MLB game and is excluded from the core 4-category scope.",
   "estimation": true
  },
  {

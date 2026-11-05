@@ -130,7 +130,7 @@ def row(rid, d, window, title, league, kind, source, note, *,
         "timeBasis": time_basis or "ESTIMATED typical window",
         "checked": CHECKED,
         "note": note,
-        "estimation": True,
+        "estimation": rid != "anchor-nfl-sb-lxii",
         **({"conditional": True} if conditional else {}),
     }
 
@@ -205,21 +205,22 @@ def estimate_rows() -> list[dict]:
             "MLB", "MLB All-Star Game", SRC_MLB_ASG_2028,
             f"Official MLB release awards the 2028 All-Star Game to the Giants at "
             f"Oracle Park (Aug 14, 2026). Game date not finalized in the release; "
-            f"press reports give {label}. Both candidate dates are blocked pending "
-            f"the official date.",
+            f"press reports give {label}; the model treats each date as estimated "
+            f"pending the official announcement, and blocks both candidates.",
             priority=True, status="Official venue — date tentative"))
 
     # LA28 Olympic baseball (announced schedule; MLB participation still pending).
     for d in daterange("2028-07-13", "2028-07-20"):
         rows.append(row(
-            f"est-oly-baseball-{d}", d, WINDOWS["oly"],
+            f"anchor-oly-baseball-{d}", d, WINDOWS["oly"],
             "LA28 Olympic baseball (Dodger Stadium) — announced schedule",
             "Olympics", "Olympic baseball (LA28)", SRC_OLY,
             "Olympic baseball at Dodger Stadium is scheduled around Jul 13-20, 2028 "
             "(LA28/WBSC published schedules differ on the exact first/last day). "
             "Whether MLB pauses its season for player participation is NOT decided; "
-            "SF terrestrial radio carriage of Olympic baseball is unverified. This "
-            "is not an MLB game and is excluded from the core 4-category scope.",
+            "SF terrestrial radio carriage of Olympic baseball is unverified. Session "
+            "times shown are estimated. This is not an MLB game and is excluded from "
+            "the core 4-category scope.",
             priority=True, status="Scheduled (LA28 published) — carriage unverified",
             time_basis="Announced session window (times estimated)"))
 
