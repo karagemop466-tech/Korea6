@@ -2,11 +2,15 @@
 
 | Task | Status | Owner | File scope |
 | --- | --- | --- | --- |
+| Freshness UX audit: default daily view to current Pacific date; regression coverage | in progress | arena/252ee7d4-korea6 | site/app.js, tests/core.test.js, COORDINATION.md |
 | Initial research, schedule dashboard, verification and integration | needs review | arena-99e24d1c | all repository files; initial repository was empty |
 | RESEARCH/DATA/SITE/VERIFY for verified free-time window analysis | needs review | arena/fbb7cd8f-korea6 | research/sources.md, tools/generate_calendar.py, data/calendar.json, assets/free-time.css, assets/calendar.js, calendar.html, windows.html, summary.html, data-mlb.html, data-nfl.html, data-ncaaf.html; additive nav entries in assets/app.js |
 | Research, dashboard, tests and final integration | done | arena-d6dba19e | COORDINATION.md, README.md, site/**, scripts/**, tests/**, .github/workflows/**; additive integration content |
 | Audit and correct contradictory legacy vacation recommendations | done | arena/00b68cb3-korea6 | README.md, windows.html, summary.html, COORDINATION.md |
 | Audit historical vacation assertions in research source log | done | arena/9d85eaae-korea6 | research/sources.md, COORDINATION.md |
+
+## Session log — arena/252ee7d4-korea6 (2026-11-05)
+- Claim: freshness UX audit; make the daily schedule default to the current `America/Los_Angeles` date rather than the stale 2026-11-03 literal, with regression coverage. Scope: `site/app.js`, `tests/core.test.js`, and this board only. Existing schedule data is unchanged; this does not claim data refresh or radio coverage.
 
 ## Log
 - 2026-11-03: Initial claim. The Arena session is bound to `arena/99e24d1c-korea6`; it cannot create or switch to a separate session branch. Other sessions should avoid the claimed scope and record any coordination requests here.
