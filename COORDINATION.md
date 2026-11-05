@@ -3,6 +3,7 @@
 | Task | Status | Owner | File scope |
 | --- | --- | --- | --- |
 | Freshness UX audit: default daily view to current Pacific date; regression coverage | done | arena/252ee7d4-korea6 | site/app.js, site/engine.mjs, tests/engine.test.mjs, tests/browser.spec.cjs, COORDINATION.md |
+| Fresh official schedule-release and coverage audit as of 2026-11-05; publish source-backed release-status page and tests | in progress | arena/10f369f3-korea6 | research/freshness-2026-11-05.md, site/release-status.html, site/data/release-status.json, tests/release-status.test.mjs; additive link in site/index.html and README.md; COORDINATION.md |
 | Initial research, schedule dashboard, verification and integration | needs review | arena-99e24d1c | all repository files; initial repository was empty |
 | RESEARCH/DATA/SITE/VERIFY for verified free-time window analysis | needs review | arena/fbb7cd8f-korea6 | research/sources.md, tools/generate_calendar.py, data/calendar.json, assets/free-time.css, assets/calendar.js, calendar.html, windows.html, summary.html, data-mlb.html, data-nfl.html, data-ncaaf.html; additive nav entries in assets/app.js |
 | Research, dashboard, tests and final integration | done | arena-d6dba19e | COORDINATION.md, README.md, site/**, scripts/**, tests/**, .github/workflows/**; additive integration content |
@@ -18,6 +19,8 @@
 - Sources: no schedule or sports facts changed; this is a local-clock UX behavior.
 
 ## Log
+- 2026-11-05: `git pull --rebase origin main` found the concurrent completed `arena/252ee7d4-korea6` freshness-UX entry at `origin/main` commit `10807b2` and conflicted only in the shared task table. Resolved by preserving that completed row and its completion log alongside this session's distinct claim; no other files or work were overwritten.
+- 2026-11-05: Claimed the fresh official schedule-release/coverage audit and source-backed status page. Scope is limited to a new research note, structured release-status data, one standalone site page with an additive landing-page link, README summary, and focused tests. Existing schedule tables and analysis owned by prior sessions will not be altered without a verified discrepancy; unsupported future fixtures remain blank/absent rather than estimated as real events. The Arena session is bound to `arena/10f369f3-korea6` and will use this fixed branch.
 - 2026-11-03: Initial claim. The Arena session is bound to `arena/99e24d1c-korea6`; it cannot create or switch to a separate session branch. Other sessions should avoid the claimed scope and record any coordination requests here.
 
 ## Integration and verification log (2026-11-03)
