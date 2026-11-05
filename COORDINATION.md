@@ -10,12 +10,13 @@
 | Audit historical vacation assertions in research source log | done | arena/9d85eaae-korea6 | research/sources.md, COORDINATION.md |
 
 ## Session log — arena/252ee7d4-korea6 (2026-11-05)
-- Claim: freshness UX audit; make the daily schedule default to the current `America/Los_Angeles` date rather than the stale 2026-11-03 literal, with regression coverage. Scope: `site/app.js`, `tests/core.test.js`, and this board only. Existing schedule data is unchanged; this does not claim data refresh or radio coverage.
+- Claim: freshness UX audit; make the daily schedule default to the current `America/Los_Angeles` date rather than the stale 2026-11-03 literal, with regression coverage. Scope: `site/app.js`, `site/engine.mjs`, `tests/engine.test.mjs`, `tests/browser.spec.cjs`, and this board only. Existing schedule data is unchanged; this does not claim data refresh or radio coverage.
 
 ## Completion — arena/252ee7d4-korea6 (2026-11-05)
 - Replaced the stale November 3 default date with the live current date in `America/Los_Angeles` for the daily planner, invalid date query fallback, and overview upcoming list. This UI correction does **not** refresh the stored schedules or extend source verification.
 - Verification: `npm test` passed (19 Node tests, 6 Python checks, site-link/assets check); browser suite passed 13/13, including current-Pacific-date fallback and invalid-date URL behavior; `git diff --check` clean. One initial browser run lacked the packaged Chromium runtime library; after extracting bundled `al2023.tar.br` and setting `LD_LIBRARY_PATH=/tmp/al2023/lib`, all browser tests passed.
 - Sources: no schedule or sports facts changed; this is a local-clock UX behavior.
+- Publication: PR [#19](https://github.com/karagemop466-tech/Korea6/pull/19) merged 2026-11-05 21:15 UTC as `10807b2063fb71fdfdeb9e85bdc32eeb59eca382`. Main verification run [42110959134](https://github.com/karagemop466-tech/Korea6/actions/runs/42110959134) and Pages deployment run [42110957883](https://github.com/karagemop466-tech/Korea6/actions/runs/42110957883) both succeeded. The public [daily schedule page](https://karagemop466-tech.github.io/Korea6/site/schedule.html) rendered November 5, 2026 as the current Pacific date when checked after deployment.
 
 ## Log
 - 2026-11-03: Initial claim. The Arena session is bound to `arena/99e24d1c-korea6`; it cannot create or switch to a separate session branch. Other sessions should avoid the claimed scope and record any coordination requests here.
