@@ -169,3 +169,67 @@ Handoff note: arena-d6dba19e's claimed tasks (site/**, scripts/**, tests/**, wor
 - 2026-11-05: Repository inspected. `main` is at `10807b2` (PR #19). Remote has only `main`; the two open PRs (#1 `arena/8645d151-korea6`, #13 `arena/b14ac548-korea6`) come from branches that no longer exist on the remote and whose last commits are ~2 days old (>60 min handoff threshold). They are **not** merged by this session because both predate the current `site/` dashboard and PR #13 asserts "VERIFIED" status against non-official sources (topendsports, sportsbrackets.net, academicjobs.com, upintherafters, wikipedia) and repeats a "Jul 12–14, 2027 verified window" that conflicts with the officially scheduled Jul 13, 2027 MLB All-Star Game. They are closed with an explanatory note instead. No other session's published pages are deleted or rewritten.
 - Non-overlap: this session does not edit `site/app.js`, `site/engine.mjs`, `site/core-scope.*`, `scripts/bay_area_expansion.py`, `scripts/seed.py`, `scripts/refresh.py`, `scripts/nfl.py`, or the root legacy HTML pages. All changes are new files plus additive appends.
 
+## Completion — arena/63ee3d13-korea6 (2026-11-05)
+
+- **Claimed and finished on the fixed session branch `arena/63ee3d13-korea6`.** Task: multi-year
+  (2027/2028/2029) vacation-window analysis, verified-anchor re-check, labelled 2028–2029
+  projections, new "2027–2029 windows" page + data, additive review flags, final integration
+  PR / merge / Pages deploy.
+- **Files created:** `research/sources-63ee3d13.md`, `scripts/projections.py`,
+  `scripts/research_append.py`, `site/data/projections.json`, `site/year-windows.html`,
+  `site/year-windows.js`, `tests/projections.test.mjs`.
+- **Additive edits (no other session's work deleted or rewritten):**
+  - `scripts/pages.py`: added the `year-windows` nav entry plus a per-page script map so
+    `core-scope.html` and the new page keep their own modules; regenerated `site/*.html`.
+  - `site/app.js`: two cross-links to the new page (`node --check` clean, no logic touched).
+  - `tests/browser.spec.cjs`: added `year-windows` to the 9-page load/overflow sweep and one
+    content test.
+  - `site/data/research.json`: 6 new source rows, 3 merged into existing URLs, 12 new flags
+    **F27–F38**. The merge is idempotent and URL/id keyed; a re-run adds nothing.
+  - `README.md`: additive section only.
+  - Two stale factual corrections on legacy pages owned by earlier sessions, both recorded as
+    flags: `data-ncaaf.html` Cal radio flagship KGO 810 → **KSFO 810** (F36) and
+    `data-nfl.html` 49ers radio stations + source link (now 49ers.com, F37/F38 context).
+  - `COORDINATION.md`: this entry.
+- **Verification performed (read 2026-11-05, full log in `research/sources-63ee3d13.md`):**
+  MLB.com 2027 schedule release (Opening Night Mar 24; Opening Day Mar 25; first full slate
+  Mar 27; ASG Jul 13 Wrigley; HR Derby Jul 12; second half Jul 15; season ends Sep 26);
+  MLB Stats API (17 spring-training games on 2027-02-19, none Feb 15–18; **totalItems 0 for
+  2028 and 2029**); NFL Football Operations (Week 18 Jan 9–10 2027; Wild Card Jan 16–18;
+  Divisional Jan 23–24; Championships Jan 31; **Super Bowl LXI Feb 14 2027 SoFi**; Nov 22 2026
+  Vikings-49ers at Estadio Banorte); 49ers.com (Week 18 at Arizona TBD; every game lists
+  KSAN 107.7 / KNBR 104.5-680; Week 1 at the MCG; Week 8 bye); Westwood One NFL schedule page;
+  NFL.com (Atlanta confirmed for LXII but its own table lists the date as **TBA**; Las Vegas
+  confirmed for LXIII with no firm date); mlb.com Giants broadcast partners (KNBR 680/104.5,
+  KSFN 1510/99.3); mlb.com Athletics affiliates (960 KNEW Bay Area, 650 KSTE Sacramento);
+  UC Berkeley events ("Radio: KSFO 810 AM").
+- **Findings:** under the rule exactly as written the longest clean run is **4 days** in 2027
+  (Feb 15–18, VERIFIED at both ends), with 2028 and 2029 estimated at 4 days each — **no
+  7/14/21-day window exists in 2027, 2028 or 2029**. Dropping MLB spring training opens
+  **Feb 15 – Mar 23, 2027 (37 days)**, verified at both ends; 32 of those days contain a
+  Giants or Athletics game and only 4 are MLB-free.
+- **Irregularities flagged (F27–F38, published on the site's Flagged for Review page):**
+  stored NFL snapshot missing Week 18 / 24 flexed games incl. the 49ers' Week 18 game;
+  2027 MLB postseason absent from the feed; Opening Night Mar 24 absent from the feed;
+  Super Bowl LXII date reported not tabled (and an earlier source register row overstated it);
+  Super Bowl LXIII date not announced; MLB 2028/2029 empty; Jul 15 2027 feed-vs-press
+  conflict; **a stale "verified Jul 12–14, 2027 window" claim is withdrawn because Jul 13,
+  2027 is the All-Star Game**; Cal's 810 AM call sign is KSFO not KGO; Athletics flagship
+  KNEW 960 (Bay Area) / KSTE 650 (Sacramento).
+- **Stale open PRs closed, not merged:** PR [#1](https://github.com/karagemop466-tech/Korea6/pull/1)
+  (`arena/8645d151-korea6`) is a superseded empty stub that would clobber the current
+  `site/` dashboard, `index.html`, `README.md` and `COORDINATION.md`. PR
+  [#13](https://github.com/karagemop466-tech/Korea6/pull/13) (`arena/b14ac548-korea6`)
+  predates the dashboard, asserts VERIFIED status against non-official sources
+  (topendsports, sportsbrackets.net, academicjobs.com, upintherafters, Wikipedia), and
+  repeats the withdrawn Jul 12–14, 2027 window. Both branches no longer exist on the remote
+  and their last commits are ~2 days old (>60 min handoff threshold). Neither session's
+  published pages were deleted.
+- **Tests:** `npm test` → 26 Node tests, 6 Python `validate.py` tests, `check-site.js`, all
+  pass. `npm run test:browser` with `LD_LIBRARY_PATH=/tmp/al2023/lib` → **15/15 pass**,
+  including the 9-page load / no-JS-error / 390px-overflow sweep and the new year-windows
+  content test. `git diff --check` clean.
+- **Not done on purpose:** no 2028/2029 MLB or 2027 NFL game rows invented (both feeds are
+  empty / unreleased); no station-reception claim for 94122 (no coverage contour consulted);
+  `scripts/refresh.py` could not run in this sandbox because outbound network is limited to
+  github/npm/pypi — the daily Actions workflow refreshes the MLB snapshots on `main`.

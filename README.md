@@ -29,3 +29,40 @@ Open `index.html` through a local HTTP server, for example `python3 -m http.serv
 - New review flags F22–F26 are published on the site's Flagged for Review page: corrected Stanford 2027 opponent list, the Jul 14–15, 2027 feed-vs-press All-Star-break nuance, the verified 2028 Super Bowl date, the KNBR 1050 HD3 carriage nuance, and 2027 TBD start times / CBA risk.
 - Conclusion stands: under the strict all-leagues definition, **no 7/14/21-day all-clear vacation window exists in 2027–2029**; the best verified 2027 gap is Feb 15–18 (between Super Bowl LXI and the first spring-training games), and 2028/2029 equivalents are anchored to the announced Feb 13, 2028 Super Bowl and remain estimated on the MLB side until those schedules release. The dashboard never labels an unverified day "free."
 - Tests: `node --test` 14/14, `python3 tests/validate.py` 6/6, `node tests/check-site.js` pass.
+
+## Multi-year vacation windows — session arena/63ee3d13-korea6 (2026-11-05)
+
+**New page: [2027–2029 windows](https://karagemop466-tech.github.io/Korea6/site/year-windows.html).**
+It re-reads every anchor that drives the vacation question, publishes them with one of four
+statuses (VERIFIED / REPORTED / ESTIMATED / UNRELEASED), and puts the answer side by side
+with what each relaxation of the rule would buy.
+
+- **Under the rule exactly as written** (every MLB game including spring training, every NFL
+  game, Stanford and Cal football, every Westwood One national NFL slot) the longest clean run
+  is **4 days** in 2027 — Feb 15–18, between Super Bowl LXI
+  ([NFL Football Operations](https://operations.nfl.com/calendar-events/nfl-important-dates))
+  and the first spring-training games
+  ([MLB Stats API](https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-02-15&endDate=2027-02-22)).
+  The 2028 and 2029 equivalents are 4 days each and are **ESTIMATED**. **No 7-, 14- or 21-day
+  window exists in any of the three years.**
+- **The one rule change that creates a real trip** is ignoring MLB spring training:
+  **Feb 15 – Mar 23, 2027 (37 days)**, bounded by two official dates — Super Bowl LXI on
+  Feb 14, 2027 and MLB Opening Night on Mar 24, 2027
+  ([MLB.com](https://www.mlb.com/news/mlb-2027-schedule-released)). 32 of those 37 days
+  contain a Giants or Athletics spring-training game, and only 4 days (Feb 15–18) are
+  completely free of MLB.
+- The page's day-by-day grid for Feb 15 – Mar 23, 2027 is computed from the official MLB 2027
+  snapshot, row by row, with a source link per day.
+
+New review flags **F27–F38** are published on
+[Flagged for Review](https://karagemop466-tech.github.io/Korea6/site/review.html). The
+load-bearing ones: the stored NFL 2026 snapshot is missing Week 18 (Jan 9–10, 2027) and 24
+flexed games including the 49ers' Week 18 game at Arizona; the 2027 MLB postseason is absent
+from the feed; Super Bowl LXII's date is reported, not on NFL's own date table; Super Bowl
+LXIII's date is not announced; MLB 2028 and 2029 return zero rows; and a stale "verified
+Jul 12–14, 2027 window" claim is **withdrawn** because Jul 13, 2027 is the All-Star Game.
+Cal's 810 AM flagship is **KSFO**, not KGO — the legacy page row was corrected.
+
+Full log: [`research/sources-63ee3d13.md`](research/sources-63ee3d13.md). Generator:
+`scripts/projections.py` → `site/data/projections.json`; additive research merge:
+`scripts/research_append.py`.

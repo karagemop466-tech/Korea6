@@ -1,0 +1,1342 @@
+{
+ "meta": {
+  "generated": "2026-11-05",
+  "session": "arena/63ee3d13-korea6",
+  "generator": "scripts/projections.py",
+  "listenerLocation": "Outer Sunset, San Francisco, CA 94122",
+  "timezone": "America/Los_Angeles",
+  "statusLegend": {
+   "VERIFIED": "Read today from an official league or club source; source URL attached.",
+   "REPORTED": "An official source confirms part of the fact; the exact value comes from a non-official source and is labelled as such.",
+   "ESTIMATED": "No released schedule exists; value is projected from the most recent released season. NOT an official schedule.",
+   "UNRELEASED": "League has not published it; no value supplied on purpose."
+  },
+  "headline": "No 7-, 14- or 21-day window is conflict-free under the rule exactly as written in 2027, 2028 or 2029. The only rule change that creates a multi-week window is ignoring MLB spring training, which opens a 37-day 2027 run (Feb 15 \u2013 Mar 23) with verified official boundaries at both ends."
+ },
+ "anchors": [
+  {
+   "id": "mlb-2027-st-open",
+   "year": 2027,
+   "league": "MLB",
+   "label": "2027 MLB spring training \u2014 first games",
+   "value": "Fri Feb 19, 2027 \u2014 17 games",
+   "date": "2027-02-19",
+   "endDate": null,
+   "status": "VERIFIED",
+   "statusNote": "MLB Stats API returns 17 spring-training games for 2027-02-19 and none for 2027-02-15..18. MLB's own press release announced the 2027 spring schedule; the API is the game-level evidence.",
+   "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-02-15&endDate=2027-02-22",
+   "sourceLabel": "MLB Stats API (official)",
+   "checked": "2026-11-05",
+   "extraSource": "https://www.mlb.com/press-release/press-release-mlb-announces-2027-spring-training-schedule",
+   "extraSourceLabel": "MLB press release \u2014 2027 spring training"
+  },
+  {
+   "id": "mlb-2027-opening-night",
+   "year": 2027,
+   "league": "MLB",
+   "label": "2027 MLB Opening Night",
+   "value": "Wed Mar 24, 2027 (single game, Netflix; matchup TBD)",
+   "date": "2027-03-24",
+   "endDate": null,
+   "status": "VERIFIED",
+   "statusNote": "Read from MLB.com's 2027 schedule release story.",
+   "source": "https://www.mlb.com/news/mlb-2027-schedule-released",
+   "sourceLabel": "MLB.com \u2014 2027 schedule released",
+   "checked": "2026-11-05"
+  },
+  {
+   "id": "mlb-2027-opening-day",
+   "year": 2027,
+   "league": "MLB",
+   "label": "2027 MLB traditional Opening Day",
+   "value": "Thu Mar 25, 2027 \u2014 14 games (earliest ever)",
+   "date": "2027-03-25",
+   "endDate": null,
+   "status": "VERIFIED",
+   "statusNote": "Read from MLB.com's 2027 schedule release story.",
+   "source": "https://www.mlb.com/news/mlb-2027-schedule-released",
+   "sourceLabel": "MLB.com \u2014 2027 schedule released",
+   "checked": "2026-11-05"
+  },
+  {
+   "id": "mlb-2027-full-slate",
+   "year": 2027,
+   "league": "MLB",
+   "label": "2027 MLB first full slate (all 30 clubs)",
+   "value": "Sat Mar 27, 2027",
+   "date": "2027-03-27",
+   "endDate": null,
+   "status": "VERIFIED",
+   "statusNote": "Read from MLB.com's 2027 schedule release story.",
+   "source": "https://www.mlb.com/news/mlb-2027-schedule-released",
+   "sourceLabel": "MLB.com \u2014 2027 schedule released",
+   "checked": "2026-11-05"
+  },
+  {
+   "id": "mlb-2027-asg",
+   "year": 2027,
+   "league": "MLB",
+   "label": "2027 MLB All-Star Game (97th) \u2014 Wrigley Field",
+   "value": "Tue Jul 13, 2027 (FOX)",
+   "date": "2027-07-13",
+   "endDate": null,
+   "status": "VERIFIED",
+   "statusNote": "Confirmed by MLB.com release story and by the All-Star row present in the MLB Stats API 2027 snapshot.",
+   "source": "https://www.mlb.com/news/mlb-2027-schedule-released",
+   "sourceLabel": "MLB.com \u2014 2027 schedule released",
+   "checked": "2026-11-05"
+  },
+  {
+   "id": "mlb-2027-hr-derby",
+   "year": 2027,
+   "league": "MLB",
+   "label": "2027 T-Mobile Home Run Derby",
+   "value": "Mon Jul 12, 2027 (Netflix)",
+   "date": "2027-07-12",
+   "endDate": null,
+   "status": "VERIFIED",
+   "statusNote": "Not a game, but an official MLB event broadcast nationally. Listed because the brief asks for 'special MLB games'.",
+   "source": "https://www.mlb.com/news/mlb-2027-schedule-released",
+   "sourceLabel": "MLB.com \u2014 2027 schedule released",
+   "checked": "2026-11-05"
+  },
+  {
+   "id": "mlb-2027-second-half",
+   "year": 2027,
+   "league": "MLB",
+   "label": "2027 MLB second half begins",
+   "value": "Thu Jul 15, 2027",
+   "date": "2027-07-15",
+   "endDate": null,
+   "status": "VERIFIED",
+   "statusNote": "MLB.com states the second half begins Thursday July 15; the All-Star break therefore has no regular-season games on Jul 12 or Jul 14, but Jul 13 has the All-Star Game itself.",
+   "source": "https://www.mlb.com/news/mlb-2027-schedule-released",
+   "sourceLabel": "MLB.com \u2014 2027 schedule released",
+   "checked": "2026-11-05"
+  },
+  {
+   "id": "mlb-2027-reg-end",
+   "year": 2027,
+   "league": "MLB",
+   "label": "2027 MLB regular season \u2014 final day",
+   "value": "Sun Sep 26, 2027",
+   "date": "2027-09-26",
+   "endDate": null,
+   "status": "VERIFIED",
+   "statusNote": "Read from MLB.com's 2027 schedule release story; matches the last regular-season date in the MLB Stats API snapshot.",
+   "source": "https://www.mlb.com/news/mlb-2027-schedule-released",
+   "sourceLabel": "MLB.com \u2014 2027 schedule released",
+   "checked": "2026-11-05"
+  },
+  {
+   "id": "mlb-2027-postseason",
+   "year": 2027,
+   "league": "MLB",
+   "label": "2027 MLB postseason (Wild Card \u2192 World Series)",
+   "value": null,
+   "date": null,
+   "endDate": null,
+   "status": "UNRELEASED",
+   "statusNote": "Not present in the official MLB feed on this date. The 2026 snapshot did carry postseason rows, so this is a coverage gap in the 2027 snapshot, not proof that no games occur. October 2027 must be treated as BUSY UNKNOWN.",
+   "source": "https://www.mlb.com/news/mlb-2027-schedule-released",
+   "sourceLabel": "MLB.com \u2014 2027 schedule released",
+   "checked": "2026-11-05"
+  },
+  {
+   "id": "nfl-2026-week18",
+   "year": 2027,
+   "league": "NFL",
+   "label": "NFL 2026 Week 18 window",
+   "value": "Sat Jan 9 \u2013 Sun Jan 10, 2027 (exact kickoffs flexed)",
+   "date": "2027-01-09",
+   "endDate": "2027-01-10",
+   "status": "VERIFIED",
+   "statusNote": "NFL Football Operations lists 'Week 18: January 9-10, 2027'. 49ers.com lists San Francisco's Week 18 game at Arizona as TBD. The stored NFL snapshot stops at Jan 3/4, 2027, so this week is missing from the dataset.",
+   "source": "https://operations.nfl.com/calendar-events/nfl-important-dates",
+   "sourceLabel": "NFL Football Operations \u2014 important dates",
+   "checked": "2026-11-05",
+   "extraSource": "https://www.49ers.com/schedule/",
+   "extraSourceLabel": "49ers.com \u2014 official 2026 schedule"
+  },
+  {
+   "id": "nfl-2026-wildcard",
+   "year": 2027,
+   "league": "NFL",
+   "label": "NFL Wild Card Weekend",
+   "value": "Sat Jan 16 \u2013 Mon Jan 18, 2027",
+   "date": "2027-01-16",
+   "endDate": "2027-01-18",
+   "status": "VERIFIED",
+   "statusNote": "Official NFL Football Operations calendar.",
+   "source": "https://operations.nfl.com/calendar-events/nfl-important-dates",
+   "sourceLabel": "NFL Football Operations \u2014 important dates",
+   "checked": "2026-11-05"
+  },
+  {
+   "id": "nfl-2026-divisional",
+   "year": 2027,
+   "league": "NFL",
+   "label": "NFL Divisional Playoffs",
+   "value": "Sat Jan 23 \u2013 Sun Jan 24, 2027",
+   "date": "2027-01-23",
+   "endDate": "2027-01-24",
+   "status": "VERIFIED",
+   "statusNote": "Official NFL Football Operations calendar.",
+   "source": "https://operations.nfl.com/calendar-events/nfl-important-dates",
+   "sourceLabel": "NFL Football Operations \u2014 important dates",
+   "checked": "2026-11-05"
+  },
+  {
+   "id": "nfl-2026-championship",
+   "year": 2027,
+   "league": "NFL",
+   "label": "AFC and NFC Championship Games",
+   "value": "Sun Jan 31, 2027",
+   "date": "2027-01-31",
+   "endDate": null,
+   "status": "VERIFIED",
+   "statusNote": "Official NFL Football Operations calendar.",
+   "source": "https://operations.nfl.com/calendar-events/nfl-important-dates",
+   "sourceLabel": "NFL Football Operations \u2014 important dates",
+   "checked": "2026-11-05"
+  },
+  {
+   "id": "nfl-2026-sb",
+   "year": 2027,
+   "league": "NFL",
+   "label": "Super Bowl LXI \u2014 last Westwood One NFL broadcast of the season",
+   "value": "Sun Feb 14, 2027 \u00b7 SoFi Stadium, Inglewood CA",
+   "date": "2027-02-14",
+   "endDate": null,
+   "status": "VERIFIED",
+   "statusNote": "Official NFL Football Operations calendar. Westwood One is the NFL's official network radio partner and carries the Super Bowl; its own schedule page shows the 2026 package running through the postseason.",
+   "source": "https://operations.nfl.com/calendar-events/nfl-important-dates",
+   "sourceLabel": "NFL Football Operations \u2014 important dates",
+   "checked": "2026-11-05",
+   "extraSource": "https://www.westwoodonesports.com/nfl-schedule/",
+   "extraSourceLabel": "Westwood One Sports \u2014 NFL schedule"
+  },
+  {
+   "id": "nfl-2026-probowl",
+   "year": 2027,
+   "league": "NFL",
+   "label": "Pro Bowl",
+   "value": "No AFC\u2013NFC Pro Bowl game is staged from the 2026 season onward",
+   "date": null,
+   "endDate": null,
+   "status": "VERIFIED",
+   "statusNote": "NFL announced the Pro Bowl Game will cease being contested; the league calendar for Jan/Feb 2027 contains no Pro Bowl date. Recorded as an exclusion, not a game.",
+   "source": "https://www.nfl.com/news/nfl-elevates-pro-bowl-selection-game-s-will-cease-being-contested",
+   "sourceLabel": "NFL.com \u2014 Pro Bowl announcement",
+   "checked": "2026-11-05"
+  },
+  {
+   "id": "nfl-2026-49ers-radio",
+   "year": 2026,
+   "league": "NFL",
+   "label": "49ers terrestrial radio flagship (every game)",
+   "value": "KNBR 680 AM / 104.5 FM and KSAN 107.7 FM",
+   "date": null,
+   "endDate": null,
+   "status": "VERIFIED",
+   "statusNote": "Listed on every 2026 home and away game on the official 49ers.com schedule, including the TBD Week 18 game at Arizona.",
+   "source": "https://www.49ers.com/schedule/",
+   "sourceLabel": "49ers.com \u2014 official 2026 schedule",
+   "checked": "2026-11-05"
+  },
+  {
+   "id": "nfl-2027-schedule",
+   "year": 2027,
+   "league": "NFL",
+   "label": "NFL 2027 season schedule",
+   "value": null,
+   "date": null,
+   "endDate": null,
+   "status": "UNRELEASED",
+   "statusNote": "The 2027 NFL schedule has not been released. 49ers opponents are set by the rotation but dates/times are not published. Anything shown for Aug 2027 \u2013 Jan 2028 is ESTIMATED.",
+   "source": "https://operations.nfl.com/calendar-events/nfl-important-dates",
+   "sourceLabel": "NFL Football Operations \u2014 important dates",
+   "checked": "2026-11-05"
+  },
+  {
+   "id": "ncaaf-2027-dates",
+   "year": 2027,
+   "league": "NCAAF",
+   "label": "Stanford & Cal 2027 game dates and kickoff times",
+   "value": null,
+   "date": null,
+   "endDate": null,
+   "status": "UNRELEASED",
+   "statusNote": "Only opponents have been announced (Cal: Aug 28 window vs Sacramento State, Sep 4 at UCLA, Sep 11 vs Old Dominion; Stanford / Cal ACC slates announced by each school). Individual dates and kickoff times are not published, so late-August through November 2027 cannot be scored day by day.",
+   "source": "https://calbears.com/news/2026/6/25/football-cal-announces-matchups-against-odu-sac-state",
+   "sourceLabel": "CalBears.com \u2014 2027 non-conference announcement",
+   "checked": "2026-11-05",
+   "extraSource": "https://gostanford.com/sports/football/schedule",
+   "extraSourceLabel": "GoStanford.com \u2014 official football schedule"
+  },
+  {
+   "id": "nfl-sb62",
+   "year": 2028,
+   "league": "NFL",
+   "label": "Super Bowl LXII \u2014 host confirmed, date reported but not on NFL's own date table",
+   "value": "Sun Feb 13, 2028 \u00b7 Mercedes-Benz Stadium, Atlanta (reported)",
+   "date": "2028-02-13",
+   "endDate": null,
+   "status": "REPORTED",
+   "statusNote": "NFL.com confirms Atlanta / Mercedes-Benz Stadium as the LXII host, but NFL.com's own 'Upcoming Super Bowls' table still lists the LXII date as TBA. The Feb 13, 2028 date is reported by ESPN (Adam Schefter) and Pro Football Talk. Treat as high-confidence, not officially tabled.",
+   "source": "https://www.nfl.com/news/mercedes-benz-stadium-in-atlanta-to-host-super-bowl-lxii-in-2028",
+   "sourceLabel": "NFL.com \u2014 Atlanta to host Super Bowl LXII",
+   "checked": "2026-11-05",
+   "extraSource": "https://sports.yahoo.com/articles/nfl-sends-message-2028-super-153037714.html",
+   "extraSourceLabel": "Non-official: Pro Football Talk on the Feb 13, 2028 date"
+  },
+  {
+   "id": "nfl-2027-season-length",
+   "year": 2028,
+   "league": "NFL",
+   "label": "2027 NFL regular season length",
+   "value": "17-game regular season retained (18-game expansion not adopted for 2027)",
+   "date": null,
+   "endDate": null,
+   "status": "REPORTED",
+   "statusNote": "Reported by Pro Football Talk / Awful Announcing when the Feb 13, 2028 Super Bowl date was set. No official NFL release of the 2027 season format was located on this date.",
+   "source": "https://sports.yahoo.com/articles/nfl-sends-message-2028-super-153037714.html",
+   "sourceLabel": "Non-official: Pro Football Talk",
+   "checked": "2026-11-05"
+  },
+  {
+   "id": "mlb-2028-schedule",
+   "year": 2028,
+   "league": "MLB",
+   "label": "MLB 2028 schedule",
+   "value": null,
+   "date": null,
+   "endDate": null,
+   "status": "UNRELEASED",
+   "statusNote": "MLB has not released a 2028 schedule. MLB Stats API returns totalItems 0 for 2028 on this date. Every 2028 MLB date below is ESTIMATED from the 2027 pattern.",
+   "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2028-01-01&endDate=2028-12-31",
+   "sourceLabel": "MLB Stats API (official) \u2014 empty 2028 response",
+   "checked": "2026-11-05"
+  },
+  {
+   "id": "mlb-2028-st-open-est",
+   "year": 2028,
+   "league": "MLB",
+   "label": "2028 MLB spring training \u2014 projected first games",
+   "value": "\u2248 Fri Feb 18, 2028",
+   "date": "2028-02-18",
+   "endDate": null,
+   "status": "ESTIMATED",
+   "statusNote": "Projection. Spring training opened 2026-02-20 and opens 2027-02-19. Projected by holding the same weekday offset; MLB has not released a 2028 schedule.",
+   "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-02-15&endDate=2027-02-22",
+   "sourceLabel": "MLB Stats API 2027 (basis for the projection)",
+   "checked": "2026-11-05"
+  },
+  {
+   "id": "mlb-2028-open-est",
+   "year": 2028,
+   "league": "MLB",
+   "label": "2028 MLB Opening Day \u2014 projected",
+   "value": "\u2248 Wed Mar 22, 2028",
+   "date": "2028-03-22",
+   "endDate": null,
+   "status": "ESTIMATED",
+   "statusNote": "Projection. 2027 Opening Night is Wed Mar 24; MLB has historically opened in the last week of March. Not a released date.",
+   "source": "https://www.mlb.com/news/mlb-2027-schedule-released",
+   "sourceLabel": "MLB.com \u2014 2027 schedule released (basis for the projection)",
+   "checked": "2026-11-05"
+  },
+  {
+   "id": "nfl-sb63",
+   "year": 2029,
+   "league": "NFL",
+   "label": "Super Bowl LXIII \u2014 host confirmed, date projected",
+   "value": "\u2248 Sun Feb 11, 2029 \u00b7 Allegiant Stadium, Las Vegas",
+   "date": "2029-02-11",
+   "endDate": null,
+   "status": "ESTIMATED",
+   "statusNote": "NFL.com confirms Las Vegas / Allegiant Stadium as the LXIII host but the announcement gives no firm date ('February 2029'). The Feb 11, 2029 date is the widely reported second Sunday of February 2029 and is shown as ESTIMATED, not as an NFL-announced date.",
+   "source": "https://www.nfl.com/news/las-vegas-to-host-super-bowl-lxiii-in-2029",
+   "sourceLabel": "NFL.com \u2014 Las Vegas to host Super Bowl LXIII",
+   "checked": "2026-11-05"
+  },
+  {
+   "id": "mlb-2029-schedule",
+   "year": 2029,
+   "league": "MLB",
+   "label": "MLB 2029 schedule",
+   "value": null,
+   "date": null,
+   "endDate": null,
+   "status": "UNRELEASED",
+   "statusNote": "MLB has not released a 2029 schedule. MLB Stats API returns totalItems 0 for 2029 on this date. Every 2029 MLB date below is ESTIMATED.",
+   "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2029-01-01&endDate=2029-12-31",
+   "sourceLabel": "MLB Stats API (official) \u2014 empty 2029 response",
+   "checked": "2026-11-05"
+  },
+  {
+   "id": "mlb-2029-st-open-est",
+   "year": 2029,
+   "league": "MLB",
+   "label": "2029 MLB spring training \u2014 projected first games",
+   "value": "\u2248 Fri Feb 16, 2029",
+   "date": "2029-02-16",
+   "endDate": null,
+   "status": "ESTIMATED",
+   "statusNote": "Projection from the 2026/2027 pattern. Not a released date.",
+   "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-02-15&endDate=2027-02-22",
+   "sourceLabel": "MLB Stats API 2027 (basis for the projection)",
+   "checked": "2026-11-05"
+  },
+  {
+   "id": "mlb-2029-open-est",
+   "year": 2029,
+   "league": "MLB",
+   "label": "2029 MLB Opening Day \u2014 projected",
+   "value": "\u2248 Wed Mar 21, 2029",
+   "date": "2029-03-21",
+   "endDate": null,
+   "status": "ESTIMATED",
+   "statusNote": "Projection from the 2027 pattern. Not a released date.",
+   "source": "https://www.mlb.com/news/mlb-2027-schedule-released",
+   "sourceLabel": "MLB.com \u2014 2027 schedule released (basis for the projection)",
+   "checked": "2026-11-05"
+  }
+ ],
+ "windows": [
+  {
+   "year": 2027,
+   "ruleSet": "strict",
+   "ruleSetName": "Strict \u2014 exactly as written",
+   "start": "2027-02-15",
+   "end": "2027-02-18",
+   "days": 4,
+   "weeks": 0.6,
+   "status": "VERIFIED",
+   "meetsOneWeek": false,
+   "meetsTwoWeeks": false,
+   "meetsThreeWeeks": false,
+   "startBoundary": {
+    "value": "2027-02-14",
+    "label": "Super Bowl LXI",
+    "status": "VERIFIED",
+    "source": "https://operations.nfl.com/calendar-events/nfl-important-dates"
+   },
+   "endBoundary": {
+    "value": "2027-02-19",
+    "label": "MLB spring training opens",
+    "status": "VERIFIED",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-02-15&endDate=2027-02-22"
+   },
+   "note": "This is the rule the brief states. Spring training counts, so the run ends the day before the first Cactus/Grapefruit League game.",
+   "definition": "Every MLB game (all 30 clubs, spring training + regular season + postseason + All-Star), every NFL game, Stanford and Cal football, and every Westwood One national NFL radio broadcast blocks a minute."
+  },
+  {
+   "year": 2027,
+   "ruleSet": "no-spring",
+   "ruleSetName": "Relaxed \u2014 MLB spring training ignored",
+   "start": "2027-02-15",
+   "end": "2027-03-23",
+   "days": 37,
+   "weeks": 5.3,
+   "status": "VERIFIED",
+   "meetsOneWeek": true,
+   "meetsTwoWeeks": true,
+   "meetsThreeWeeks": true,
+   "startBoundary": {
+    "value": "2027-02-14",
+    "label": "Super Bowl LXI",
+    "status": "VERIFIED",
+    "source": "https://operations.nfl.com/calendar-events/nfl-important-dates"
+   },
+   "endBoundary": {
+    "value": "2027-03-24",
+    "label": "MLB Opening Night",
+    "status": "VERIFIED",
+    "source": "https://www.mlb.com/news/mlb-2027-schedule-released"
+   },
+   "note": "This is the only rule change that produces a multi-week window. The cost: you will miss Giants and Athletics spring-training broadcasts.",
+   "definition": "As strict, but exhibition/spring-training games do not block. Only MLB regular season, postseason and All-Star events count."
+  },
+  {
+   "year": 2027,
+   "ruleSet": "no-nfl",
+   "ruleSetName": "Relaxed \u2014 NFL / Westwood One ignored",
+   "start": "2027-01-02",
+   "end": "2027-02-18",
+   "days": 48,
+   "weeks": 6.9,
+   "status": "ESTIMATED",
+   "meetsOneWeek": true,
+   "meetsTwoWeeks": true,
+   "meetsThreeWeeks": true,
+   "startBoundary": {
+    "value": "2027-01-01",
+    "label": "Last possible Stanford/Cal bowl date (projected)",
+    "status": "ESTIMATED",
+    "source": "https://gostanford.com/sports/football/schedule"
+   },
+   "endBoundary": {
+    "value": "2027-02-19",
+    "label": "MLB spring training opens",
+    "status": "VERIFIED",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-02-15&endDate=2027-02-22"
+   },
+   "note": "The winter gap between the last possible college bowl game and the first spring-training game.",
+   "definition": "MLB and Stanford/Cal football only. No NFL game and no Westwood One slot blocks a minute."
+  },
+  {
+   "year": 2027,
+   "ruleSet": "no-mlb",
+   "ruleSetName": "Relaxed \u2014 MLB ignored",
+   "start": "2027-02-15",
+   "end": "2027-08-05",
+   "days": 172,
+   "weeks": 24.6,
+   "status": "ESTIMATED",
+   "meetsOneWeek": true,
+   "meetsTwoWeeks": true,
+   "meetsThreeWeeks": true,
+   "startBoundary": {
+    "value": "2027-02-14",
+    "label": "Super Bowl LXI",
+    "status": "VERIFIED",
+    "source": "https://operations.nfl.com/calendar-events/nfl-important-dates"
+   },
+   "endBoundary": {
+    "value": "2027-08-06",
+    "label": "Projected first 2027 preseason game (2026 Hall of Fame Game fell on Aug 6, 2026)",
+    "status": "ESTIMATED",
+    "source": "https://www.49ers.com/schedule/"
+   },
+   "note": "The longest possible run, but it sits entirely inside the MLB regular season.",
+   "definition": "NFL, Stanford/Cal football and Westwood One only. No MLB game blocks a minute."
+  },
+  {
+   "year": 2027,
+   "ruleSet": "no-nfl-ncaaf",
+   "ruleSetName": "Relaxed \u2014 NFL and college football ignored",
+   "start": "2027-11-06",
+   "end": "2028-02-17",
+   "days": 104,
+   "weeks": 14.9,
+   "status": "ESTIMATED",
+   "meetsOneWeek": true,
+   "meetsTwoWeeks": true,
+   "meetsThreeWeeks": true,
+   "startBoundary": {
+    "value": "2027-11-05",
+    "label": "Projected World Series end (2026 pattern)",
+    "status": "ESTIMATED",
+    "source": "https://www.mlb.com/news/mlb-2027-schedule-released"
+   },
+   "endBoundary": {
+    "value": "2028-02-18",
+    "label": "Projected MLB spring training opener (2028)",
+    "status": "ESTIMATED",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-02-15&endDate=2027-02-22"
+   },
+   "note": "The off-season gap: the day after the World Series ends through the day before spring training opens the following February. Both boundaries are projections.",
+   "definition": "MLB only (spring training, regular season, postseason, All-Star)."
+  },
+  {
+   "year": 2028,
+   "ruleSet": "strict",
+   "ruleSetName": "Strict \u2014 exactly as written",
+   "start": "2028-02-14",
+   "end": "2028-02-17",
+   "days": 4,
+   "weeks": 0.6,
+   "status": "ESTIMATED",
+   "meetsOneWeek": false,
+   "meetsTwoWeeks": false,
+   "meetsThreeWeeks": false,
+   "startBoundary": {
+    "value": "2028-02-13",
+    "label": "Super Bowl LXII (date reported, host official)",
+    "status": "REPORTED",
+    "source": "https://www.nfl.com/news/mercedes-benz-stadium-in-atlanta-to-host-super-bowl-lxii-in-2028"
+   },
+   "endBoundary": {
+    "value": "2028-02-18",
+    "label": "Projected MLB spring training opener",
+    "status": "ESTIMATED",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-02-15&endDate=2027-02-22"
+   },
+   "note": "This is the rule the brief states. Spring training counts, so the run ends the day before the first Cactus/Grapefruit League game.",
+   "definition": "Every MLB game (all 30 clubs, spring training + regular season + postseason + All-Star), every NFL game, Stanford and Cal football, and every Westwood One national NFL radio broadcast blocks a minute."
+  },
+  {
+   "year": 2028,
+   "ruleSet": "no-spring",
+   "ruleSetName": "Relaxed \u2014 MLB spring training ignored",
+   "start": "2028-02-14",
+   "end": "2028-03-21",
+   "days": 37,
+   "weeks": 5.3,
+   "status": "ESTIMATED",
+   "meetsOneWeek": true,
+   "meetsTwoWeeks": true,
+   "meetsThreeWeeks": true,
+   "startBoundary": {
+    "value": "2028-02-13",
+    "label": "Super Bowl LXII (date reported, host official)",
+    "status": "REPORTED",
+    "source": "https://www.nfl.com/news/mercedes-benz-stadium-in-atlanta-to-host-super-bowl-lxii-in-2028"
+   },
+   "endBoundary": {
+    "value": "2028-03-22",
+    "label": "Projected MLB Opening Night",
+    "status": "ESTIMATED",
+    "source": "https://www.mlb.com/news/mlb-2027-schedule-released"
+   },
+   "note": "This is the only rule change that produces a multi-week window. The cost: you will miss Giants and Athletics spring-training broadcasts.",
+   "definition": "As strict, but exhibition/spring-training games do not block. Only MLB regular season, postseason and All-Star events count."
+  },
+  {
+   "year": 2028,
+   "ruleSet": "no-nfl",
+   "ruleSetName": "Relaxed \u2014 NFL / Westwood One ignored",
+   "start": "2028-01-02",
+   "end": "2028-02-17",
+   "days": 47,
+   "weeks": 6.7,
+   "status": "ESTIMATED",
+   "meetsOneWeek": true,
+   "meetsTwoWeeks": true,
+   "meetsThreeWeeks": true,
+   "startBoundary": {
+    "value": "2028-01-01",
+    "label": "Projected last Stanford/Cal bowl date",
+    "status": "ESTIMATED",
+    "source": "https://gostanford.com/sports/football/schedule"
+   },
+   "endBoundary": {
+    "value": "2028-02-18",
+    "label": "Projected MLB spring training opener",
+    "status": "ESTIMATED",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-02-15&endDate=2027-02-22"
+   },
+   "note": "The winter gap between the last possible college bowl game and the first spring-training game.",
+   "definition": "MLB and Stanford/Cal football only. No NFL game and no Westwood One slot blocks a minute."
+  },
+  {
+   "year": 2028,
+   "ruleSet": "no-mlb",
+   "ruleSetName": "Relaxed \u2014 MLB ignored",
+   "start": "2028-02-14",
+   "end": "2028-08-04",
+   "days": 173,
+   "weeks": 24.7,
+   "status": "ESTIMATED",
+   "meetsOneWeek": true,
+   "meetsTwoWeeks": true,
+   "meetsThreeWeeks": true,
+   "startBoundary": {
+    "value": "2028-02-13",
+    "label": "Super Bowl LXII (date reported, host official)",
+    "status": "REPORTED",
+    "source": "https://www.nfl.com/news/mercedes-benz-stadium-in-atlanta-to-host-super-bowl-lxii-in-2028"
+   },
+   "endBoundary": {
+    "value": "2028-08-05",
+    "label": "Projected first 2028 preseason game",
+    "status": "ESTIMATED",
+    "source": "https://www.49ers.com/schedule/"
+   },
+   "note": "The longest possible run, but it sits entirely inside the MLB regular season.",
+   "definition": "NFL, Stanford/Cal football and Westwood One only. No MLB game blocks a minute."
+  },
+  {
+   "year": 2028,
+   "ruleSet": "no-nfl-ncaaf",
+   "ruleSetName": "Relaxed \u2014 NFL and college football ignored",
+   "start": "2028-11-05",
+   "end": "2029-02-15",
+   "days": 103,
+   "weeks": 14.7,
+   "status": "ESTIMATED",
+   "meetsOneWeek": true,
+   "meetsTwoWeeks": true,
+   "meetsThreeWeeks": true,
+   "startBoundary": {
+    "value": "2028-11-04",
+    "label": "Projected World Series end",
+    "status": "ESTIMATED",
+    "source": "https://www.mlb.com/news/mlb-2027-schedule-released"
+   },
+   "endBoundary": {
+    "value": "2029-02-16",
+    "label": "Projected MLB spring training opener (2029)",
+    "status": "ESTIMATED",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-02-15&endDate=2027-02-22"
+   },
+   "note": "The off-season gap: the day after the World Series ends through the day before spring training opens the following February. Both boundaries are projections.",
+   "definition": "MLB only (spring training, regular season, postseason, All-Star)."
+  },
+  {
+   "year": 2029,
+   "ruleSet": "strict",
+   "ruleSetName": "Strict \u2014 exactly as written",
+   "start": "2029-02-12",
+   "end": "2029-02-15",
+   "days": 4,
+   "weeks": 0.6,
+   "status": "ESTIMATED",
+   "meetsOneWeek": false,
+   "meetsTwoWeeks": false,
+   "meetsThreeWeeks": false,
+   "startBoundary": {
+    "value": "2029-02-11",
+    "label": "Super Bowl LXIII (host official, date projected)",
+    "status": "ESTIMATED",
+    "source": "https://www.nfl.com/news/las-vegas-to-host-super-bowl-lxiii-in-2029"
+   },
+   "endBoundary": {
+    "value": "2029-02-16",
+    "label": "Projected MLB spring training opener",
+    "status": "ESTIMATED",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-02-15&endDate=2027-02-22"
+   },
+   "note": "This is the rule the brief states. Spring training counts, so the run ends the day before the first Cactus/Grapefruit League game.",
+   "definition": "Every MLB game (all 30 clubs, spring training + regular season + postseason + All-Star), every NFL game, Stanford and Cal football, and every Westwood One national NFL radio broadcast blocks a minute."
+  },
+  {
+   "year": 2029,
+   "ruleSet": "no-spring",
+   "ruleSetName": "Relaxed \u2014 MLB spring training ignored",
+   "start": "2029-02-12",
+   "end": "2029-03-20",
+   "days": 37,
+   "weeks": 5.3,
+   "status": "ESTIMATED",
+   "meetsOneWeek": true,
+   "meetsTwoWeeks": true,
+   "meetsThreeWeeks": true,
+   "startBoundary": {
+    "value": "2029-02-11",
+    "label": "Super Bowl LXIII (host official, date projected)",
+    "status": "ESTIMATED",
+    "source": "https://www.nfl.com/news/las-vegas-to-host-super-bowl-lxiii-in-2029"
+   },
+   "endBoundary": {
+    "value": "2029-03-21",
+    "label": "Projected MLB Opening Night",
+    "status": "ESTIMATED",
+    "source": "https://www.mlb.com/news/mlb-2027-schedule-released"
+   },
+   "note": "This is the only rule change that produces a multi-week window. The cost: you will miss Giants and Athletics spring-training broadcasts.",
+   "definition": "As strict, but exhibition/spring-training games do not block. Only MLB regular season, postseason and All-Star events count."
+  },
+  {
+   "year": 2029,
+   "ruleSet": "no-nfl",
+   "ruleSetName": "Relaxed \u2014 NFL / Westwood One ignored",
+   "start": "2029-01-02",
+   "end": "2029-02-15",
+   "days": 45,
+   "weeks": 6.4,
+   "status": "ESTIMATED",
+   "meetsOneWeek": true,
+   "meetsTwoWeeks": true,
+   "meetsThreeWeeks": true,
+   "startBoundary": {
+    "value": "2029-01-01",
+    "label": "Projected last Stanford/Cal bowl date",
+    "status": "ESTIMATED",
+    "source": "https://gostanford.com/sports/football/schedule"
+   },
+   "endBoundary": {
+    "value": "2029-02-16",
+    "label": "Projected MLB spring training opener",
+    "status": "ESTIMATED",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-02-15&endDate=2027-02-22"
+   },
+   "note": "The winter gap between the last possible college bowl game and the first spring-training game.",
+   "definition": "MLB and Stanford/Cal football only. No NFL game and no Westwood One slot blocks a minute."
+  },
+  {
+   "year": 2029,
+   "ruleSet": "no-mlb",
+   "ruleSetName": "Relaxed \u2014 MLB ignored",
+   "start": "2029-02-12",
+   "end": "2029-08-03",
+   "days": 173,
+   "weeks": 24.7,
+   "status": "ESTIMATED",
+   "meetsOneWeek": true,
+   "meetsTwoWeeks": true,
+   "meetsThreeWeeks": true,
+   "startBoundary": {
+    "value": "2029-02-11",
+    "label": "Super Bowl LXIII (host official, date projected)",
+    "status": "ESTIMATED",
+    "source": "https://www.nfl.com/news/las-vegas-to-host-super-bowl-lxiii-in-2029"
+   },
+   "endBoundary": {
+    "value": "2029-08-04",
+    "label": "Projected first 2029 preseason game",
+    "status": "ESTIMATED",
+    "source": "https://www.49ers.com/schedule/"
+   },
+   "note": "The longest possible run, but it sits entirely inside the MLB regular season.",
+   "definition": "NFL, Stanford/Cal football and Westwood One only. No MLB game blocks a minute."
+  },
+  {
+   "year": 2029,
+   "ruleSet": "no-nfl-ncaaf",
+   "ruleSetName": "Relaxed \u2014 NFL and college football ignored",
+   "start": "2029-11-04",
+   "end": "2030-02-14",
+   "days": 103,
+   "weeks": 14.7,
+   "status": "ESTIMATED",
+   "meetsOneWeek": true,
+   "meetsTwoWeeks": true,
+   "meetsThreeWeeks": true,
+   "startBoundary": {
+    "value": "2029-11-03",
+    "label": "Projected World Series end",
+    "status": "ESTIMATED",
+    "source": "https://www.mlb.com/news/mlb-2027-schedule-released"
+   },
+   "endBoundary": {
+    "value": "2030-02-15",
+    "label": "Projected 2030 MLB spring training opener (2030)",
+    "status": "ESTIMATED",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-02-15&endDate=2027-02-22"
+   },
+   "note": "The off-season gap: the day after the World Series ends through the day before spring training opens the following February. Both boundaries are projections.",
+   "definition": "MLB only (spring training, regular season, postseason, All-Star)."
+  }
+ ],
+ "ladder2027DayByDay": {
+  "window": {
+   "start": "2027-02-15",
+   "end": "2027-03-23",
+   "days": 37
+  },
+  "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-02-15&endDate=2027-03-23",
+  "sourceLabel": "MLB Stats API 2027 snapshot (official)",
+  "daysWithZeroMlbGames": 4,
+  "daysWithAnyMlbGame": 33,
+  "daysWithGiantsOrAthletics": 32,
+  "days": [
+   {
+    "date": "2027-02-15",
+    "weekday": "Mon",
+    "mlbGames": 0,
+    "priorityGames": 0,
+    "giants": false,
+    "athletics": false,
+    "kinds": [],
+    "sample": null,
+    "source": null
+   },
+   {
+    "date": "2027-02-16",
+    "weekday": "Tue",
+    "mlbGames": 0,
+    "priorityGames": 0,
+    "giants": false,
+    "athletics": false,
+    "kinds": [],
+    "sample": null,
+    "source": null
+   },
+   {
+    "date": "2027-02-17",
+    "weekday": "Wed",
+    "mlbGames": 0,
+    "priorityGames": 0,
+    "giants": false,
+    "athletics": false,
+    "kinds": [],
+    "sample": null,
+    "source": null
+   },
+   {
+    "date": "2027-02-18",
+    "weekday": "Thu",
+    "mlbGames": 0,
+    "priorityGames": 0,
+    "giants": false,
+    "athletics": false,
+    "kinds": [],
+    "sample": null,
+    "source": null
+   },
+   {
+    "date": "2027-02-19",
+    "weekday": "Fri",
+    "mlbGames": 17,
+    "priorityGames": 2,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Exhibition Game",
+     "Spring Training"
+    ],
+    "sample": "Atlanta Braves at Baltimore Orioles",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-02-19&endDate=2027-02-19"
+   },
+   {
+    "date": "2027-02-20",
+    "weekday": "Sat",
+    "mlbGames": 16,
+    "priorityGames": 2,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "Baltimore Orioles at Minnesota Twins",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-02-20&endDate=2027-02-20"
+   },
+   {
+    "date": "2027-02-21",
+    "weekday": "Sun",
+    "mlbGames": 16,
+    "priorityGames": 2,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "Pittsburgh Pirates at Baltimore Orioles",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-02-21&endDate=2027-02-21"
+   },
+   {
+    "date": "2027-02-22",
+    "weekday": "Mon",
+    "mlbGames": 16,
+    "priorityGames": 2,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "Boston Red Sox at Baltimore Orioles",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-02-22&endDate=2027-02-22"
+   },
+   {
+    "date": "2027-02-23",
+    "weekday": "Tue",
+    "mlbGames": 15,
+    "priorityGames": 2,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "Baltimore Orioles at Toronto Blue Jays",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-02-23&endDate=2027-02-23"
+   },
+   {
+    "date": "2027-02-24",
+    "weekday": "Wed",
+    "mlbGames": 16,
+    "priorityGames": 2,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "Tampa Bay Rays at Baltimore Orioles",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-02-24&endDate=2027-02-24"
+   },
+   {
+    "date": "2027-02-25",
+    "weekday": "Thu",
+    "mlbGames": 15,
+    "priorityGames": 2,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "Pittsburgh Pirates at Philadelphia Phillies",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-02-25&endDate=2027-02-25"
+   },
+   {
+    "date": "2027-02-26",
+    "weekday": "Fri",
+    "mlbGames": 16,
+    "priorityGames": 2,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "Boston Red Sox at Minnesota Twins",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-02-26&endDate=2027-02-26"
+   },
+   {
+    "date": "2027-02-27",
+    "weekday": "Sat",
+    "mlbGames": 16,
+    "priorityGames": 2,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "Detroit Tigers at Baltimore Orioles",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-02-27&endDate=2027-02-27"
+   },
+   {
+    "date": "2027-02-28",
+    "weekday": "Sun",
+    "mlbGames": 16,
+    "priorityGames": 2,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "Baltimore Orioles at Minnesota Twins",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-02-28&endDate=2027-02-28"
+   },
+   {
+    "date": "2027-03-01",
+    "weekday": "Mon",
+    "mlbGames": 12,
+    "priorityGames": 1,
+    "giants": false,
+    "athletics": true,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "Philadelphia Phillies at Baltimore Orioles",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-03-01&endDate=2027-03-01"
+   },
+   {
+    "date": "2027-03-02",
+    "weekday": "Tue",
+    "mlbGames": 9,
+    "priorityGames": 1,
+    "giants": true,
+    "athletics": false,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "Pittsburgh Pirates at Baltimore Orioles",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-03-02&endDate=2027-03-02"
+   },
+   {
+    "date": "2027-03-03",
+    "weekday": "Wed",
+    "mlbGames": 13,
+    "priorityGames": 2,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "New York Mets at Minnesota Twins",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-03-03&endDate=2027-03-03"
+   },
+   {
+    "date": "2027-03-04",
+    "weekday": "Thu",
+    "mlbGames": 14,
+    "priorityGames": 2,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "Minnesota Twins at New York Yankees",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-03-04&endDate=2027-03-04"
+   },
+   {
+    "date": "2027-03-05",
+    "weekday": "Fri",
+    "mlbGames": 16,
+    "priorityGames": 2,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "Pittsburgh Pirates at Philadelphia Phillies",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-03-05&endDate=2027-03-05"
+   },
+   {
+    "date": "2027-03-06",
+    "weekday": "Sat",
+    "mlbGames": 16,
+    "priorityGames": 2,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "Minnesota Twins at Baltimore Orioles",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-03-06&endDate=2027-03-06"
+   },
+   {
+    "date": "2027-03-07",
+    "weekday": "Sun",
+    "mlbGames": 16,
+    "priorityGames": 3,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "Philadelphia Phillies at Baltimore Orioles",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-03-07&endDate=2027-03-07"
+   },
+   {
+    "date": "2027-03-08",
+    "weekday": "Mon",
+    "mlbGames": 13,
+    "priorityGames": 2,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "Boston Red Sox at Philadelphia Phillies",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-03-08&endDate=2027-03-08"
+   },
+   {
+    "date": "2027-03-09",
+    "weekday": "Tue",
+    "mlbGames": 13,
+    "priorityGames": 2,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "Boston Red Sox at New York Yankees",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-03-09&endDate=2027-03-09"
+   },
+   {
+    "date": "2027-03-10",
+    "weekday": "Wed",
+    "mlbGames": 13,
+    "priorityGames": 2,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "Toronto Blue Jays at Baltimore Orioles",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-03-10&endDate=2027-03-10"
+   },
+   {
+    "date": "2027-03-11",
+    "weekday": "Thu",
+    "mlbGames": 13,
+    "priorityGames": 2,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "Pittsburgh Pirates at Toronto Blue Jays",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-03-11&endDate=2027-03-11"
+   },
+   {
+    "date": "2027-03-12",
+    "weekday": "Fri",
+    "mlbGames": 16,
+    "priorityGames": 2,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "Washington Nationals at Minnesota Twins",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-03-12&endDate=2027-03-12"
+   },
+   {
+    "date": "2027-03-13",
+    "weekday": "Sat",
+    "mlbGames": 17,
+    "priorityGames": 2,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "Philadelphia Phillies at Toronto Blue Jays",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-03-13&endDate=2027-03-13"
+   },
+   {
+    "date": "2027-03-14",
+    "weekday": "Sun",
+    "mlbGames": 16,
+    "priorityGames": 2,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "Detroit Tigers at Minnesota Twins",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-03-14&endDate=2027-03-14"
+   },
+   {
+    "date": "2027-03-15",
+    "weekday": "Mon",
+    "mlbGames": 12,
+    "priorityGames": 2,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "Los Angeles Dodgers at Chicago Cubs",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-03-15&endDate=2027-03-15"
+   },
+   {
+    "date": "2027-03-16",
+    "weekday": "Tue",
+    "mlbGames": 12,
+    "priorityGames": 0,
+    "giants": false,
+    "athletics": false,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "Toronto Blue Jays at Philadelphia Phillies",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-03-16&endDate=2027-03-16"
+   },
+   {
+    "date": "2027-03-17",
+    "weekday": "Wed",
+    "mlbGames": 15,
+    "priorityGames": 3,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "Baltimore Orioles at Philadelphia Phillies",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-03-17&endDate=2027-03-17"
+   },
+   {
+    "date": "2027-03-18",
+    "weekday": "Thu",
+    "mlbGames": 13,
+    "priorityGames": 3,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "Boston Red Sox at Minnesota Twins",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-03-18&endDate=2027-03-18"
+   },
+   {
+    "date": "2027-03-19",
+    "weekday": "Fri",
+    "mlbGames": 16,
+    "priorityGames": 2,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "Tampa Bay Rays at Philadelphia Phillies",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-03-19&endDate=2027-03-19"
+   },
+   {
+    "date": "2027-03-20",
+    "weekday": "Sat",
+    "mlbGames": 16,
+    "priorityGames": 2,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Spring Training"
+    ],
+    "sample": "Atlanta Braves at Minnesota Twins",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-03-20&endDate=2027-03-20"
+   },
+   {
+    "date": "2027-03-21",
+    "weekday": "Sun",
+    "mlbGames": 15,
+    "priorityGames": 2,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Exhibition Game",
+     "Spring Training"
+    ],
+    "sample": "Tampa Bay Rays at New York Yankees",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-03-21&endDate=2027-03-21"
+   },
+   {
+    "date": "2027-03-22",
+    "weekday": "Mon",
+    "mlbGames": 10,
+    "priorityGames": 2,
+    "giants": true,
+    "athletics": true,
+    "kinds": [
+     "Exhibition Game",
+     "Spring Training"
+    ],
+    "sample": "Tampa Bay Rays at Philadelphia Phillies",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-03-22&endDate=2027-03-22"
+   },
+   {
+    "date": "2027-03-23",
+    "weekday": "Tue",
+    "mlbGames": 5,
+    "priorityGames": 1,
+    "giants": true,
+    "athletics": false,
+    "kinds": [
+     "Exhibition Game",
+     "Spring Training"
+    ],
+    "sample": "Milwaukee Brewers at Chicago Cubs",
+    "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-03-23&endDate=2027-03-23"
+   }
+  ]
+ },
+ "mlbOnlyQuietRuns2027": [
+  {
+   "start": "2027-09-27",
+   "end": "2027-12-31",
+   "days": 96,
+   "status": "UNKNOWN",
+   "note": "This run runs to the end of the year because the official 2027 MLB snapshot stops at 2027-09-26. The 2027 postseason is NOT in the feed. This is a coverage gap and must be treated as BUSY, not free."
+  },
+  {
+   "start": "2027-02-15",
+   "end": "2027-02-18",
+   "days": 4,
+   "status": "VERIFIED",
+   "note": "Starts before the first date present in the official MLB 2027 snapshot (2027-02-19); MLB has no games before spring training opens."
+  },
+  {
+   "start": "2027-07-14",
+   "end": "2027-07-15",
+   "days": 2,
+   "status": "CONFLICT",
+   "note": "MLB.com says the 2027 second half begins Thursday July 15, but the MLB Stats API snapshot has no game on that date. The two official sources disagree, so Jul 15 is treated as BUSY and this run is scored as 1 day(s), not 2.",
+   "daysIfConflictResolvedAsBusy": 1
+  },
+  {
+   "start": "2027-03-24",
+   "end": "2027-03-24",
+   "days": 1,
+   "status": "UNKNOWN",
+   "note": "2027 MLB Opening Night (Netflix, matchup TBD) is announced by MLB.com but is not present in the MLB Stats API snapshot. Treat as BUSY."
+  },
+  {
+   "start": "2027-07-12",
+   "end": "2027-07-12",
+   "days": 1,
+   "status": "VERIFIED",
+   "note": null
+  }
+ ]
+}
