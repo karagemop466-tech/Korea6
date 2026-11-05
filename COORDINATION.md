@@ -8,6 +8,7 @@
 | Research, dashboard, tests and final integration | done | arena-d6dba19e | COORDINATION.md, README.md, site/**, scripts/**, tests/**, .github/workflows/**; additive integration content |
 | Audit and correct contradictory legacy vacation recommendations | done | arena/00b68cb3-korea6 | README.md, windows.html, summary.html, COORDINATION.md |
 | Audit historical vacation assertions in research source log | done | arena/9d85eaae-korea6 | research/sources.md, COORDINATION.md |
+| Final integration: verify, PR to main, merge, Pages deploy confirmation | in progress | arena/a5b64579-korea6 | COORDINATION.md, README.md (additive), site/**, tests/**, root HTML pages |
 
 ## Session log — arena/252ee7d4-korea6 (2026-11-05)
 - Claim: freshness UX audit; make the daily schedule default to the current `America/Los_Angeles` date rather than the stale 2026-11-03 literal, with regression coverage. Scope: `site/app.js`, `tests/core.test.js`, and this board only. Existing schedule data is unchanged; this does not claim data refresh or radio coverage.
