@@ -399,6 +399,24 @@
       "title": "2027 MLB start times mostly TBD; CBA risk",
       "detail": "1,930 of 2,901 imported 2027 MLB feed records have no start time (TBD), so day-level free-minute estimates for 2027 are planning overlays only (F07). Press coverage also notes the MLB CBA expires in Dec 2026 and a work stoppage could shift 2027 dates; 2027 anchors are re-checked at each release.",
       "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2027-01-01&endDate=2027-12-31"
+    },
+    {
+      "id": "F27",
+      "title": "2028/2029 MLB spring-training starts are estimated",
+      "detail": "The 2028 and 2029 MLB schedules are not released (empty official feed = unknown coverage, not free time). The winter-gap estimates for 2028 (Feb 14-17) and 2029 (Feb 12-17) project the 2027 pattern (Super Bowl mid-Feb, MLB spring training ~Feb 18-19). These are planning projections, not verified dates.",
+      "source": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=2028-01-01&endDate=2028-12-31"
+    },
+    {
+      "id": "F28",
+      "title": "Super Bowl LXIII (Feb 11, 2029) is an announced future date",
+      "detail": "The NFL announced Las Vegas/Allegiant Stadium as the Super Bowl LXIII host on 2026-03-30; the game date is reported as Sunday, Feb 11, 2029. This is an announced future date, not a completed event, and the 2029 season schedule is otherwise unreleased.",
+      "source": "https://en.wikipedia.org/wiki/Super_Bowl_LXIII"
+    },
+    {
+      "id": "F29",
+      "title": "No 7/14/21-day all-clear window exists in 2027-2029",
+      "detail": "Under the strict all-sports rule (all MLB, all NFL, Stanford/Cal NCAAF, Westwood One), the NFL season, MLB season and NCAAF overlap almost continuously through 2027-2029. The only genuine multi-day gap is the few days between the Super Bowl and MLB spring training (2027: Feb 15-18 verified; 2028: Feb 14-17 estimated; 2029: Feb 12-17 estimated). No 7-, 14- or 21-day certified window exists.",
+      "source": "https://operations.nfl.com/calendar-events/nfl-important-dates"
     }
   ]
 }
