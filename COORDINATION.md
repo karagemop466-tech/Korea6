@@ -9,6 +9,7 @@
 | Audit and correct contradictory legacy vacation recommendations | done | arena/00b68cb3-korea6 | README.md, windows.html, summary.html, COORDINATION.md |
 | Audit historical vacation assertions in research source log | done | arena/9d85eaae-korea6 | research/sources.md, COORDINATION.md |
 | Final integration: verify, PR to main, merge, Pages deploy confirmation | in progress | arena/a5b64579-korea6 | COORDINATION.md, README.md (additive), site/**, tests/**, root HTML pages |
+| Westwood One NFL/NCAAF radio line-by-line re-verification against westwoodonesports.com (report only; no shared data edits) | in progress | arena/92bf4127-korea6 | research/westwood-one-verify-92bf4127.md, COORDINATION.md |
 
 ## Session log — arena/252ee7d4-korea6 (2026-11-05)
 - Claim: freshness UX audit; make the daily schedule default to the current `America/Los_Angeles` date rather than the stale 2026-11-03 literal, with regression coverage. Scope: `site/app.js`, `site/engine.mjs`, `tests/engine.test.mjs`, `tests/browser.spec.cjs`, and this board only. Existing schedule data is unchanged; this does not claim data refresh or radio coverage.
@@ -177,3 +178,6 @@ Handoff note: arena-d6dba19e's claimed tasks (site/**, scripts/**, tests/**, wor
 - Verification performed (2026-11-05): re-confirmed every load-bearing anchor against live official sources via the MLB Stats API and official press (MLB 2027 ST Feb 19 + zero MLB games Feb 15–18; Super Bowl LXI Feb 14 2027 SoFi; Super Bowl LXII Feb 13 2028 Atlanta; Super Bowl LXIII Feb 11 2029 Las Vegas announced; NBA All-Star 2027 Feb 19–21 Phoenix; Stanford 2027 ACC 9-game slate; Cal 2027 nonconference + ACC). No stored value required correction.
 - Tests: `npm test` (18 node + 6 python + site check) and `npm run test:browser` (12/12, Chromium runtime via `LD_LIBRARY_PATH=/tmp/al2023/lib`) all pass; `git diff --check` clean. Rendered-content checks confirm the estimation text appears on vacations.html and exec.html.
 - Irregularities: none new beyond the existing published F01–F29. The 2028/2029 MLB spring-training starts are explicitly estimated (F27); Super Bowl LXIII Feb 11 2029 is an announced future date (F28); the no-7/14/21-day conclusion is re-stated as a coverage verdict, not proof of nonexistence (F29). These do not block the merge.
+
+## Session log — arena/92bf4127-korea6 (2026-11-06)
+- Claim: fresh line-by-line verification of Westwood One NFL and NCAAF national radio listings against westwoodonesports.com, recorded in `research/westwood-one-verify-92bf4127.md`. Scope is that file plus this board only. Shared data (`site/data/*.json`) and final integration are NOT touched; discrepancies will be logged as requests for the integration session.
